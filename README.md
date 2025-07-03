@@ -123,7 +123,7 @@ entities:
     timer: timer.zone_2_timer
     sensor: sensor.zone_2_is_finished
 ```
-![image3](images/defaultadvanced.png)
+![image3](images/water.png)
 
 #### Example for Entity Based Modification (Please see the entity zone 2)
 ```
