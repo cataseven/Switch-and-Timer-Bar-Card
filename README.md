@@ -124,6 +124,7 @@ entities:
     sensor: sensor.zone_2_is_finished
 ```
 ![image3](images/water.png)
+![image4](images/defaultadvanced.png)
 
 #### Example for Entity Based Modification (Please see the entity zone 2)
 ```
@@ -176,7 +177,7 @@ entities:
     labels:
       status_ready: 'Light Off' # Use a custom status text
 ```
-![image4](images/entityadvanced.png)      
+![image5](images/entityadvanced.png)      
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
