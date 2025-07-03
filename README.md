@@ -2,7 +2,7 @@
 
 A flexible Lovelace card for Home Assistant that allows you to control a switch, manage an associated timer, and track its progress with a visual bar. It is perfect for automations that require timing and status tracking, such as irrigation systems, pool pumps, or charging stations.
 
-![image1](images/simple.png)
+![image1](images/simple1.png)
 
 *(Note: This is an example image. You should add a screenshot of your own card here.)*
 
