@@ -2,7 +2,8 @@
 
 A flexible Lovelace card for Home Assistant that allows you to control a switch, manage an associated timer, and track its progress with a visual bar. It is perfect for automations that require timing and status tracking, such as irrigation systems, pool pumps, or charging stations.
 
-![Switch and Timer Bar Card Screenshot](https://user-images.githubusercontent.com/8282363/233131733-146377e7-3b7c-4861-a111-1a4362d66e70.png)
+![image1](images/simple.png)
+
 *(Note: This is an example image. You should add a screenshot of your own card here.)*
 
 ## ✨ Features
@@ -85,6 +86,7 @@ entities:
     timer: timer.zone_2_timer
     sensor: sensor.zone_2_is_finished
 ```
+![image2](images/simple.png)
 
 #### Example with Default Values Applying to All Entities
 ```
@@ -124,7 +126,7 @@ entities:
     timer: timer.zone_2_timer
     sensor: sensor.zone_2_is_finished
 ```
-
+![image3](images/defaultadvanced.png)
 
 #### Example for Entity Based Modification (Please see the entity zone 2)
 ```
@@ -177,15 +179,7 @@ entities:
     labels:
       status_ready: 'Light Off' # Use a custom status text
 ```
-      
-#### Minimal usage with only a switch
-```
-type: custom:switch-and-timer-bar-card
-entities:
-  - name: Fruit Trees
-    switch: switch.fruit_trees_valve
-    # No timer or sensor. The card will only show on/off state and active duration.
-```
+![image4](images/entityadvanced.png)      
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
