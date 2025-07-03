@@ -76,9 +76,14 @@ To get the card running quickly with only the required fields:
 ```
 type: custom:switch-and-timer-bar-card
 entities:
-  - switch: switch.garden_sprinkler
-    timer: timer.garden_sprinkler_timer
-    sensor: sensor.garden_sprinkler_last_run
+  - name: Zone 1
+    switch: switch.zone_1
+    timer: timer.zone_1_timer
+    sensor: sensor.zone_1_is_finished
+  - name: Living Room Light
+    switch: switch.zone_2
+    timer: timer.zone_2_timer
+    sensor: sensor.zone_2_is_finished
 ```
 
 #### Example with Default Values Applying to All Entities
