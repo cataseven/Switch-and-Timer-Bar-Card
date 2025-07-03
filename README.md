@@ -45,29 +45,21 @@ A flexible Lovelace card for Home Assistant that allows you to control a switch,
 
 To add the card to your Lovelace dashboard, click "Add Card", choose "Manual", and use the YAML configuration below.
 
-### Main Configuration Options
+### Configuration Options
 
-| Option | Description | Type | Default |
-| :--- | :--- | :--- | :--- |
-| `type` | The type of the card. Must be `custom:switch-and-timer-bar-card`. | `string` | **Required** |
-| `title` | The main title to be displayed at the top of the card. | `string` | `''` |
-| `button_position`| The position of the Start/Stop buttons. Can be `left` or `right`. | `string` | `left` |
-| `colors` | An object containing the card's colors. (Details below) | `object` | `{...}` |
-| `icons` | An object containing the card's icons. (Details below) | `object` | `{...}` |
-| `labels` | An object containing the card's text labels. (Details below) | `object` | `{...}` |
-| `entities` | A list of devices to be displayed. | `list` | **Required** |
-
-### Entity Options
-
-Each item in the `entities` list can have the following options:
-
-| Option | Description | Type | Default |
-| :--- | :--- | :--- | :--- |
-| `switch` | The entity ID of the switch to be controlled. | `string` | **Required** |
-| `name` | The name to display for the device. If not specified, the `friendly_name` of the switch is used. | `string` | The switch's name |
-| `timer` | The entity ID of the timer associated with the switch. | `string` | `undefined` |
-| `sensor` | The entity ID of the sensor that stores the last run time. | `string` | `undefined` |
-| `button_position`, `colors`, `icons`, `labels` | Used to override the global settings specifically for this entity. | `string` / `object` | Global settings |
+| Option | Description | Type | Required | Default |
+| :--- | :--- | :--- | :--- | :--- |
+| `type` | The type of the card. Must be `custom:switch-and-timer-bar-card`. | `string` | **YES** |
+| `title` | The main title to be displayed at the top of the card. | `string` | No | |
+| `entities` | A list of devices to be displayed. | `list` | **YES** |
+| `switch` | The entity ID of the switch to be controlled. | `string` | **Yes** | |
+| `name` | The name to display for the device. If not specified, the `friendly_name` of the switch is used. | `string` | No | The switch's name |
+| `timer` | The entity ID of the timer associated with the switch. | `string` | No | the timer you want to use |
+| `sensor` | The entity ID of the sensor that stores the last run time. | `string` | No | the sensor you want to use |
+| `button_position` | Used to override the global settings specifically for this entity. | `string` / `object` | No | Please see the below examples |
+| `colors`| Used to override the global settings specifically for this entity. | `string` / `object` | No | Please see the below examples |
+| `icons` | Used to override the global settings specifically for this entity. | `string` / `object` | No | Please see the below examples |
+| `labels`| Used to override the global settings specifically for this entity. | `string` / `object` | No | Please see the below examples |
 
 ### 🛠️ Example YAML Configurations
 
