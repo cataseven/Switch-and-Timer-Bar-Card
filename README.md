@@ -171,7 +171,7 @@ entities:
 ```
 ![image5](images/entityadvanced.png)      
 
-### how to Create Trigger Based Sensor for any entity?
+### How to Create Trigger Based Sensor for any entity?
 
 Configuration.yaml example to create sensor triggered by the state of switch entity: Below sensor returns the turn off time of switch.zone_1. Home Asistants last_updated values are deleted when you restart HA but below sensor is always remember the last triggered time!!
 ```
