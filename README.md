@@ -4,8 +4,6 @@ A flexible Lovelace card for Home Assistant that allows you to control a switch,
 
 ![image1](images/simple1.png)
 
-*(Note: This is an example image. You should add a screenshot of your own card here.)*
-
 ## ✨ Features
 
 - **Switch and Timer Control:** Turn a switch on/off and start/stop the associated timer from a single interface.
