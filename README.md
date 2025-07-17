@@ -190,3 +190,6 @@ template:
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+## ⭐ Support
+If you like this card, feel free to ⭐ star the project on GitHub and share it with the Home Assistant community!
