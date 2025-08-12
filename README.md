@@ -17,7 +17,7 @@ A flexible Lovelace card for Home Assistant that allows you to control a switch,
 ## 📋 Prerequisites
 
 - **Home Assistant:** The card is designed to run on Home Assistant.
-- **(Optional) `timer` Integration:** To use the timer functionality, you must have timers created with the `timer` integration in Home Assistant. Not Mandatory
+- `timer` Integration and connect it to switch
 - **(Optional) `sensor` Integration:** To display the "last run" information, you will need a sensor that records the date/time whenever the switch turns off. This is typically done with an automation. Not Mandatory
 
 ## 🚀 Installation
