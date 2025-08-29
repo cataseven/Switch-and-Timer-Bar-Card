@@ -63,7 +63,7 @@ Add the card via **Add Card → Manual** and paste YAML.
 | `switch`                                    | The **entity\_id** of the device to control. **Supported domains:** `switch`, `cover`, `lock`, `media_player`.                                                                 | `string`            | **YES**  |         |
 | `timer`                                     | The timer entity associated with the device.                                                                                                                                   | `string`            | No       |         |
 | `sensor`                                    | Sensor that stores info about the timer.                                                                                                                                          | `string`            | No       |         |
-| `timer_and_entity_connected_via_automation` | Set **true** if your **own automations** handle turning the device on/off when the timer starts/finishes. When **false** (default), the card will call device services itself. | `boolean`           | No       | `false` |
+| `timer_and_entity_connected_via_automation` | Set **true** if your **own automations** handle turning the device on/off when the timer starts/finishes. When **false** (default), the card will call device services itself. | `boolean`           | No       | `true` |
 | `button_position`                           | Override global button position (e.g., `left`/`right`) for the whole card or per‑entity.                                                                                       | `string` / `object` | No       |         |
 | `colors`                                    | Override colors globally or per‑entity.                                                                                                                                        | `string` / `object` | No       |         |
 | `icons`                                     | Override icons globally or per‑entity.                                                                                                                                         | `string` / `object` | No       |         |
@@ -98,7 +98,7 @@ entities:
     switch: switch.pool_pump
     timer: timer.pool_pump
     sensor: sensor.pool_pump_last_run
-    timer_and_entity_connected_via_automation: true
+    timer_and_entity_connected_via_automation: true #this line is not required because default value is true
 ```
 
 ---
