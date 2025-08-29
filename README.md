@@ -23,7 +23,12 @@ A flexible Lovelace card for Home Assistant that lets you control a device, mana
 | Domain         | Start does                                     | Stop does                                       | Active means          |
 | :------------- | :--------------------------------------------- | :---------------------------------------------- | :-------------------- |
 | `switch`       | `switch.turn_on`                               | `switch.turn_off`                               | state is `on`         |
-| `cover`        | `cover.close_cover`                            | `cover.open_cover`                              | position is `closed` |
+| `light`        | `light.turn_on`                                | `light.turn_off`                                | state is `on`         |
+| `siren`        | `siren.turn_on`                                | `siren.turn_off`                                | state is `on`         |
+| `fan`          | `fan.turn_on`                                  | `fan.turn_off`                                  | state is `on`         |
+| `automation`   | `automation.turn_on`                           | `automation.turn_off`                           | state is `on`         |
+| `input_booelan`| `input_booelan.turn_on`                        | `input_booelan.turn_off`                        | state is `on`         |
+| `cover`        | `cover.close_cover`                            | `cover.open_cover`                              | position is `closed`  |
 | `lock`         | `lock.unlock`                                  | `lock.lock`                                     | state is `unlocked`   |
 | `media_player` | `media_player.media_play` (fallback `turn_on`) | `media_player.media_stop` (fallback `turn_off`) | state is `playing/on` |
 
