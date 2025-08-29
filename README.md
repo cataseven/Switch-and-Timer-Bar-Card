@@ -4,7 +4,7 @@
 
 # Switch and Timer Bar Card
 
-A flexible Lovelace card for Home Assistant that lets you control a device, manage an associated timer, and track its progress with a visual bar. Perfect for automations that need timing and status tracking—irrigation, pool pumps, blinds, gates, media players, charging stations, and more.
+A flexible Lovelace card for Home Assistant that lets you control a device, manage an associated timer, and track its progress with a visual bar. Perfect for automations that need timing and status tracking—irrigation, pool pumps, blinds, gates, media players, charging stations, and more. You can even turn_off your automations or your input_boolean entity for spesific time that you want!
 
 ![image1](images/simple1.png)
 
@@ -65,7 +65,7 @@ Add the card via **Add Card → Manual** and paste YAML.
 | `type`                                      | Must be `custom:switch-and-timer-bar-card`.                                                                                                                                    | `string`            | **YES**  |         |
 | `title`                                     | Title shown at the top of the card.                                                                                                                                            | `string`            | No       |         |
 | `entities`                                  | List of devices to display.                                                                                                                                                    | `list`              | **YES**  |         |
-| `switch`                                    | The **entity\_id** of the device to control. **Supported domains:** `switch`, `cover`, `lock`, `media_player`.                                                                 | `string`            | **YES**  |         |
+| `switch`                                    | The **entity\_id** of the device to control. **Supported domains:** `switch`, `cover`, `light`, `siren`,`lock`, `media_player`. `automation`, `input_boolean`.                                                               | `string`            | **YES**  |         |
 | `timer`                                     | The timer entity associated with the device.                                                                                                                                   | `string`            | No       |         |
 | `sensor`                                    | Sensor that stores info about the timer.                                                                                                                                          | `string`            | No       |         |
 | `timer_and_entity_connected_via_automation` | Set **true** if your **own automations** handle turning the device on/off when the timer starts/finishes. When **false** (default), the card will call device services itself. | `boolean`           | No       | `true` |
@@ -189,7 +189,31 @@ entities:
     sensor: sensor.tv_last_run
     timer_and_entity_connected_via_automation: true
 ```
+### 5) `automation` domain (e.g., automation.arriving_home)
 
+**Entity and Timer are NOT connected via Automation, Script  etc.**
+
+```yaml
+type: custom:switch-and-timer-bar-card
+entities:
+  - name: Living Room TV
+    switch: automation.arriving_home
+    timer: timer.stop_automation
+    sensor: sensor.stop_automation_last_time
+    timer_and_entity_connected_via_automation: false
+```
+
+**Entity and Timer are connected via Automation, Script  etc.**
+
+```yaml
+type: custom:switch-and-timer-bar-card
+entities:
+  - name: Living Room TV
+    switch: automation.arriving_home
+    timer: timer.stop_automation
+    sensor: sensor.stop_automation_last_time
+    timer_and_entity_connected_via_automation: true
+```
 ---
 
 ## 📦 Examples with global defaults
