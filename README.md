@@ -8,7 +8,7 @@ A flexible Lovelace card for Home Assistant that lets you control a device, mana
 
 ![image1](images/simple1.png)
 
-## ✨ What’s new in 1.0.6
+## ✨ Features
 
 * **Multi‑domain control:** The card now supports **switch**, **cover**, **lock**, and **media\_player** entities.
 * **Device‑aware Start/Stop:** The card sends the right service for each domain (see mapping below).
