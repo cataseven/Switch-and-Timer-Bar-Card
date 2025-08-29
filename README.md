@@ -76,6 +76,11 @@ Add the card via **Add Card → Manual** and paste YAML.
 
 ---
 
+## 🧩 New Option `timer_and_entity_connected_via_automation`
+Default value is true. If you’ve already connected your timer and device with an automation or script etc., start button will start the timer to trigger the automation.
+
+However, now you do not need to connect your timer and entity via automation if you set this to false. The card will start the timer and switch at the same time automatically and when the timer is finished card will turn off the switch automatically without a need of automation. This also means you can use the same timer for different entities on the card. For example, if you have 6 different entities from different domains but they are all needs 10 minutes timer, just create 1 timer and use it for all on the card config
+
 ## 🧩 YAML Examples (by domain & scenario)
 
 Below are **paired** examples for each domain: first with **automation mode off** (`false`), then **automation mode on** (`true`). Replace entity IDs with your own.
