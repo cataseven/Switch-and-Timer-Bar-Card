@@ -77,7 +77,7 @@ Below are **paired** examples for each domain: first with **automation mode off*
 
 ### 1) `switch` domain
 
-**Entity and Timer are connected via Automation, Script  etc.**
+**Entity and Timer are NOT connected via Automation, Script  etc.**
 
 ```yaml
 type: custom:switch-and-timer-bar-card
@@ -89,7 +89,7 @@ entities:
     timer_and_entity_connected_via_automation: false
 ```
 
-**You control via automations (default)**
+**Entity and Timer are connected via Automation, Script  etc. (default)**
 
 ```yaml
 type: custom:switch-and-timer-bar-card
@@ -105,7 +105,7 @@ entities:
 
 ### 2) `cover` domain (e.g., blinds)
 
-**Entity and Timer are connected via Automation, Script  etc.**
+**Entity and Timer are NOT connected via Automation, Script  etc.**
 
 ```yaml
 type: custom:switch-and-timer-bar-card
@@ -117,7 +117,7 @@ entities:
     timer_and_entity_connected_via_automation: false
 ```
 
-**You control via automations**
+**Entity and Timer are connected via Automation, Script  etc.**
 
 ```yaml
 type: custom:switch-and-timer-bar-card
@@ -133,7 +133,7 @@ entities:
 
 ### 3) `lock` domain (e.g., gate lock)
 
-**Entity and Timer are connected via Automation, Script  etc.**
+**Entity and Timer are NOT connected via Automation, Script  etc.**
 
 ```yaml
 type: custom:switch-and-timer-bar-card
@@ -145,7 +145,7 @@ entities:
     timer_and_entity_connected_via_automation: false
 ```
 
-**You control via automations**
+**Entity and Timer are connected via Automation, Script  etc.**
 
 ```yaml
 type: custom:switch-and-timer-bar-card
@@ -161,7 +161,7 @@ entities:
 
 ### 4) `media_player` domain (e.g., TV or speaker)
 
-**Entity and Timer are connected via Automation, Script  etc.**
+**Entity and Timer are NOT connected via Automation, Script  etc.**
 
 ```yaml
 type: custom:switch-and-timer-bar-card
@@ -173,7 +173,7 @@ entities:
     timer_and_entity_connected_via_automation: false
 ```
 
-**You control via automations**
+**Entity and Timer are connected via Automation, Script  etc.**
 
 ```yaml
 type: custom:switch-and-timer-bar-card
