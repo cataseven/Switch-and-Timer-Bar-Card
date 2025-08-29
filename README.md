@@ -1,86 +1,195 @@
 <a href="https://www.buymeacoffee.com/cataseven" target="_blank">
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height: 60px !important;width: 217px !important;" >
-</a>      
+</a>
 
 # Switch and Timer Bar Card
 
-A flexible Lovelace card for Home Assistant that allows you to control a switch, manage an associated timer, and track its progress with a visual bar. It is perfect for automations that require timing and status tracking, such as irrigation systems, pool pumps, or charging stations.
+A flexible Lovelace card for Home Assistant that lets you control a device, manage an associated timer, and track its progress with a visual bar. Perfect for automations that need timing and status tracking—irrigation, pool pumps, blinds, gates, media players, charging stations, and more.
 
 ![image1](images/simple1.png)
 
-## ✨ Features
+## ✨ What’s new in 1.0.6
 
-- **Switch and Timer Control:** Turn a switch on/off and start/stop the associated timer from a single interface.
-- **Visual Progress Bar:** Visually track how long the timer has been active and how much time is left.
-- **Last Run Information:** Display when the device last ran and for how long, via a sensor.
-- **Deep Customization:** Personalize all **colors, icons, and texts** on the card through YAML.
-- **Global and Per-Entity Settings:** Define default settings for the entire card and override them for specific entities.
-- **Localization (i18n) Support:** Easily translate the card into your own language using the `labels` configuration.
-- **Optional Entities:** You can use the card even if you only have a switch; a timer and sensor are not required.
+* **Multi‑domain control:** The card now supports **switch**, **cover**, **lock**, and **media\_player** entities.
+* **Device‑aware Start/Stop:** The card sends the right service for each domain (see mapping below).
+* **Auto turn‑off at timer end:** When the timer finishes, the card can stop the device automatically.
+* **Optional automation mode:** Use `timer_and_entity_connected_via_automation: true` if your own automations already link the timer ↔️ device; the card then avoids extra on/off actions.
+* **Smarter status:** “Active” is interpreted sensibly per domain (e.g., covers consider *closed* as active; locks consider *unlocked* as active; media players consider *playing/on* as active).
+
+---
+
+## ✅ Supported domains & service mapping
+
+| Domain         | Start does                                     | Stop does                                       | Active means          |
+| :------------- | :--------------------------------------------- | :---------------------------------------------- | :-------------------- |
+| `switch`       | `switch.turn_on`                               | `switch.turn_off`                               | state is `on`         |
+| `cover`        | `cover.close_cover`                            | `cover.open_cover`                              | position is `closed` |
+| `lock`         | `lock.unlock`                                  | `lock.lock`                                     | state is `unlocked`   |
+| `media_player` | `media_player.media_play` (fallback `turn_on`) | `media_player.media_stop` (fallback `turn_off`) | state is `playing/on` |
+
+> **Note:** When `timer_and_entity_connected_via_automation: true`, the card will **not** call these services; it will only start/stop the timer and display progress. Your automations must handle turning the device on/off.
+
+---
 
 ## 📋 Prerequisites
 
-- **Home Assistant:** The card is designed to run on Home Assistant.
-- `timer` Integration and connect it to switch
-- **(Optional) `sensor` Integration:** To display the "last run" information, you will need a sensor that records the date/time whenever the switch turns off. This is typically done with an automation. Not Mandatory
+* **Home Assistant**
+* **Timer integration** and a device entity from one of the supported domains.
+* **(Optional) Sensor for “last run”** to show when the device last completed. Commonly a template sensor updated by an automation.
+* **If using automation mode** (`timer_and_entity_connected_via_automation: true`): create automations that (1) turn the device on when the timer starts and (2) turn it off when the timer finishes or is stopped.
 
 ## 🚀 Installation
 
-### HACS (Recommended Method)
+### HACS (Recommended)
 
-1.  Navigate to HACS > Frontend.
-2.  Click the three dots in the top right corner and select "Custom repositories".
-3.  Paste the URL of this card's GitHub repository, select "Lovelace" (or "Frontend") as the category, and click "Add".
-4.  Find the `Switch and Timer Bar Card` in the list and click the "Install" button.
+1. Go to **HACS → Frontend**.
+2. Open the three‑dot menu → **Custom repositories**.
+3. Add this repo as **Lovelace/Frontend**.
+4. Find **Switch and Timer Bar Card** and click **Install**.
 
-### Manual Installation
-
-1.  Download the latest `switch-and-timer-bar-card.js` file from the repository's "Releases" section.
-2.  Copy the file to the `www` folder in your Home Assistant configuration directory. (Create the `www` folder if it doesn't exist).
-3.  From the Home Assistant UI, go to Settings > Dashboards.
-4.  Click the three dots in the top right and select "Resources".
-5.  Click the "Add Resource" button.
-6.  Enter `/local/switch-and-timer-bar-card.js` as the URL and select "JavaScript Module" as the Resource Type.
-7.  Click the "Create" button and refresh your browser.
+---
 
 ## ⚙️ Configuration
 
-To add the card to your Lovelace dashboard, click "Add Card", choose "Manual", and use the YAML configuration below.
+Add the card via **Add Card → Manual** and paste YAML.
 
-### Configuration Options
+### Options
 
-| Option | Description | Type | Required | Default |
-| :--- | :--- | :--- | :--- | :--- |
-| `type` | The type of the card. Must be `custom:switch-and-timer-bar-card`. | `string` | **YES** |
-| `title` | The main title to be displayed at the top of the card. | `string` | No | |
-| `entities` | A list of devices to be displayed. | `list` | **YES** |
-| `switch` | The entity ID of the switch to be controlled. | `string` | **Yes** | |
-| `name` | The name to display for the device. If not specified, the `friendly_name` of the switch is used. | `string` | No | The switch's name |
-| `timer` | The entity ID of the timer associated with the switch. | `string` | No | the timer you want to use |
-| `sensor` | The entity ID of the sensor that stores the last run time. | `string` | No | the sensor you want to use |
-| `button_position` | Used to override the global settings specifically for this entity. | `string` / `object` | No | Please see the below examples |
-| `colors`| Used to override the global settings specifically for this entity. | `string` / `object` | No | Please see the below examples |
-| `icons` | Used to override the global settings specifically for this entity. | `string` / `object` | No | Please see the below examples |
-| `labels`| Used to override the global settings specifically for this entity. | `string` / `object` | No | Please see the below examples |
+| Option                                      | Description                                                                                                                                                                    | Type                | Required | Default |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------ | :------- | :------ |
+| `type`                                      | Must be `custom:switch-and-timer-bar-card`.                                                                                                                                    | `string`            | **YES**  |         |
+| `title`                                     | Title shown at the top of the card.                                                                                                                                            | `string`            | No       |         |
+| `entities`                                  | List of devices to display.                                                                                                                                                    | `list`              | **YES**  |         |
+| `switch`                                    | The **entity\_id** of the device to control. **Supported domains:** `switch`, `cover`, `lock`, `media_player`.                                                                 | `string`            | **YES**  |         |
+| `timer`                                     | The timer entity associated with the device.                                                                                                                                   | `string`            | No       |         |
+| `sensor`                                    | Sensor that stores info about the timer.                                                                                                                                          | `string`            | No       |         |
+| `timer_and_entity_connected_via_automation` | Set **true** if your **own automations** handle turning the device on/off when the timer starts/finishes. When **false** (default), the card will call device services itself. | `boolean`           | No       | `false` |
+| `button_position`                           | Override global button position (e.g., `left`/`right`) for the whole card or per‑entity.                                                                                       | `string` / `object` | No       |         |
+| `colors`                                    | Override colors globally or per‑entity.                                                                                                                                        | `string` / `object` | No       |         |
+| `icons`                                     | Override icons globally or per‑entity.                                                                                                                                         | `string` / `object` | No       |         |
+| `labels`                                    | Override labels (i18n) globally or per‑entity.                                                                                                                                 | `string` / `object` | No       |         |
 
-### 🛠️ Example YAML Configurations
+---
 
-#### Minimal Example
-To get the card running quickly with only the required fields:
+## 🧩 YAML Examples (by domain & scenario)
 
-```
+Below are **paired** examples for each domain: first with **automation mode off** (`false`), then **automation mode on** (`true`). Replace entity IDs with your own.
+
+### 1) `switch` domain
+
+**Entity and Timer are connected via Automation, Script  etc.**
+
+```yaml
 type: custom:switch-and-timer-bar-card
 entities:
-  - name: Garden
-    switch: switch.zone_1
-    timer: timer.zone_1_timer
-    sensor: sensor.zone_1_is_finished
-
+  - name: Pool Pump
+    switch: switch.pool_pump
+    timer: timer.pool_pump
+    sensor: sensor.pool_pump_last_run
+    timer_and_entity_connected_via_automation: false
 ```
-![image2](images/simple1.png)
 
-#### Example with Default Values Applying to All Entities
+**You control via automations (default)**
+
+```yaml
+type: custom:switch-and-timer-bar-card
+entities:
+  - name: Pool Pump
+    switch: switch.pool_pump
+    timer: timer.pool_pump
+    sensor: sensor.pool_pump_last_run
+    timer_and_entity_connected_via_automation: true
 ```
+
+---
+
+### 2) `cover` domain (e.g., blinds)
+
+**Entity and Timer are connected via Automation, Script  etc.**
+
+```yaml
+type: custom:switch-and-timer-bar-card
+entities:
+  - name: Patio Blind
+    switch: cover.patio_blind
+    timer: timer.patio_blind
+    sensor: sensor.patio_blind_last_run
+    timer_and_entity_connected_via_automation: false
+```
+
+**You control via automations**
+
+```yaml
+type: custom:switch-and-timer-bar-card
+entities:
+  - name: Patio Blind
+    switch: cover.patio_blind
+    timer: timer.patio_blind
+    sensor: sensor.patio_blind_last_run
+    timer_and_entity_connected_via_automation: true
+```
+
+---
+
+### 3) `lock` domain (e.g., gate lock)
+
+**Entity and Timer are connected via Automation, Script  etc.**
+
+```yaml
+type: custom:switch-and-timer-bar-card
+entities:
+  - name: Garden Gate
+    switch: lock.garden_gate
+    timer: timer.garden_gate
+    sensor: sensor.garden_gate_last_run
+    timer_and_entity_connected_via_automation: false
+```
+
+**You control via automations**
+
+```yaml
+type: custom:switch-and-timer-bar-card
+entities:
+  - name: Garden Gate
+    switch: lock.garden_gate
+    timer: timer.garden_gate
+    sensor: sensor.garden_gate_last_run
+    timer_and_entity_connected_via_automation: true
+```
+
+---
+
+### 4) `media_player` domain (e.g., TV or speaker)
+
+**Entity and Timer are connected via Automation, Script  etc.**
+
+```yaml
+type: custom:switch-and-timer-bar-card
+entities:
+  - name: Living Room TV
+    switch: media_player.living_room_tv
+    timer: timer.tv_sleep_timer
+    sensor: sensor.tv_last_run
+    timer_and_entity_connected_via_automation: false
+```
+
+**You control via automations**
+
+```yaml
+type: custom:switch-and-timer-bar-card
+entities:
+  - name: Living Room TV
+    switch: media_player.living_room_tv
+    timer: timer.tv_sleep_timer
+    sensor: sensor.tv_last_run
+    timer_and_entity_connected_via_automation: true
+```
+
+---
+
+## 📦 Examples with global defaults
+
+```yaml
 type: custom:switch-and-timer-bar-card
 title: ''
 button_position: left
@@ -113,15 +222,19 @@ entities:
     timer: timer.zone_1_timer
     sensor: sensor.zone_1_is_finished
   - name: Zone 2
-    switch: switch.zone_2
-    timer: timer.zone_2_timer
-    sensor: sensor.zone_2_is_finished
+    switch: cover.lounge_blind
+    timer: timer.lounge_blind
+    sensor: sensor.lounge_blind_last_run
 ```
+
 ![image3](images/water.png)
 ![image4](images/defaultadvanced.png)
 
-#### Example for Entity Based Modification (Please see the entity zone 2)
-```
+---
+
+## 🔧 Per‑entity overrides example
+
+```yaml
 type: custom:switch-and-timer-bar-card
 title: ''
 button_position: left
@@ -157,26 +270,29 @@ entities:
     switch: switch.zone_2
     timer: timer.zone_2_timer
     sensor: sensor.zone_2_is_finished
-  # This entity overrides some global settings
   - name: Living Room Light
     switch: switch.zone_3
     timer: timer.zone_3_timer
     sensor: sensor.zone_3_is_finished
-    button_position: right # Only this entity's button will be on the right
+    button_position: right
     colors:
-      button_start: '#F443FF' # Only this entity will be purple when active
-      ready: '#FF5500' # Only this entity will be orange when active
+      button_start: '#F443FF'
+      ready: '#FF5500'
     icons:
-      start: 'mdi:light-switch' # Use a custom start icon
+      start: 'mdi:light-switch'
     labels:
-      status_ready: 'Light Off' # Use a custom status text
+      status_ready: 'Light Off'
 ```
-![image5](images/entityadvanced.png)      
 
-### How to Create Trigger Based Sensor for any entity?
+![image5](images/entityadvanced.png)
 
-Configuration.yaml example to create sensor triggered by the state of switch entity: Below sensor returns the turn off time of switch.zone_1. Home Asistants last_updated values are deleted when you restart HA but template sensors like the below one always remember the last triggered time!!
-```
+---
+
+## 🧪 How to create a trigger‑based sensor
+
+To show "last run" on the card, you can create a template sensor that updates when the timer finishes (works for all domains) and/or when the device turns off. Example below uses both a `timer.finished` event and a switch turning off; adapt the second trigger for your domain if needed.
+
+```yaml
 template:
   - trigger:
       - trigger: event
@@ -184,19 +300,22 @@ template:
         event_data:
           entity_id: timer.zone_1_timer
       - trigger: state
-        entity_id: switch.zone_1
-        from: "on"
-        to: "off"
+        entity_id: switch.zone_1   # For non-switch domains, change to your entity
+        from: 'on'
+        to: 'off'
     sensor:
       - name: zone_1_is_finished
         state: "{{ now().timestamp() | as_datetime }}"
 ```
 
+---
+
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
+MIT — see the `LICENSE` file.
 
 ## ⭐ Support
 
 <a href="https://www.buymeacoffee.com/cataseven" target="_blank">
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height: 60px !important;width: 217px !important;" >
-</a>      
+</a>
