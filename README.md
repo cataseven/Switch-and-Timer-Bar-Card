@@ -81,6 +81,106 @@ Default value is true. If you’ve already connected your timer and device with 
 
 However, now you do not need to connect your timer and entity via automation if you set this to false. The card will start the timer and switch at the same time automatically and when the timer is finished card will turn off the switch automatically without a need of automation. This also means you can use the same timer for different entities on the card. For example, if you have 6 different entities from different domains but they are all needs 10 minutes timer, just create 1 timer and use it for all on the card config
 
+## 📦 Examples with global defaults
+
+```yaml
+type: custom:switch-and-timer-bar-card
+title: ''
+button_position: left
+colors:
+  on: '#2196F3'
+  ready: '#4CAF50'
+  unavailable: '#F44336'
+  button_start: '#4CAF50'
+  button_stop: '#2196F3'
+  icon: 'white'
+  progress_fill: '#2196F3'
+icons:
+  start: 'mdi:play'
+  stop: 'mdi:stop'
+labels:
+  status_on: 'Watering'
+  status_ready: 'Ready'
+  status_unavailable: 'Unavailable'
+  last_on_active: 'Active'
+  last_on_now: 'Just now'
+  last_on_ago_minutes: 'minutes ago'
+  last_on_ago_hours: 'hours ago'
+  last_on_ago_days: 'days ago'
+  time_format_zero: '0m 00s'
+  time_unit_minutes: 'm'
+  time_unit_seconds: 's'
+entities:
+  - name: Zone 1
+    switch: switch.zone_1
+    timer: timer.zone_1_timer
+    sensor: sensor.zone_1_is_finished
+  - name: Zone 2
+    switch: cover.lounge_blind
+    timer: timer.lounge_blind
+    sensor: sensor.lounge_blind_last_run
+```
+
+![image3](images/water.png)
+![image4](images/defaultadvanced.png)
+
+---
+
+## 🔧 Per‑entity overrides example
+
+```yaml
+type: custom:switch-and-timer-bar-card
+title: ''
+button_position: left
+colors:
+  on: '#2196F3'
+  ready: '#4CAF50'
+  unavailable: '#F44336'
+  button_start: '#4CAF50'
+  button_stop: '#2196F3'
+  icon: 'white'
+  progress_fill: '#2196F3'
+icons:
+  start: 'mdi:play'
+  stop: 'mdi:stop'
+labels:
+  status_on: 'Watering'
+  status_ready: 'Ready'
+  status_unavailable: 'Unavailable'
+  last_on_active: 'Active'
+  last_on_now: 'Just now'
+  last_on_ago_minutes: 'minutes ago'
+  last_on_ago_hours: 'hours ago'
+  last_on_ago_days: 'days ago'
+  time_format_zero: '0m 00s'
+  time_unit_minutes: 'm'
+  time_unit_seconds: 's'
+entities:
+  - name: Zone 1
+    switch: switch.zone_1
+    timer: timer.zone_1_timer
+    sensor: sensor.zone_1_is_finished
+  - name: Zone 2
+    switch: switch.zone_2
+    timer: timer.zone_2_timer
+    sensor: sensor.zone_2_is_finished
+  - name: Living Room Light
+    switch: switch.zone_3
+    timer: timer.zone_3_timer
+    sensor: sensor.zone_3_is_finished
+    button_position: right
+    colors:
+      button_start: '#F443FF'
+      ready: '#FF5500'
+    icons:
+      start: 'mdi:light-switch'
+    labels:
+      status_ready: 'Light Off'
+```
+
+![image5](images/entityadvanced.png)
+
+
 ## 🧩 YAML Examples (by domain & scenario)
 
 Below are **paired** examples for each domain: first with **automation mode off** (`false`), then **automation mode on** (`true`). Replace entity IDs with your own.
@@ -219,106 +319,6 @@ entities:
     sensor: sensor.stop_automation_last_time
     timer_and_entity_connected_via_automation: true
 ```
----
-
-## 📦 Examples with global defaults
-
-```yaml
-type: custom:switch-and-timer-bar-card
-title: ''
-button_position: left
-colors:
-  on: '#2196F3'
-  ready: '#4CAF50'
-  unavailable: '#F44336'
-  button_start: '#4CAF50'
-  button_stop: '#2196F3'
-  icon: 'white'
-  progress_fill: '#2196F3'
-icons:
-  start: 'mdi:play'
-  stop: 'mdi:stop'
-labels:
-  status_on: 'Watering'
-  status_ready: 'Ready'
-  status_unavailable: 'Unavailable'
-  last_on_active: 'Active'
-  last_on_now: 'Just now'
-  last_on_ago_minutes: 'minutes ago'
-  last_on_ago_hours: 'hours ago'
-  last_on_ago_days: 'days ago'
-  time_format_zero: '0m 00s'
-  time_unit_minutes: 'm'
-  time_unit_seconds: 's'
-entities:
-  - name: Zone 1
-    switch: switch.zone_1
-    timer: timer.zone_1_timer
-    sensor: sensor.zone_1_is_finished
-  - name: Zone 2
-    switch: cover.lounge_blind
-    timer: timer.lounge_blind
-    sensor: sensor.lounge_blind_last_run
-```
-
-![image3](images/water.png)
-![image4](images/defaultadvanced.png)
-
----
-
-## 🔧 Per‑entity overrides example
-
-```yaml
-type: custom:switch-and-timer-bar-card
-title: ''
-button_position: left
-colors:
-  on: '#2196F3'
-  ready: '#4CAF50'
-  unavailable: '#F44336'
-  button_start: '#4CAF50'
-  button_stop: '#2196F3'
-  icon: 'white'
-  progress_fill: '#2196F3'
-icons:
-  start: 'mdi:play'
-  stop: 'mdi:stop'
-labels:
-  status_on: 'Watering'
-  status_ready: 'Ready'
-  status_unavailable: 'Unavailable'
-  last_on_active: 'Active'
-  last_on_now: 'Just now'
-  last_on_ago_minutes: 'minutes ago'
-  last_on_ago_hours: 'hours ago'
-  last_on_ago_days: 'days ago'
-  time_format_zero: '0m 00s'
-  time_unit_minutes: 'm'
-  time_unit_seconds: 's'
-entities:
-  - name: Zone 1
-    switch: switch.zone_1
-    timer: timer.zone_1_timer
-    sensor: sensor.zone_1_is_finished
-  - name: Zone 2
-    switch: switch.zone_2
-    timer: timer.zone_2_timer
-    sensor: sensor.zone_2_is_finished
-  - name: Living Room Light
-    switch: switch.zone_3
-    timer: timer.zone_3_timer
-    sensor: sensor.zone_3_is_finished
-    button_position: right
-    colors:
-      button_start: '#F443FF'
-      ready: '#FF5500'
-    icons:
-      start: 'mdi:light-switch'
-    labels:
-      status_ready: 'Light Off'
-```
-
-![image5](images/entityadvanced.png)
 
 ---
 
