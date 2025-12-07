@@ -81,6 +81,26 @@ Default value is true. If you’ve already connected your timer and device with 
 
 However, now you do not need to connect your timer and entity via automation if you set this to false. The card will start the timer and switch at the same time automatically and when the timer is finished card will turn off the switch automatically without a need of automation. This also means you can use the same timer for different entities on the card. For example, if you have 6 different entities from different domains but they are all needs 10 minutes timer, just create 1 timer and use it for all on the card config
 
+## 🧪 How to create a trigger‑based sensor
+
+To show "last run" on the card, you can create a template sensor that updates when the timer finishes (works for all domains) and/or when the device turns off. Example below uses both a `timer.finished` event and a switch turning off; adapt the second trigger for your domain if needed.
+
+```yaml
+template:
+  - trigger:
+      - trigger: event
+        event_type: timer.finished
+        event_data:
+          entity_id: timer.zone_1_timer
+      - trigger: state
+        entity_id: switch.zone_1   # For non-switch domains, change to your entity
+        from: 'on'
+        to: 'off'
+    sensor:
+      - name: zone_1_is_finished
+        state: "{{ now().timestamp() | as_datetime }}"
+```
+
 ## 📦 Examples with global defaults
 
 ```yaml
@@ -320,27 +340,6 @@ entities:
     timer_and_entity_connected_via_automation: true
 ```
 
----
-
-## 🧪 How to create a trigger‑based sensor
-
-To show "last run" on the card, you can create a template sensor that updates when the timer finishes (works for all domains) and/or when the device turns off. Example below uses both a `timer.finished` event and a switch turning off; adapt the second trigger for your domain if needed.
-
-```yaml
-template:
-  - trigger:
-      - trigger: event
-        event_type: timer.finished
-        event_data:
-          entity_id: timer.zone_1_timer
-      - trigger: state
-        entity_id: switch.zone_1   # For non-switch domains, change to your entity
-        from: 'on'
-        to: 'off'
-    sensor:
-      - name: zone_1_is_finished
-        state: "{{ now().timestamp() | as_datetime }}"
-```
 
 ---
 
