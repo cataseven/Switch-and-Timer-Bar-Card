@@ -151,7 +151,7 @@ entities:
 
 ---
 
-Another Example
+## Another Example
 ```yaml
 type: custom:switch-and-timer-bar-card
 title: Irrigation & Control Panel
@@ -361,6 +361,180 @@ entities:
       status_ready: Zone 10 Ready
 ```
 ![image8](images/example1.png)
+
+## Section View Example
+```yaml
+type: sections
+max_columns: 8
+title: test
+path: test
+dense_section_placement: true
+sections:
+  - type: grid
+    cards:
+      - type: custom:switch-and-timer-bar-card
+        entities:
+          - switch: switch.zone_1
+            timer: timer.zone_1_timer
+            sensor: sensor.zone_1_is_finished
+            timer_and_entity_connected_via_automation: true
+        colors: {}
+        icons: {}
+        labels: {}
+        button_position: left
+        grid_options:
+          columns: 21
+          rows: auto
+      - type: custom:switch-and-timer-bar-card
+        entities:
+          - switch: switch.zone_2
+            timer: timer.zone_2_timer
+            sensor: sensor.zone_2_is_finished
+            timer_and_entity_connected_via_automation: true
+        colors: {}
+        icons: {}
+        labels: {}
+        button_position: left
+        grid_options:
+          columns: 21
+          rows: auto
+      - type: custom:switch-and-timer-bar-card
+        entities:
+          - switch: switch.zone_3
+            timer: timer.zone_3_timer
+            sensor: sensor.zone_3_is_finished
+            timer_and_entity_connected_via_automation: true
+        colors: {}
+        icons: {}
+        labels: {}
+        button_position: left
+        grid_options:
+          columns: 21
+          rows: auto
+      - type: custom:switch-and-timer-bar-card
+        entities:
+          - switch: switch.zone_4
+            timer: timer.zone_4_timer
+            sensor: sensor.zone_4_is_finished
+            timer_and_entity_connected_via_automation: true
+        colors: {}
+        icons: {}
+        labels: {}
+        button_position: left
+        grid_options:
+          columns: 21
+          rows: auto
+      - type: custom:switch-and-timer-bar-card
+        entities:
+          - switch: switch.zone_5
+            timer: timer.zone_5_timer
+            sensor: sensor.zone_5_is_finished
+            timer_and_entity_connected_via_automation: true
+        colors: {}
+        icons: {}
+        labels: {}
+        button_position: left
+        grid_options:
+          columns: 21
+          rows: auto
+      - type: custom:switch-and-timer-bar-card
+        entities:
+          - switch: switch.zone_6
+            timer: timer.zone_6_timer
+            sensor: sensor.zone_6_is_finished
+            timer_and_entity_connected_via_automation: true
+        colors: {}
+        icons: {}
+        labels: {}
+        button_position: left
+        grid_options:
+          columns: 21
+          rows: auto
+      - type: custom:switch-and-timer-bar-card
+        entities:
+          - switch: switch.zone_7
+            timer: timer.zone_7_timer
+            sensor: sensor.zone_7_is_finished
+            timer_and_entity_connected_via_automation: true
+        colors: {}
+        icons: {}
+        labels: {}
+        button_position: left
+        grid_options:
+          columns: 21
+          rows: auto
+      - type: custom:switch-and-timer-bar-card
+        entities:
+          - switch: switch.zone_8
+            timer: timer.zone_8_timer
+            sensor: sensor.zone_8_is_finished
+            timer_and_entity_connected_via_automation: true
+        colors: {}
+        icons: {}
+        labels: {}
+        button_position: left
+        grid_options:
+          columns: 21
+          rows: auto
+      - type: custom:switch-and-timer-bar-card
+        entities:
+          - switch: switch.zone_9
+            timer: timer.zone_9_timer
+            sensor: sensor.zone_9_is_finished
+            timer_and_entity_connected_via_automation: true
+        colors: {}
+        icons: {}
+        labels: {}
+        button_position: left
+        grid_options:
+          columns: 21
+          rows: auto
+      - type: custom:switch-and-timer-bar-card
+        entities:
+          - switch: switch.zone_10
+            timer: timer.zone_10_timer
+            sensor: sensor.zone_10_is_finished
+            timer_and_entity_connected_via_automation: true
+        colors: {}
+        icons: {}
+        labels: {}
+        button_position: left
+        grid_options:
+          columns: 21
+          rows: auto
+      - type: custom:switch-and-timer-bar-card
+        entities:
+          - switch: switch.zone_11
+            timer: timer.zone_11_timer
+            sensor: sensor.zone_11_is_finished
+            timer_and_entity_connected_via_automation: true
+        colors: {}
+        icons: {}
+        labels: {}
+        button_position: left
+        grid_options:
+          columns: 21
+          rows: auto
+      - type: custom:switch-and-timer-bar-card
+        entities:
+          - switch: switch.zone_11
+            timer: timer.zone_11_timer
+            sensor: sensor.zone_11_is_finished
+            timer_and_entity_connected_via_automation: true
+        colors: {}
+        icons: {}
+        labels: {}
+        button_position: left
+        grid_options:
+          columns: 21
+          rows: auto
+    column_span: 8
+cards: []
+icon: mdi:grass
+
+```
+![image8](images/section.png)
+
 
 ## 🔧 Per‑entity overrides example
 
