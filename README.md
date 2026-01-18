@@ -151,6 +151,217 @@ entities:
 
 ---
 
+Another Example
+```yaml
+type: custom:switch-and-timer-bar-card
+title: Irrigation & Control Panel
+button_position: left
+colors:
+  "on": "#2196F3"
+  ready: "#4CAF50"
+  unavailable: "#F44336"
+  button_start: "#4CAF50"
+  button_stop: "#2196F3"
+  icon: "#FFFFFF"
+  progress_fill: "#2196F3"
+icons:
+  start: mdi:play
+  stop: mdi:stop
+labels:
+  status_on: Running
+  status_ready: Ready
+  status_unavailable: Unavailable
+  last_on_active: Active
+  last_on_now: Just now
+  last_on_ago_minutes: minutes ago
+  last_on_ago_hours: hours ago
+  last_on_ago_days: days ago
+  time_format_zero: 0m 00s
+  time_unit_minutes: m
+  time_unit_seconds: s
+entities:
+  - name: Zone 1
+    switch: switch.zone_1
+    timer: timer.zone_1_timer
+    sensor: sensor.zone_1_is_finished
+    timer_and_entity_connected_via_automation: true
+    button_position: left
+    colors:
+      "on": "#1E88E5"
+      ready: "#43A047"
+      unavailable: "#E53935"
+      button_start: "#43A047"
+      button_stop: "#1E88E5"
+      icon: "#FFFFFF"
+      progress_fill: "#1E88E5"
+    icons:
+      start: mdi:play-circle
+      stop: mdi:stop-circle
+    labels:
+      status_on: Watering
+      status_ready: Ready
+      status_unavailable: No Signal
+      last_on_active: Active
+      last_on_now: Just now
+      last_on_ago_minutes: min ago
+      last_on_ago_hours: hours ago
+      last_on_ago_days: days ago
+      time_format_zero: 0m 00s
+      time_unit_minutes: m
+      time_unit_seconds: s
+  - name: Zone 2
+    switch: switch.zone_2
+    timer: timer.zone_2_timer
+    sensor: sensor.zone_2_is_finished
+    timer_and_entity_connected_via_automation: true
+    button_position: right
+    colors:
+      button_start: "#7CB342"
+      button_stop: "#3949AB"
+      progress_fill: "#3949AB"
+    icons:
+      start: mdi:play
+      stop: mdi:stop
+    labels:
+      status_on: Zone 2 On
+      status_ready: Zone 2 Ready
+  - name: Zone 3
+    switch: switch.zone_3
+    timer: timer.zone_3_timer
+    sensor: sensor.zone_3_is_finished
+    timer_and_entity_connected_via_automation: true
+    button_position: left
+    colors:
+      "on": "#00ACC1"
+      ready: "#8BC34A"
+      unavailable: "#D32F2F"
+      progress_fill: "#00ACC1"
+    icons:
+      start: mdi:sprinkler-variant
+      stop: mdi:sprinkler
+    labels:
+      status_on: Irrigating
+      status_ready: Idle
+  - name: Zone 4
+    switch: switch.zone_4
+    timer: timer.zone_4_timer
+    sensor: sensor.zone_4_is_finished
+    timer_and_entity_connected_via_automation: true
+    button_position: right
+    colors:
+      button_start: "#FFB300"
+      button_stop: "#5E35B1"
+      icon: "#FFFFFF"
+    icons:
+      start: mdi:play-outline
+      stop: mdi:stop-outline
+    labels:
+      status_on: Zone 4 Running
+      status_ready: Zone 4 Ready
+      status_unavailable: Zone 4 Unavailable
+  - name: Zone 5
+    switch: switch.zone_5
+    timer: timer.zone_5_timer
+    sensor: sensor.zone_5_is_finished
+    timer_and_entity_connected_via_automation: false
+    button_position: left
+    colors:
+      "on": "#EF6C00"
+      button_start: "#EF6C00"
+      button_stop: "#616161"
+      progress_fill: "#EF6C00"
+    icons:
+      start: mdi:power
+      stop: mdi:power-off
+    labels:
+      status_on: Manual ON
+      status_ready: Manual Ready
+  - name: Zone 6
+    switch: switch.zone_6
+    timer: timer.zone_6_timer
+    sensor: sensor.zone_6_is_finished
+    timer_and_entity_connected_via_automation: true
+    button_position: right
+    colors:
+      ready: "#2E7D32"
+      unavailable: "#B71C1C"
+    icons:
+      start: mdi:play
+      stop: mdi:stop
+    labels:
+      last_on_now: Now
+      last_on_ago_minutes: m ago
+      last_on_ago_hours: h ago
+      last_on_ago_days: d ago
+  - name: Zone 7
+    switch: switch.zone_7
+    timer: timer.zone_7_timer
+    sensor: sensor.zone_7_is_finished
+    timer_and_entity_connected_via_automation: true
+    button_position: left
+    colors:
+      "on": "#5E35B1"
+      progress_fill: "#5E35B1"
+    icons:
+      start: mdi:play
+      stop: mdi:stop
+    labels:
+      status_on: Running
+      status_ready: Ready
+  - name: Zone 8
+    switch: switch.zone_8
+    timer: timer.zone_8_timer
+    sensor: sensor.zone_8_is_finished
+    timer_and_entity_connected_via_automation: true
+    button_position: right
+    colors:
+      button_start: "#00897B"
+      button_stop: "#C62828"
+      icon: "#FFFFFF"
+    icons:
+      start: mdi:water
+      stop: mdi:water-off
+    labels:
+      status_on: Water ON
+      status_ready: Water OFF
+  - name: Zone 9
+    switch: switch.zone_9
+    timer: timer.zone_9_timer
+    sensor: sensor.zone_9_is_finished
+    timer_and_entity_connected_via_automation: true
+    button_position: left
+    colors:
+      "on": "#1565C0"
+      ready: "#43A047"
+      unavailable: "#D32F2F"
+      progress_fill: "#1565C0"
+    icons:
+      start: mdi:play
+      stop: mdi:stop
+    labels:
+      time_format_zero: 0m 00s
+      time_unit_minutes: m
+      time_unit_seconds: s
+  - name: Zone 10
+    switch: switch.zone_10
+    timer: timer.zone_10_timer
+    sensor: sensor.zone_10_is_finished
+    timer_and_entity_connected_via_automation: true
+    button_position: right
+    colors:
+      "on": "#00BCD4"
+      button_start: "#00BCD4"
+      button_stop: "#9E9E9E"
+      progress_fill: "#00BCD4"
+    icons:
+      start: mdi:play-circle-outline
+      stop: mdi:stop-circle-outline
+    labels:
+      status_on: Zone 10 Active
+      status_ready: Zone 10 Ready
+```
+![image8](images/example1.png)
+
 ## 🔧 Per‑entity overrides example
 
 ```yaml
