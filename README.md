@@ -53,6 +53,11 @@ A flexible Lovelace card for Home Assistant that lets you control a device, mana
 4. Find **Switch and Timer Bar Card** and click **Install**.
 
 ---
+## ⚙️ UI EDITOR
+
+![image8](images/ui.png)
+
+![image9](images/ui2.png)
 
 ## ⚙️ Configuration
 
