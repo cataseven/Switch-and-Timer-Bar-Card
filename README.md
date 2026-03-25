@@ -4,6 +4,15 @@
 
 # Switch and Timer Bar Card
 
+![Downloads](https://img.shields.io/github/downloads/cataseven/Switch-and-Timer-Bar-Card/total?color=41BDF5&logo=home-assistant&label=Downloads&suffix=%20downloads&style=for-the-badge)
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/frontend)
+[![GitHub Release](https://img.shields.io/github/release/cataseven/Switch-and-Timer-Bar-Card.svg)](https://github.com/cataseven/Switch-and-Timer-Bar-Card/releases)
+[![License](https://img.shields.io/github/license/cataseven/Switch-and-Timer-Bar-Card.svg)](LICENSE)
+![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2024.1.0%2B-blue.svg)
+![Maintenance](https://img.shields.io/maintenance/yes/2026.svg)
+[![GitHub Stars](https://img.shields.io/github/stars/cataseven/Switch-and-Timer-Bar-Card?style=social)](https://github.com/cataseven/Switch-and-Timer-Bar-Card)
+[![GitHub Issues](https://img.shields.io/github/issues/cataseven/Switch-and-Timer-Bar-Card?style=flat-square)](https://github.com/cataseven/Switch-and-Timer-Bar-Card/issues)
+
 A flexible Lovelace card for Home Assistant that lets you control a device, manage an associated timer, and track its progress with a visual bar. Perfect for automations that need timing and status tracking—irrigation, pool pumps, blinds, gates, media players, charging stations, and more. You can even turn_off your automations or your input_boolean entity for spesific time that you want!
 
 ![image1](images/simple1.png)
