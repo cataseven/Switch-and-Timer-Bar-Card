@@ -19,7 +19,7 @@ A flexible Lovelace card for Home Assistant that lets you control a device, mana
 
 ## ✨ Features
 
-* **Multi‑domain control:** The card now supports **switch**, **cover**, **lock**, and **media\_player** entities.
+* **Multi‑domain control:** The card supports **switch**, **light**, **fan**, **input\_boolean**, **automation**, **siren**, **cover**, **valve**, **lock**, and **media\_player** entities.
 * **Device‑aware Start/Stop:** The card sends the right service for each domain (see mapping below).
 * **Auto turn‑off at timer end:** When the timer finishes, the card can stop the device automatically.
 * **Optional automation mode:** Use `timer_and_entity_connected_via_automation: true` if your own automations already link the timer ↔️ device; the card then avoids extra on/off actions.
@@ -36,8 +36,9 @@ A flexible Lovelace card for Home Assistant that lets you control a device, mana
 | `siren`        | `siren.turn_on`                                | `siren.turn_off`                                | state is `on`         |
 | `fan`          | `fan.turn_on`                                  | `fan.turn_off`                                  | state is `on`         |
 | `automation`   | `automation.turn_on`                           | `automation.turn_off`                           | state is `on`         |
-| `input_booelan`| `input_booelan.turn_on`                        | `input_booelan.turn_off`                        | state is `on`         |
+| `input_boolean`| `input_boolean.turn_on`                        | `input_boolean.turn_off`                        | state is `on`         |
 | `cover`        | `cover.close_cover`                            | `cover.open_cover`                              | position is `closed`  |
+| `valve`        | `valve.open_valve`                             | `valve.close_valve`                             | state is `open`       |
 | `lock`         | `lock.unlock`                                  | `lock.lock`                                     | state is `unlocked`   |
 | `media_player` | `media_player.media_play` (fallback `turn_on`) | `media_player.media_stop` (fallback `turn_off`) | state is `playing/on` |
 
@@ -79,7 +80,7 @@ Add the card via **Add Card → Manual** and paste YAML.
 | `type`                                      | Must be `custom:switch-and-timer-bar-card`.                                                                                                                                    | `string`            | **YES**  |         |
 | `title`                                     | Title shown at the top of the card.                                                                                                                                            | `string`            | No       |         |
 | `entities`                                  | List of devices to display.                                                                                                                                                    | `list`              | **YES**  |         |
-| `switch`                                    | The **entity\_id** of the device to control. **Supported domains:** `switch`, `cover`, `light`, `siren`,`lock`, `media_player`. `automation`, `input_boolean`.                                                               | `string`            | **YES**  |         |
+| `switch`                                    | The **entity\_id** of the device to control. **Supported domains:** `switch`, `light`, `fan`, `input_boolean`, `automation`, `siren`, `cover`, `valve`, `lock`, `media_player`.                                                               | `string`            | **YES**  |         |
 | `timer`                                     | The timer entity associated with the device.                                                                                                                                   | `string`            | No       |         |
 | `sensor`                                    | Sensor that stores info about the timer.                                                                                                                                          | `string`            | No       |         |
 | `timer_and_entity_connected_via_automation` | Set **true** if your **own automations** handle turning the device on/off when the timer starts/finishes. When **false** (default), the card will call device services itself. | `boolean`           | No       | `true` |
@@ -660,7 +661,35 @@ entities:
 
 ---
 
-### 3) `lock` domain (e.g., gate lock)
+### 3) `valve` domain (e.g., irrigation / water valve)
+
+**Entity and Timer are NOT connected via Automation, Script  etc.**
+
+```yaml
+type: custom:switch-and-timer-bar-card
+entities:
+  - name: Garden Valve
+    switch: valve.garden_water_valve
+    timer: timer.garden_valve
+    sensor: sensor.garden_valve_last_run
+    timer_and_entity_connected_via_automation: false
+```
+
+**Entity and Timer are connected via Automation, Script  etc.**
+
+```yaml
+type: custom:switch-and-timer-bar-card
+entities:
+  - name: Garden Valve
+    switch: valve.garden_water_valve
+    timer: timer.garden_valve
+    sensor: sensor.garden_valve_last_run
+    timer_and_entity_connected_via_automation: true
+```
+
+---
+
+### 4) `lock` domain (e.g., gate lock)
 
 **Entity and Timer are NOT connected via Automation, Script  etc.**
 
@@ -688,7 +717,7 @@ entities:
 
 ---
 
-### 4) `media_player` domain (e.g., TV or speaker)
+### 5) `media_player` domain (e.g., TV or speaker)
 
 **Entity and Timer are NOT connected via Automation, Script  etc.**
 
@@ -713,7 +742,7 @@ entities:
     sensor: sensor.tv_last_run
     timer_and_entity_connected_via_automation: true
 ```
-### 5) `automation` domain (e.g., automation.arriving_home)
+### 6) `automation` domain (e.g., automation.arriving_home)
 
 **Entity and Timer are NOT connected via Automation, Script  etc.**
 
