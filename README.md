@@ -24,6 +24,7 @@ A flexible Lovelace card for Home Assistant that lets you control a device, mana
 * **Auto turn‑off at timer end:** When the timer finishes, the card can stop the device automatically.
 * **Optional automation mode:** Use `timer_and_entity_connected_via_automation: true` if your own automations already link the timer ↔️ device; the card then avoids extra on/off actions.
 * **Smarter status:** “Active” is interpreted sensibly per domain (e.g., covers consider *closed* as active; locks consider *unlocked* as active; media players consider *playing/on* as active).
+* **Shared-device aware:** Use the same controllable entity across multiple cards (e.g., one boiler with 15/30/60-minute boost buttons). Each card tracks its own timer independently and coordinates so an active timer is not interrupted by another card.
 
 ---
 
@@ -42,7 +43,7 @@ A flexible Lovelace card for Home Assistant that lets you control a device, mana
 | `lock`         | `lock.unlock`                                  | `lock.lock`                                     | state is `unlocked`   |
 | `media_player` | `media_player.media_play` (fallback `turn_on`) | `media_player.media_stop` (fallback `turn_off`) | state is `playing/on` |
 
-> **Note:** When `timer_and_entity_connected_via_automation: true`, the card will **not** call these services; it will only start/stop the timer and display progress. Your automations must handle turning the device on/off.
+> **Note:** When `timer_and_entity_connected_via_automation: true`, the card will **not** call these services on either Start or Stop; it will only start/finish the timer and display progress. Your automations must handle turning the device on/off.
 
 ---
 
@@ -83,7 +84,7 @@ Add the card via **Add Card → Manual** and paste YAML.
 | `switch`                                    | The **entity\_id** of the device to control. **Supported domains:** `switch`, `light`, `fan`, `input_boolean`, `automation`, `siren`, `cover`, `valve`, `lock`, `media_player`.                                                               | `string`            | **YES**  |         |
 | `timer`                                     | The timer entity associated with the device.                                                                                                                                   | `string`            | No       |         |
 | `sensor`                                    | Sensor that stores info about the timer.                                                                                                                                          | `string`            | No       |         |
-| `timer_and_entity_connected_via_automation` | Set **true** if your **own automations** handle turning the device on/off when the timer starts/finishes. When **false** (default), the card will call device services itself. | `boolean`           | No       | `true` |
+| `timer_and_entity_connected_via_automation` | Set **true** (default) if your **own automations** handle turning the device on/off when the timer starts/finishes/is stopped. Set **false** if you want the card to call device services itself. | `boolean`           | No       | `true` |
 | `button_position`                           | Override global button position (e.g., `left`/`right`) for the whole card or per‑entity.                                                                                       | `string` / `object` | No       |         |
 | `colors`                                    | Override colors globally or per‑entity.                                                                                                                                        | `string` / `object` | No       |         |
 | `icons`                                     | Override icons globally or per‑entity.                                                                                                                                         | `string` / `object` | No       |         |
@@ -95,6 +96,19 @@ Add the card via **Add Card → Manual** and paste YAML.
 Default value is true. If you’ve already connected your timer and device with an automation or script etc., start button will start the timer to trigger the automation.
 
 However, now you do not need to connect your timer and entity via automation if you set this to false. The card will start the timer and switch at the same time automatically and when the timer is finished card will turn off the switch automatically without a need of automation. This also means you can use the same timer for different entities on the card. For example, if you have 6 different entities from different domains but they are all needs 10 minutes timer, just create 1 timer and use it for all on the card config
+
+## 🔁 Multiple timers for the same device
+
+You can also use the **same controllable entity across multiple cards**, each with its own timer. The classic use case is a heating boost panel: one boiler with 15/30/60-minute buttons, each driven by its own timer.
+
+The card detects this setup automatically (no extra config needed) and:
+
+* Each card reflects **its own timer** — Start on one card does not make the others appear active.
+* The progress bar, status badge, and Start/Stop button each follow that card's own timer.
+* If multiple boosts overlap, finishing one does **not** turn the device off while another timer is still running. The device is turned off only when the last active timer finishes (or you stop it).
+* Works with both `timer_and_entity_connected_via_automation: true` and `false`. Pick whichever matches your setup.
+
+A full YAML example is in the "Multiple timers for the same device" section below.
 
 ## 🧪 How to create a trigger‑based sensor
 
@@ -768,6 +782,43 @@ entities:
     timer_and_entity_connected_via_automation: true
 ```
 
+
+---
+
+### 7) Multiple timers for the same device (heating boost example)
+
+A single boiler controlled by three boost buttons — 15, 30, and 60 minutes. The card automatically detects that all three cards share the same `switch` and coordinates between them.
+
+```yaml
+type: custom:switch-and-timer-bar-card
+title: ♨️ Central Heating
+button_position: left
+labels:
+  status_on: Heating
+  status_ready: Idle
+entities:
+  - name: 15 Minute Boost
+    switch: switch.boiler_central_heating
+    timer: timer.boost_central_heating_for_15_minutes
+    timer_and_entity_connected_via_automation: false
+  - name: 30 Minute Boost
+    switch: switch.boiler_central_heating
+    timer: timer.boost_central_heating_for_30_minutes
+    timer_and_entity_connected_via_automation: false
+  - name: 60 Minute Boost
+    switch: switch.boiler_central_heating
+    timer: timer.boost_central_heating_for_60_minutes
+    timer_and_entity_connected_via_automation: false
+```
+
+Behavior:
+
+* Press **Start** on the 30-minute card → only that card shows "Heating" and a counting progress bar; the 15- and 60-minute cards stay "Idle".
+* Start a second boost while the first is running → both run in parallel, each with its own countdown.
+* When one of two parallel boosts finishes, the boiler stays on until the other one is also done.
+* Press **Stop** on the only running boost → boiler turns off. Press **Stop** on one of two running boosts → only that timer finishes; boiler stays on for the other.
+
+If you prefer to handle the boiler on/off in your own automations, set `timer_and_entity_connected_via_automation: true` on every entry and trigger your automation from `timer.started` / `timer.finished` events.
 
 ---
 
