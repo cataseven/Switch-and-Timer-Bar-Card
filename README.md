@@ -25,6 +25,8 @@ A flexible Lovelace card for Home Assistant that lets you control a device, mana
 * **Optional automation mode:** Use `timer_and_entity_connected_via_automation: true` if your own automations already link the timer ↔️ device; the card then avoids extra on/off actions.
 * **Smarter status:** “Active” is interpreted sensibly per domain (e.g., covers consider *closed* as active; locks consider *unlocked* as active; media players consider *playing/on* as active).
 * **Shared-device aware:** Use the same controllable entity across multiple cards (e.g., one boiler with 15/30/60-minute boost buttons). Each card tracks its own timer independently and coordinates so an active timer is not interrupted by another card.
+* **Editable duration:** Optionally let users tap the total time on the card to change the timer duration on the fly. The value is saved per device, so each user can have their own preferred boost length. You can also set a YAML default to override the timer helper's configured duration without touching the helper.
+* **Theme & `card-mod` compatible:** The card is wrapped in a standard `ha-card`, so themes and `card-mod` can fully customize its appearance (transparent background, custom shadows, padding, etc.).
 
 ---
 
@@ -85,6 +87,8 @@ Add the card via **Add Card → Manual** and paste YAML.
 | `timer`                                     | The timer entity associated with the device.                                                                                                                                   | `string`            | No       |         |
 | `sensor`                                    | Sensor that stores info about the timer.                                                                                                                                          | `string`            | No       |         |
 | `timer_and_entity_connected_via_automation` | Set **true** (default) if your **own automations** handle turning the device on/off when the timer starts/finishes/is stopped. Set **false** if you want the card to call device services itself. | `boolean`           | No       | `true` |
+| `duration`                                  | Optional. Overrides the timer helper's configured duration when starting from this card. Accepts `"HH:MM:SS"` (e.g., `"00:10:00"`) or a number of seconds. Leave empty to use the helper's default.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | `string` / `number` | No       |         |
+| `editable_duration`                         | If `true`, the user can tap the total time on the card to change the duration. The value is saved in the browser (per device).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | `boolean`           | No       | `false` |
 | `button_position`                           | Override global button position (e.g., `left`/`right`) for the whole card or per‑entity.                                                                                       | `string` / `object` | No       |         |
 | `colors`                                    | Override colors globally or per‑entity.                                                                                                                                        | `string` / `object` | No       |         |
 | `icons`                                     | Override icons globally or per‑entity.                                                                                                                                         | `string` / `object` | No       |         |
@@ -109,6 +113,84 @@ The card detects this setup automatically (no extra config needed) and:
 * Works with both `timer_and_entity_connected_via_automation: true` and `false`. Pick whichever matches your setup.
 
 A full YAML example is in the "Multiple timers for the same device" section below.
+
+## ⏱️ Setting and editing the duration
+
+By default, the card uses the duration configured in your `timer` helper. v1.4.0 adds two ways to override this without editing the helper:
+
+![image8](images/timer.png)
+
+### YAML default (`duration`)
+
+Set a fixed duration in the card config. Useful when you want one timer helper to behave differently in different cards (for example, the same `timer.boiler` used as a "15 minute boost" in one card and "30 minute boost" in another).
+
+```yaml
+entities:
+  - name: 15 Minute Boost
+    switch: switch.boiler
+    timer: timer.boost
+    duration: "00:15:00"   # or 900 (seconds)
+  - name: 30 Minute Boost
+    switch: switch.boiler
+    timer: timer.boost
+    duration: "00:30:00"
+```
+
+When you press Start, the card starts the timer with this duration. The helper itself stays untouched.
+
+### Live editing from the card (`editable_duration`)
+
+Set `editable_duration: true` to make the total time on the card tappable. A dialog opens with hours / minutes / seconds inputs.
+
+```yaml
+entities:
+  - name: Heating Boost
+    switch: switch.boiler
+    timer: timer.boost
+    editable_duration: true
+```
+
+* The new value is saved in the browser (`localStorage`) per device, so it persists across page reloads.
+* The tap target is only active while the timer is **idle** — running timers are not disturbed.
+* A "Reset to default" button is shown when an override is active. It removes the saved value and falls back to the YAML default or the helper default.
+* You can also set `editable_duration: true` globally for all entities, and override per-entity if needed.
+
+### Priority order
+
+When the card starts a timer, it uses the first available value:
+
+1. **User-set value** from the editable-duration dialog (if any)
+2. **YAML `duration`** on the entity (if any)
+3. **Timer helper's** own configured duration
+
+---
+
+## 🎨 Theming & `card-mod` compatibility
+
+The card uses a standard `ha-card` wrapper, so it honours your active theme automatically and can be customized further with [card-mod](https://github.com/thomasloven/lovelace-card-mod).
+
+Example — transparent card with no shadow:
+
+```yaml
+type: custom:switch-and-timer-bar-card
+title: My Card
+entities:
+  - switch: switch.zone_1
+    timer: timer.zone_1
+card_mod:
+  style: |
+    ha-card {
+      background: rgba(0, 0, 0, 0.1);
+      box-shadow: none;
+    }
+    .entity-card {
+      background: transparent !important;
+    }
+```
+
+The `ha-card` selector controls the outer shell. The `.entity-card` selector controls each entity row inside.
+
+---
 
 ## 🧪 How to create a trigger‑based sensor
 
