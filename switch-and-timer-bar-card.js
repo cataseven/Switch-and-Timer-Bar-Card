@@ -97,12 +97,6 @@ function _0x2563(_0x3b08fa,_0x399f5b){_0x3b08fa=_0x3b08fa-0x1ce;const _0x59e249=
         font-weight: bold;
       }
       .battery {
-        color: var(--secondary-text-color);
-        font-size: 0.75em;
-        font-weight: normal;
-        margin-left: 0.4rem;
-        white-space: nowrap;
-      }
         align-items: center;
         color: var(--secondary-text-color);
         display: inline-flex;
@@ -299,11 +293,6 @@ function _0x2563(_0x3b08fa,_0x399f5b){_0x3b08fa=_0x3b08fa-0x1ce;const _0x59e249=
         >
           ${_0x10a3c7}
           <ha-icon icon="mdi:pencil" class="edit-icon"></ha-icon>
-        </span>`:haHtml`<span>${_0x4693c5}</span>`;const _batteryRaw=_0x3a770b['battery'],_batteryStateObj=typeof _batteryRaw==='string'&&_0x5581df[_batteryRaw]?_0x5581df[_batteryRaw]:undefined,_batteryValue=_batteryStateObj?_batteryStateObj['state']:_batteryRaw,_batteryPercent=_batteryValue!==undefined&&_batteryValue!==null&&_batteryValue!==''&&!isNaN(Number(_batteryValue))?Math.round(Number(_batteryValue)):null;return haHtml`
-      <div class="entity-card">
-        <div class="header">
-          <div class="title" style="${_0x3e95c2?_0x545378(0xc0,0x9c,0xd6,0x183)+_0x414ae8['on']:''}">
-            ${_0x3a770b[_0x545378(-0x7f,-0xe,0xa4,-0xeb)]||_0x14db1d[_0x545378(0xcf,0x1b1,0x13a,0x1e0)][_0x2ef218(0x627,0x666,0x6a8,0x620)+_0x2ef218(0x732,0x614,0x701,0x64d)]||_0x422bef}${_batteryPercent!==null?haHtml`<span class="battery">${_batteryPercent}%</span>`:''}
         </span>`:haHtml`<span>${_0x10a3c7}</span>`;return haHtml`
       <div class="entity-card">
         <div class="header">
@@ -757,9 +746,6 @@ function _0x2563(_0x3b08fa,_0x399f5b){_0x3b08fa=_0x3b08fa-0x1ce;const _0x59e249=
                       </label>
                     </div>
                   </div>
-                </div>
-                <div class="grid grid-2">
-                  ${this['_renderEntityPicker']('Battery (optional)',_0x71b81a['battery']||'',_0x173548+'.battery',['sensor'])}
                 </div>
               </div>
             </div>
