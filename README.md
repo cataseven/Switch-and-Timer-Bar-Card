@@ -86,6 +86,7 @@ Add the card via **Add Card → Manual** and paste YAML.
 | `switch`                                    | The **entity\_id** of the device to control. **Supported domains:** `switch`, `light`, `fan`, `input_boolean`, `automation`, `siren`, `cover`, `valve`, `lock`, `media_player`.                                                               | `string`            | **YES**  |         |
 | `timer`                                     | The timer entity associated with the device.                                                                                                                                   | `string`            | No       |         |
 | `sensor`                                    | Sensor that stores info about the timer.                                                                                                                                          | `string`            | No       |         |
+| `battery`                                   | Optional battery percentage shown in a smaller font next to the entity name. Accepts a battery **entity\_id** (its state is used) or a literal number. When omitted, empty, or non‑numeric, no indicator is shown.                                                                | `string` / `number` | No       |         |
 | `timer_and_entity_connected_via_automation` | Set **true** (default) if your **own automations** handle turning the device on/off when the timer starts/finishes/is stopped. Set **false** if you want the card to call device services itself. | `boolean`           | No       | `true` |
 | `duration`                                  | Optional. Overrides the timer helper's configured duration when starting from this card. Accepts `"HH:MM:SS"` (e.g., `"00:10:00"`) or a number of seconds. Leave empty to use the helper's default.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | `string` / `number` | No       |         |
 | `editable_duration`                         | If `true`, the user can tap the total time on the card to change the duration. The value is saved in the browser (per device).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | `boolean`           | No       | `false` |
@@ -162,6 +163,30 @@ When the card starts a timer, it uses the first available value:
 1. **User-set value** from the editable-duration dialog (if any)
 2. **YAML `duration`** on the entity (if any)
 3. **Timer helper's** own configured duration
+
+---
+
+## 🔋 Battery percentage indicator
+
+Add an optional `battery` value to any entity to show its battery level in a smaller font right next to the entity name. When it isn't provided (or the value is empty/non‑numeric), nothing is shown.
+
+You can provide either a battery **entity\_id** (the card reads its state) or a literal number:
+
+```yaml
+entities:
+  - name: Zone 1
+    switch: switch.zone_1
+    timer: timer.zone_1
+    battery: sensor.zone_1_battery   # reads the sensor's state, e.g. 87 → "87%"
+  - name: Zone 2
+    switch: switch.zone_2
+    timer: timer.zone_2
+    battery: 55                      # literal value → "55%"
+```
+
+* The value is rounded to a whole number and displayed as `NN%`.
+* If `battery` is omitted, empty, or non‑numeric (e.g. `unavailable`), the indicator stays hidden.
+* You can also set it from the visual editor: open an entity and use the **Battery** field on the *General* tab.
 
 ---
 
