@@ -96,6 +96,13 @@
       .title {
         font-weight: bold;
       }
+      .battery {
+        color: var(--secondary-text-color);
+        font-size: 0.75em;
+        font-weight: normal;
+        margin-left: 0.4rem;
+        white-space: nowrap;
+      }
       /* ---- Duration editor (clickable total time) ---- */
       .duration-editable {
         align-items: center;
@@ -277,11 +284,11 @@
         >
           ${_0x4693c5}
           <ha-icon icon="mdi:pencil" class="edit-icon"></ha-icon>
-        </span>`:haHtml`<span>${_0x4693c5}</span>`;return haHtml`
+        </span>`:haHtml`<span>${_0x4693c5}</span>`;const _batteryRaw=_0x3a770b['battery'],_batteryStateObj=typeof _batteryRaw==='string'&&_0x5581df[_batteryRaw]?_0x5581df[_batteryRaw]:undefined,_batteryValue=_batteryStateObj?_batteryStateObj['state']:_batteryRaw,_batteryPercent=_batteryValue!==undefined&&_batteryValue!==null&&_batteryValue!==''&&!isNaN(Number(_batteryValue))?Math.round(Number(_batteryValue)):null;return haHtml`
       <div class="entity-card">
         <div class="header">
           <div class="title" style="${_0x3e95c2?_0x545378(0xc0,0x9c,0xd6,0x183)+_0x414ae8['on']:''}">
-            ${_0x3a770b[_0x545378(-0x7f,-0xe,0xa4,-0xeb)]||_0x14db1d[_0x545378(0xcf,0x1b1,0x13a,0x1e0)][_0x2ef218(0x627,0x666,0x6a8,0x620)+_0x2ef218(0x732,0x614,0x701,0x64d)]||_0x422bef}
+            ${_0x3a770b[_0x545378(-0x7f,-0xe,0xa4,-0xeb)]||_0x14db1d[_0x545378(0xcf,0x1b1,0x13a,0x1e0)][_0x2ef218(0x627,0x666,0x6a8,0x620)+_0x2ef218(0x732,0x614,0x701,0x64d)]||_0x422bef}${_batteryPercent!==null?haHtml`<span class="battery">${_batteryPercent}%</span>`:''}
           </div>
           <div class="status" style="${_0x3cea54}">
             ${this[_0x2ef218(0x658,0x749,0x7da,0x841)+_0x2ef218(0x56e,0x508,0x4a7,0x646)](_0x14db1d,_0x36af31,_0x42402a,_0x3e95c2)}
