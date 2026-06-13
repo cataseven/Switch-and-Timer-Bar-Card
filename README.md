@@ -166,6 +166,30 @@ When the card starts a timer, it uses the first available value:
 
 ---
 
+## 🔋 Battery percentage indicator
+
+Add an optional `battery` value to any entity to show its battery level in a smaller font right next to the entity name. When it isn't provided (or the value is empty/non‑numeric), nothing is shown.
+
+You can provide either a battery **entity\_id** (the card reads its state) or a literal number:
+
+```yaml
+entities:
+  - name: Zone 1
+    switch: switch.zone_1
+    timer: timer.zone_1
+    battery: sensor.zone_1_battery   # reads the sensor's state, e.g. 87 → "87%"
+  - name: Zone 2
+    switch: switch.zone_2
+    timer: timer.zone_2
+    battery: 55                      # literal value → "55%"
+```
+
+* The value is rounded to a whole number and displayed as `NN%`.
+* If `battery` is omitted, empty, or non‑numeric (e.g. `unavailable`), the indicator stays hidden.
+* You can also set it from the visual editor: open an entity and use the **Battery** field on the *General* tab.
+
+---
+
 ## 🎨 Theming & `card-mod` compatibility
 
 The card uses a standard `ha-card` wrapper, so it honours your active theme automatically and can be customized further with [card-mod](https://github.com/thomasloven/lovelace-card-mod).
