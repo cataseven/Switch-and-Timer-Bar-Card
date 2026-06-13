@@ -734,6 +734,17 @@
                     </div>
                   </div>
                 </div>
+                <div class="grid grid-2">
+                  <div class="field">
+                    <div class="field-label">Battery ${this['_tip']('Optional battery percentage shown in a smaller font next to the name. Use a battery entity_id (its state is used) or a number. Leave empty to hide.')}</div>
+                    <ha-textfield
+                      placeholder="e.g. sensor.zone_1_battery or 87"
+                      .value="${_0x71b81a['battery']??''}"
+                      .configValue="${_0x173548}.battery"
+                      @input=${this[_0x214993(0x9b,0x195,0x155,0x129)+_0x15c52e(0x37f,0x296,0x440,0x443)]}
+                    ></ha-textfield>
+                  </div>
+                </div>
               </div>
             </div>
 
