@@ -1,4 +1,4 @@
-function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callService','isFinite','Entity\x20#','background-color:\x20','_renderLabelOptions','playing','_openSensorHelp','prototype','switch.example_switch','title','localStorage','entities.','forEach','smooth','open','active','start_confirm_ok','__durationOverrides','floor','fromEntries','_resetDurationOverride','start_confirm_cancel','Cancel','clear','This\x20timer\x20switches\x20the\x20device\x20off\x20via\x20your\x20browser.\x20If\x20no\x20dashboard\x20tab\x20is\x20open\x20on\x20your\x20browser\x20or\x20your\x20HA\x20app\x20is\x20closed\x20when\x20the\x20timer\x20ends,\x20the\x20device\x20won\x27t\x20turn\x20off.\x20For\x20unattended\x20use,\x20enable\x20“Automation\x20Link”\x20for\x20this\x20entity\x20and\x20let\x20a\x20Home\x20Assistant\x20automation\x20handle\x20the\x20switch-off.','_reconcileMissedTimers','Timer\x20entity','Optional.\x20If\x20set\x20(HH:MM:SS\x20or\x20seconds),\x20this\x20overrides\x20the\x20timer\x20helper’s\x20configured\x20duration\x20when\x20starting\x20from\x20this\x20card.\x20Leave\x20empty\x20to\x20use\x20the\x20helper\x20default.','_durationEditor','_renderDurationDialog','last_changed','Override\x20global\x20button\x20position\x20for\x20this\x20entity\x20only.','hasOverride','_timer','_config','_openDurationEditor','edit_duration_minutes','turn_on','_renderBattery','_toggleEntityExpand','_addEntity','_closeDurationEditor','_showSensorHelp','button_position','customCards','Watering','Where\x20Start/Stop\x20buttons\x20appear\x20by\x20default\x20for\x20all\x20entities.','removeEventListener','1476066IHOmgV','value','config-changed','push','__interval','unknown','valve','__needsTick','color:\x20','open_cover','key','switch','max','_dispatchConfig','Ready','_resetPath','_renderSensorHelpDialog','streaming','HA-SWITCH','_tip','734250QuCLJF','_getEffectiveGlobal','_startConfirm','switch-and-timer-bar-card:\x20Lit\x20not\x20found.\x20This\x20card\x20must\x20run\x20inside\x20Home\x20Assistant.','getData','isNaN','getItem','detail','Position','_dragOverIndex','string','edit_duration_cancel','#2196F3','dropEffect','Escape','renderEntity','lock','text/plain','_entityTabs','.timer','right','__durationStorageKey','Hours','\x20(copy)','edit_duration_title','start_confirm_body','_onDurationFieldChange','unavailable','button_stop','__itemsCache','states','.switch','_renderSensorPickerWithHelp','name','unlock','object','Click\x20to\x20change\x20duration','edit_duration_seconds','button_start','_mainTab','findIndex','labels','days\x20ago','entities','Use\x20global','.entity-head','minutes\x20ago','Irrigation\x20Control','_duplicateEntity','_disarmTimer','open_valve','_loadDurationOverrides','delete','__armedStorageKey','_hasUIDurationOverride','input_datetime','tagName','entries','_onDragOver','cover','_applyDurationEditor','Left','Switch\x20&\x20Timer\x20Bar\x20Card','timer','close_cover','split','min','has','0m\x2000s','.icons','DEFAULTS','edit_duration_apply','Right','status_unavailable','__recomputeTickNeedAndApply','media_player','__lastEntitySig','global_overrides','__lastOffAt','mdi:stop','__offDebounceMs','css','opening','_closeSensorHelp','_saveArmedTimers','finishesAt','padStart','stringify','finishes_at','#4CAF50','_armTimer','status_ready','battery','hass','_maybeReconcile','left','_callService','colors','charAt','getAttribute','stop','switch-and-timer-bar-card','renderRoot','entity_','addEventListener','mdi:battery-','unlocked','start','parse','calculateActivePercent','now','ready','charging','Reset\x20to\x20default','effectAllowed','_pruneDefaults','dataTransfer','off','edit_duration_tooltip','mdi:battery','getConfigElement','sensor','_scrollEntityIntoView','attributes','.sensor','icon','stopPropagation','_valueChanged','Battery\x20(optional)','isArray','If\x20enabled,\x20users\x20can\x20tap\x20the\x20total\x20time\x20on\x20the\x20card\x20to\x20change\x20the\x20duration.\x20The\x20value\x20is\x20saved\x20in\x20the\x20browser\x20(localStorage).','totalDuration','__reconciledOnce','getStatusText','general','get','Front\x20Yard','setData','some','disconnectedCallback','310JZdwBv','.battery','toUpperCase','getPrototypeOf','entity_id','ha-panel-lovelace','_performStart','duration','_handleStop','length','_secondsToHHMMSS','_isActive','last_on_active','_renderIconOptions','Switch\x20and\x20Timer\x20Bar\x20Card:\x20\x27entities\x27\x20is\x20not\x20a\x20list\x20or\x20is\x20missing.','editable_duration','_saveDurationOverrides','Apply','_getEffectiveDuration','ha-dialog','__tickMs','scrollIntoView','__startTick','map','splice','Invalid\x20configuration.','render','_renderEntityPicker','getLastWateringText','createElement','icons','2cVsHEW','properties','Seconds','530120fhGMNc','mdi:battery-charging-100','_hasAnyDurationOverride','_loadArmedTimers','Shown\x20at\x20the\x20top\x20of\x20the\x20card.\x20Leave\x20empty\x20to\x20hide.','fan','setConfig','number','state','updated','655592WeHvQb','_onDragLeave','connectedCallback','_getBuiltInDefaults','styles','formatTime','template:\x0a\x20\x20-\x20trigger:\x0a\x20\x20\x20\x20\x20\x20-\x20trigger:\x20event\x0a\x20\x20\x20\x20\x20\x20\x20\x20event_type:\x20timer.finished\x0a\x20\x20\x20\x20\x20\x20\x20\x20event_data:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20entity_id:\x20timer.zone_1_timer\x0a\x20\x20\x20\x20\x20\x20-\x20trigger:\x20state\x0a\x20\x20\x20\x20\x20\x20\x20\x20entity_id:\x20switch.zone_1\x20\x20\x20#\x20For\x20non-switch\x20domains,\x20change\x20to\x20your\x20entity\x0a\x20\x20\x20\x20\x20\x20\x20\x20from:\x20\x27on\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20to:\x20\x27off\x27\x0a\x20\x20\x20\x20sensor:\x0a\x20\x20\x20\x20\x20\x20-\x20name:\x20zone_1_is_finished\x0a\x20\x20\x20\x20\x20\x20\x20\x20state:\x20\x22{{\x20now().timestamp()\x20|\x20as_datetime\x20}}\x22','Just\x20now','hours\x20ago','Last\x20run\x20sensor\x20(optional)','keys','timer_and_entity_connected_via_automation','trim','includes','Start\x20anyway','white','__onConfirmKeyDown','_renderColorOptions','timer.example_timer','.labels','round','Optional\x20custom\x20name.\x20If\x20empty,\x20card\x20uses\x20entity\x20friendly\x20name.','_dragFromIndex','target','_computeEntitySig','53952iEQmHX','replace','slice','_onDrop','controllableEntity','.colors','entityConfig','_confirmStart','switch-and-timer-bar-card-editor','paused','light','startsWith','preventDefault','Set\x20duration','mdi:battery-outline','html','edit_duration_hours','mdi:play','input_boolean','Minutes','switch-and-timer-bar-card:durations','parseDuration','_cancelStart','global','mdi:battery-charging-','close_valve','__armedTimers','friendly_name','326951Qmnwey','_reorderEntities','This\x20timer\x20switches\x20the\x20device\x20off\x20from\x20your\x20browser.\x20If\x20no\x20dashboard\x20is\x20open\x20when\x20the\x20timer\x20ends,\x20the\x20device\x20won\x27t\x20turn\x20off.\x20For\x20unattended\x20use,\x20enable\x20“Automation\x20Link”\x20for\x20this\x20entity\x20and\x20let\x20a\x20Home\x20Assistant\x20automation\x20handle\x20the\x20switch-off.','_onDragStart','configValue','_renderStartConfirmDialog','dropdown','finish','_expanded','#F44336','212421XUnpem','_renderEntitySection','Unavailable','time_unit_seconds','__stopTick','define','status_on','keydown','filter','__sharedSwitches','_toggleExpand','set','30qymnOA','9wiynUj'];_0x481b=function(){return _0xb73e23;};return _0x481b();}const _0x4f5e72=_0x59e2;(function(_0x40b515,_0x13f987){const _0x52dcb1=_0x59e2,_0x152b55=_0x40b515();while(!![]){try{const _0x2158bd=-parseInt(_0x52dcb1(0x133))/0x1*(parseInt(_0x52dcb1(0xf1))/0x2)+parseInt(_0x52dcb1(0x149))/0x3*(parseInt(_0x52dcb1(0x117))/0x4)+-parseInt(_0x52dcb1(0x192))/0x5+-parseInt(_0x52dcb1(0x17e))/0x6+parseInt(_0x52dcb1(0xfe))/0x7+parseInt(_0x52dcb1(0xf4))/0x8*(parseInt(_0x52dcb1(0x14a))/0x9)+parseInt(_0x52dcb1(0xd2))/0xa*(parseInt(_0x52dcb1(0x13d))/0xb);if(_0x2158bd===_0x13f987)break;else _0x152b55['push'](_0x152b55['shift']());}catch(_0x3fefa9){_0x152b55['push'](_0x152b55['shift']());}}}(_0x481b,0x2a63e));let HaLitBase,haHtml,haCss;{const base=window['LitElement']||(customElements['get'](_0x4f5e72(0xd7))?Object[_0x4f5e72(0xd5)](customElements[_0x4f5e72(0xcd)](_0x4f5e72(0xd7))):null);if(!base||!base['prototype']?.[_0x4f5e72(0x126)]||!base[_0x4f5e72(0x155)]?.[_0x4f5e72(0x97)]){const msg=_0x4f5e72(0x195);console['error'](msg),HaLitBase=class{},haHtml=()=>'',haCss=()=>'';}else HaLitBase=base,haHtml=base[_0x4f5e72(0x155)]['html'],haCss=base['prototype']['css'];}class SwitchAndTimerBarCard extends HaLitBase{static get[_0x4f5e72(0xf2)](){return{'hass':{},'_config':{},'_timer':{},'_durationEditor':{},'_startConfirm':{}};}static get[_0x4f5e72(0x8c)](){const _0x5e8395=_0x4f5e72;return{'button_position':_0x5e8395(0xa5),'colors':{'on':_0x5e8395(0x19e),'ready':_0x5e8395(0x9f),'unavailable':_0x5e8395(0x13c),'button_start':_0x5e8395(0x9f),'button_stop':_0x5e8395(0x19e),'icon':'#FFFFFF','progress_fill':_0x5e8395(0x19e)},'icons':{'start':_0x5e8395(0x128),'stop':_0x5e8395(0x95)},'labels':{'status_on':_0x5e8395(0x17b),'status_ready':_0x5e8395(0x18c),'status_unavailable':_0x5e8395(0x13f),'last_on_active':'Active','last_on_now':_0x5e8395(0x105),'last_on_ago_minutes':_0x5e8395(0x1c0),'last_on_ago_hours':_0x5e8395(0x106),'last_on_ago_days':_0x5e8395(0x1bc),'time_format_zero':_0x5e8395(0x1d6),'time_unit_minutes':'m','time_unit_seconds':'s','edit_duration_title':_0x5e8395(0x124),'edit_duration_hours':_0x5e8395(0x1a8),'edit_duration_minutes':_0x5e8395(0x12a),'edit_duration_seconds':_0x5e8395(0xf3),'edit_duration_apply':_0x5e8395(0xe3),'edit_duration_reset':_0x5e8395(0xb7),'edit_duration_cancel':_0x5e8395(0x164),'edit_duration_tooltip':_0x5e8395(0x1b6),'start_confirm_body':_0x5e8395(0x166),'start_confirm_ok':'Start\x20anyway','start_confirm_cancel':_0x5e8395(0x164)}};}static async[_0x4f5e72(0xbe)](){const _0x532cbc=_0x4f5e72;return document[_0x532cbc(0xef)](_0x532cbc(0x11f));}static['getStubConfig'](){const _0x2aadb5=_0x4f5e72;return{'title':_0x2aadb5(0x1c1),'entities':[{'name':_0x2aadb5(0xce),'switch':_0x2aadb5(0x156),'timer':_0x2aadb5(0x110),'sensor':'sensor.example_last_watered','timer_and_entity_connected_via_automation':!![]}]};}static get[_0x4f5e72(0x102)](){return haCss`
+const _0x1a7b4c=_0x37df;(function(_0x1b6602,_0x5c1088){const _0x289d19=_0x37df,_0x2b150f=_0x1b6602();while(!![]){try{const _0x316ab6=-parseInt(_0x289d19(0x1ac))/0x1*(-parseInt(_0x289d19(0x206))/0x2)+-parseInt(_0x289d19(0x1f5))/0x3*(-parseInt(_0x289d19(0x254))/0x4)+parseInt(_0x289d19(0x15f))/0x5+parseInt(_0x289d19(0x1d2))/0x6*(-parseInt(_0x289d19(0x151))/0x7)+parseInt(_0x289d19(0x16a))/0x8*(-parseInt(_0x289d19(0x191))/0x9)+parseInt(_0x289d19(0x1f1))/0xa*(parseInt(_0x289d19(0x22a))/0xb)+-parseInt(_0x289d19(0x27d))/0xc;if(_0x316ab6===_0x5c1088)break;else _0x2b150f['push'](_0x2b150f['shift']());}catch(_0x46c219){_0x2b150f['push'](_0x2b150f['shift']());}}}(_0x1949,0x948e6));function _0x37df(_0x1a4609,_0x41137b){_0x1a4609=_0x1a4609-0x141;const _0x19493f=_0x1949();let _0x37dfcb=_0x19493f[_0x1a4609];return _0x37dfcb;}let HaLitBase,haHtml,haCss;{const base=window['LitElement']||(customElements[_0x1a7b4c(0x228)](_0x1a7b4c(0x14e))?Object['getPrototypeOf'](customElements[_0x1a7b4c(0x228)]('ha-panel-lovelace')):null);if(!base||!base[_0x1a7b4c(0x204)]?.[_0x1a7b4c(0x1b2)]||!base['prototype']?.[_0x1a7b4c(0x1c2)]){const msg='switch-and-timer-bar-card:\x20Lit\x20not\x20found.\x20This\x20card\x20must\x20run\x20inside\x20Home\x20Assistant.';console[_0x1a7b4c(0x210)](msg),HaLitBase=class{},haHtml=()=>'',haCss=()=>'';}else HaLitBase=base,haHtml=base[_0x1a7b4c(0x204)][_0x1a7b4c(0x1b2)],haCss=base[_0x1a7b4c(0x204)][_0x1a7b4c(0x1c2)];}class SwitchAndTimerBarCard extends HaLitBase{static get[_0x1a7b4c(0x16b)](){return{'hass':{},'_config':{},'_timer':{},'_durationEditor':{},'_startConfirm':{}};}static get[_0x1a7b4c(0x281)](){const _0x47c61b=_0x1a7b4c;return{'button_position':_0x47c61b(0x1a7),'colors':{'on':_0x47c61b(0x257),'ready':_0x47c61b(0x28a),'unavailable':_0x47c61b(0x161),'button_start':'#4CAF50','button_stop':_0x47c61b(0x257),'icon':_0x47c61b(0x234),'progress_fill':'#2196F3'},'icons':{'start':'mdi:play','stop':_0x47c61b(0x235)},'labels':{'status_on':_0x47c61b(0x1dc),'status_ready':_0x47c61b(0x26b),'status_unavailable':_0x47c61b(0x19e),'last_on_active':_0x47c61b(0x1e5),'last_on_now':_0x47c61b(0x177),'last_on_ago_minutes':_0x47c61b(0x1ba),'last_on_ago_hours':_0x47c61b(0x241),'last_on_ago_days':_0x47c61b(0x1e1),'time_format_zero':'0m\x2000s','time_unit_minutes':'m','time_unit_seconds':'s','edit_duration_title':_0x47c61b(0x175),'edit_duration_hours':_0x47c61b(0x1a0),'edit_duration_minutes':_0x47c61b(0x1ea),'edit_duration_seconds':_0x47c61b(0x1cb),'edit_duration_apply':_0x47c61b(0x142),'edit_duration_reset':_0x47c61b(0x1a2),'edit_duration_cancel':_0x47c61b(0x188),'edit_duration_tooltip':_0x47c61b(0x1ec),'start_confirm_body':_0x47c61b(0x231),'start_confirm_ok':_0x47c61b(0x284),'start_confirm_cancel':_0x47c61b(0x188)}};}static async['getConfigElement'](){const _0x335964=_0x1a7b4c;return document[_0x335964(0x253)]('switch-and-timer-bar-card-editor');}static[_0x1a7b4c(0x192)](){const _0x155213=_0x1a7b4c;return{'title':'Irrigation\x20Control','entities':[{'name':'Front\x20Yard','switch':_0x155213(0x1a1),'timer':_0x155213(0x1d6),'sensor':_0x155213(0x17f),'timer_and_entity_connected_via_automation':!![]}]};}static get[_0x1a7b4c(0x264)](){return haCss`
       :host {
         display: block;
         position: relative;
@@ -217,7 +217,7 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
         box-sizing: border-box;
         max-width: 460px;
-        padding: 20px 20px 10px;
+        padding: 20px;
         width: 100%;
       }
       .confirm-callout {
@@ -243,239 +243,241 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
         font-size: 0.92em;
         line-height: 1.45;
       }
-    `;}constructor(){const _0x13d79a=_0x4f5e72;super(),this[_0x13d79a(0x182)]=null,this[_0x13d79a(0xe6)]=0x3e8,this[_0x13d79a(0x185)]=![],this[_0x13d79a(0x94)]=new Map(),this[_0x13d79a(0x96)]=0x9c4,this[_0x13d79a(0x146)]=new Set(),this['__durationOverrides']=new Map(),this[_0x13d79a(0x1a7)]=_0x13d79a(0x12b),this[_0x13d79a(0x1c5)](),this[_0x13d79a(0x131)]=new Map(),this['__armedStorageKey']='switch-and-timer-bar-card:armed',this[_0x13d79a(0xf7)](),this[_0x13d79a(0xca)]=![],this['_startConfirm']=null,this[_0x13d79a(0x10e)]=_0x3f30c9=>{const _0x5a5bf8=_0x13d79a;if(_0x3f30c9[_0x5a5bf8(0x188)]===_0x5a5bf8(0x1a0)&&this[_0x5a5bf8(0x194)])this[_0x5a5bf8(0x12d)]();},this[_0x13d79a(0x16a)]=null;}[_0x4f5e72(0x1c5)](){const _0x29e2f5=_0x4f5e72;try{const _0x1e74e1=window['localStorage']?.[_0x29e2f5(0x198)](this[_0x29e2f5(0x1a7)]);if(!_0x1e74e1)return;const _0x4e95e4=JSON[_0x29e2f5(0xb2)](_0x1e74e1);_0x4e95e4&&typeof _0x4e95e4==='object'&&(this[_0x29e2f5(0x15f)]=new Map(Object[_0x29e2f5(0x1cb)](_0x4e95e4)));}catch(_0x447bd0){}}[_0x4f5e72(0xe2)](){const _0x3cdc70=_0x4f5e72;try{const _0xa441f1=Object[_0x3cdc70(0x161)](this[_0x3cdc70(0x15f)]);window[_0x3cdc70(0x158)]?.['setItem'](this[_0x3cdc70(0x1a7)],JSON[_0x3cdc70(0x9d)](_0xa441f1));}catch(_0x5dc1ac){}}[_0x4f5e72(0xf7)](){const _0x3d56ef=_0x4f5e72;try{const _0x4d16d2=window['localStorage']?.['getItem'](this[_0x3d56ef(0x1c7)]);if(!_0x4d16d2)return;const _0x5e96c4=JSON[_0x3d56ef(0xb2)](_0x4d16d2);_0x5e96c4&&typeof _0x5e96c4===_0x3d56ef(0x1b5)&&(this[_0x3d56ef(0x131)]=new Map(Object[_0x3d56ef(0x1cb)](_0x5e96c4)));}catch(_0x191789){}}[_0x4f5e72(0x9a)](){const _0x4b2c65=_0x4f5e72;try{const _0x5a2c13=Object['fromEntries'](this[_0x4b2c65(0x131)]);window[_0x4b2c65(0x158)]?.['setItem'](this[_0x4b2c65(0x1c7)],JSON[_0x4b2c65(0x9d)](_0x5a2c13));}catch(_0x2e8fe5){}}[_0x4f5e72(0xa0)](_0xfb838f,_0x40fcec,_0x3a77a3){const _0x2220a2=_0x4f5e72;if(!_0xfb838f||!_0x40fcec)return;const _0x587072=Number[_0x2220a2(0x14f)](_0x3a77a3)?_0x3a77a3:null,_0x116e44=this[_0x2220a2(0x131)][_0x2220a2(0xcd)](_0xfb838f);if(_0x116e44&&_0x116e44[_0x2220a2(0x189)]===_0x40fcec&&_0x116e44[_0x2220a2(0x9b)]===_0x587072)return;this[_0x2220a2(0x131)][_0x2220a2(0x148)](_0xfb838f,{'switch':_0x40fcec,'finishesAt':_0x587072}),this['_saveArmedTimers']();}[_0x4f5e72(0x1c3)](_0x5e98fa){const _0x25ea52=_0x4f5e72;if(!_0x5e98fa||!this[_0x25ea52(0x131)][_0x25ea52(0x1d5)](_0x5e98fa))return;this['__armedTimers'][_0x25ea52(0x1c6)](_0x5e98fa),this[_0x25ea52(0x9a)]();}[_0x4f5e72(0xa4)](){const _0x31991b=_0x4f5e72;if(this[_0x31991b(0xca)])return;if(!this[_0x31991b(0xa3)]||!this[_0x31991b(0x170)]?.['entities'])return;this[_0x31991b(0xca)]=!![],this['_reconcileMissedTimers']();}[_0x4f5e72(0x167)](){const _0x64a8b2=_0x4f5e72;if(!this['hass']||!this[_0x64a8b2(0x131)]['size'])return;const _0x129345=this[_0x64a8b2(0xa3)][_0x64a8b2(0x1b0)]||{},_0x198eb4=new Map();for(const _0x12b5f9 of this['_config']?.[_0x64a8b2(0x1bd)]||[]){if(_0x12b5f9[_0x64a8b2(0x109)])continue;if(_0x12b5f9['timer']&&_0x12b5f9[_0x64a8b2(0x189)])_0x198eb4[_0x64a8b2(0x148)](_0x12b5f9[_0x64a8b2(0x1d1)],_0x12b5f9);}let _0x1b16d9=![];for(const [_0x57b250,_0xc7ea0]of[...this[_0x64a8b2(0x131)]['entries']()]){const _0x4f53f6=_0x198eb4[_0x64a8b2(0xcd)](_0x57b250),_0x3cd35b=_0x129345[_0x57b250];if(!_0x4f53f6||!_0x3cd35b){this[_0x64a8b2(0x131)][_0x64a8b2(0x1c6)](_0x57b250),_0x1b16d9=!![];continue;}const _0x5d2a83=_0x3cd35b[_0x64a8b2(0xfc)];if(_0x5d2a83===_0x64a8b2(0x15d)||_0x5d2a83===_0x64a8b2(0x120)){if(_0x5d2a83===_0x64a8b2(0x15d)){const _0x339fc1=Date[_0x64a8b2(0xb2)](_0x3cd35b[_0x64a8b2(0xc1)]?.[_0x64a8b2(0x9e)]||''),_0x303313=Number[_0x64a8b2(0x14f)](_0x339fc1)?_0x339fc1:null;_0xc7ea0[_0x64a8b2(0x9b)]!==_0x303313&&(this[_0x64a8b2(0x131)][_0x64a8b2(0x148)](_0x57b250,{'switch':_0x4f53f6[_0x64a8b2(0x189)],'finishesAt':_0x303313}),_0x1b16d9=!![]);}continue;}const _0x3e9f3e=_0x4f53f6[_0x64a8b2(0x189)],_0x1acd8f=_0x129345[_0x3e9f3e];if(_0x1acd8f&&this[_0x64a8b2(0xdd)](_0x1acd8f)){let _0x457b4d=![];this[_0x64a8b2(0x146)][_0x64a8b2(0x1d5)](_0x3e9f3e)&&(_0x457b4d=(this[_0x64a8b2(0x170)]['entities']||[])['some'](_0x3ec92a=>_0x3ec92a[_0x64a8b2(0x189)]===_0x3e9f3e&&_0x3ec92a[_0x64a8b2(0x1d1)]&&_0x3ec92a[_0x64a8b2(0x1d1)]!==_0x57b250&&_0x129345[_0x3ec92a[_0x64a8b2(0x1d1)]]?.[_0x64a8b2(0xfc)]==='active'));if(!_0x457b4d){const _0x541ec9=Date[_0x64a8b2(0xb4)](),_0x1f9c22=this[_0x64a8b2(0x94)]['get'](_0x3e9f3e)||0x0;_0x541ec9-_0x1f9c22>=this[_0x64a8b2(0x96)]&&(this[_0x64a8b2(0x94)]['set'](_0x3e9f3e,_0x541ec9),this[_0x64a8b2(0xa6)](_0x3e9f3e,_0x64a8b2(0xbb)));}}this[_0x64a8b2(0x131)][_0x64a8b2(0x1c6)](_0x57b250),_0x1b16d9=!![];}if(_0x1b16d9)this['_saveArmedTimers']();}[_0x4f5e72(0xfa)](_0x2dba9f){const _0x59041c=_0x4f5e72;if(!_0x2dba9f)throw new Error(_0x59041c(0xeb));const _0x1d4dfd=SwitchAndTimerBarCard['DEFAULTS'],_0x8b727d=JSON[_0x59041c(0xb2)](JSON[_0x59041c(0x9d)](_0x2dba9f));(!_0x8b727d[_0x59041c(0x1bd)]||!Array['isArray'](_0x8b727d[_0x59041c(0x1bd)]))&&(console['warn'](_0x59041c(0xe0)),_0x8b727d[_0x59041c(0x1bd)]=[]);_0x8b727d[_0x59041c(0x1bd)][_0x59041c(0x15a)](_0x329243=>{_0x329243['timer_and_entity_connected_via_automation']===undefined&&(_0x329243['timer_and_entity_connected_via_automation']=!![]);}),this[_0x59041c(0x170)]={..._0x1d4dfd,..._0x8b727d,'colors':{..._0x1d4dfd[_0x59041c(0xa7)],..._0x8b727d[_0x59041c(0xa7)]||{}},'icons':{..._0x1d4dfd[_0x59041c(0xf0)],..._0x8b727d[_0x59041c(0xf0)]||{}},'labels':{..._0x1d4dfd['labels'],..._0x8b727d[_0x59041c(0x1bb)]||{}}};const _0x13031c=new Map();for(const _0x2854ee of this[_0x59041c(0x170)][_0x59041c(0x1bd)]){if(_0x2854ee['switch'])_0x13031c[_0x59041c(0x148)](_0x2854ee[_0x59041c(0x189)],(_0x13031c[_0x59041c(0xcd)](_0x2854ee[_0x59041c(0x189)])||0x0)+0x1);}this[_0x59041c(0x146)]=new Set(Array['from'](_0x13031c[_0x59041c(0x1cb)]())['filter'](([,_0x211cc1])=>_0x211cc1>0x1)[_0x59041c(0xe9)](([_0x485b36])=>_0x485b36)),this['__recomputeTickNeedAndApply']();}[_0x4f5e72(0x100)](){const _0x958845=_0x4f5e72;super[_0x958845(0x100)]?.(),this[_0x958845(0x90)](),this[_0x958845(0xa4)](),window[_0x958845(0xae)]('keydown',this[_0x958845(0x10e)]);}[_0x4f5e72(0xd1)](){const _0x4c9a1b=_0x4f5e72;super[_0x4c9a1b(0xd1)]?.(),this[_0x4c9a1b(0x141)](),window[_0x4c9a1b(0x17d)](_0x4c9a1b(0x144),this['__onConfirmKeyDown']),this[_0x4c9a1b(0xca)]=![];}[_0x4f5e72(0xfd)](_0x388f94){const _0x17b390=_0x4f5e72;if(_0x388f94[_0x17b390(0x1d5)](_0x17b390(0xa3))){this[_0x17b390(0x90)](),this['_maybeReconcile']();if(!this[_0x17b390(0x170)]?.['entities'])return;const _0x3036e5=_0x388f94['get']('hass');for(const _0x4cc3ba of this[_0x17b390(0x170)]['entities']){if(_0x4cc3ba[_0x17b390(0x109)])continue;const _0x592592=_0x4cc3ba['timer'],_0x51be23=_0x4cc3ba[_0x17b390(0x189)];if(!_0x592592||!_0x51be23)continue;const _0x5c17ba=this[_0x17b390(0xa3)]?.[_0x17b390(0x1b0)]?.[_0x592592],_0x437110=this[_0x17b390(0xa3)]?.[_0x17b390(0x1b0)]?.[_0x51be23];if(!_0x5c17ba)continue;if(_0x5c17ba['state']===_0x17b390(0x15d)){const _0x480351=Date['parse'](_0x5c17ba['attributes']?.[_0x17b390(0x9e)]||'');this['_armTimer'](_0x592592,_0x51be23,_0x480351);}const _0x2e05e4=_0x3036e5?.[_0x17b390(0x1b0)]?.[_0x592592];if(!_0x2e05e4)continue;if(_0x2e05e4[_0x17b390(0xfc)]==='active'&&_0x5c17ba[_0x17b390(0xfc)]==='idle'){this[_0x17b390(0x1c3)](_0x592592);if(!_0x437110)continue;if(!this['_isActive'](_0x437110))continue;if(this['__sharedSwitches'][_0x17b390(0x1d5)](_0x51be23)){const _0x4e6317=this[_0x17b390(0x170)][_0x17b390(0x1bd)][_0x17b390(0xd0)](_0x15dfb4=>_0x15dfb4['switch']===_0x51be23&&_0x15dfb4['timer']&&_0x15dfb4[_0x17b390(0x1d1)]!==_0x592592&&this[_0x17b390(0xa3)][_0x17b390(0x1b0)]?.[_0x15dfb4[_0x17b390(0x1d1)]]?.[_0x17b390(0xfc)]===_0x17b390(0x15d));if(_0x4e6317)continue;}const _0x2c08c5=Date[_0x17b390(0xb4)](),_0x359e56=this[_0x17b390(0x94)][_0x17b390(0xcd)](_0x51be23)||0x0;if(_0x2c08c5-_0x359e56<this[_0x17b390(0x96)])continue;this[_0x17b390(0x94)][_0x17b390(0x148)](_0x51be23,_0x2c08c5),this[_0x17b390(0xa6)](_0x51be23,_0x17b390(0xbb));}}}}[_0x4f5e72(0xe8)](){const _0x51927d=_0x4f5e72;if(this[_0x51927d(0x182)])return;this[_0x51927d(0x182)]=setInterval(()=>{const _0x5064a2=_0x51927d;this[_0x5064a2(0x16f)]=Date[_0x5064a2(0xb4)]();},this[_0x51927d(0xe6)]);}[_0x4f5e72(0x141)](){if(!this['__interval'])return;clearInterval(this['__interval']),this['__interval']=null;}[_0x4f5e72(0x90)](){const _0x5cb261=_0x4f5e72;if(!this[_0x5cb261(0xa3)]||!this[_0x5cb261(0x170)]?.[_0x5cb261(0x1bd)]?.[_0x5cb261(0xdb)]){this[_0x5cb261(0x185)]=![],this['__stopTick']();return;}const _0x4fea81=this[_0x5cb261(0xa3)][_0x5cb261(0x1b0)]||{};let _0x59bf9f=![];for(const _0x250204 of this['_config'][_0x5cb261(0x1bd)]){const _0x173259=_0x250204[_0x5cb261(0x189)];if(!_0x173259)continue;const _0x3b70a7=_0x250204[_0x5cb261(0x1d1)],_0x205b4b=_0x3b70a7?_0x4fea81[_0x3b70a7]:null;if(this[_0x5cb261(0x146)]['has'](_0x173259)){if(_0x205b4b&&_0x205b4b[_0x5cb261(0xfc)]==='active'){_0x59bf9f=!![];break;}continue;}const _0x4baf8b=_0x4fea81[_0x173259];if(_0x4baf8b&&this['_isActive'](_0x4baf8b)){_0x59bf9f=!![];break;}if(_0x205b4b&&_0x205b4b['state']===_0x5cb261(0x15d)){_0x59bf9f=!![];break;}}this[_0x5cb261(0x185)]=_0x59bf9f;if(_0x59bf9f)this[_0x5cb261(0xe8)]();else this[_0x5cb261(0x141)]();}[_0x4f5e72(0xe4)](_0x5489c0,_0x57b45b){const _0x40a4a8=_0x4f5e72,_0x5d6c50=_0x5489c0?.['timer'];if(_0x5d6c50&&this['__durationOverrides'][_0x40a4a8(0x1d5)](_0x5d6c50)){const _0x248c85=Number(this[_0x40a4a8(0x15f)][_0x40a4a8(0xcd)](_0x5d6c50));if(Number[_0x40a4a8(0x14f)](_0x248c85)&&_0x248c85>=0x0)return _0x248c85;}if(_0x5489c0&&_0x5489c0[_0x40a4a8(0xd9)]!==undefined&&_0x5489c0['duration']!==null&&_0x5489c0['duration']!==''){const _0x43a488=this[_0x40a4a8(0x12c)](_0x5489c0[_0x40a4a8(0xd9)]);if(_0x43a488>0x0)return _0x43a488;}return this[_0x40a4a8(0x12c)](_0x57b45b?.['attributes']?.[_0x40a4a8(0xd9)]);}[_0x4f5e72(0xf6)](_0x2eafcb){const _0x404326=_0x4f5e72,_0x393e7b=_0x2eafcb?.[_0x404326(0x1d1)];if(_0x393e7b&&this[_0x404326(0x15f)][_0x404326(0x1d5)](_0x393e7b))return!![];if(_0x2eafcb?.[_0x404326(0xd9)]!==undefined&&_0x2eafcb[_0x404326(0xd9)]!==null&&_0x2eafcb['duration']!=='')return!![];return![];}[_0x4f5e72(0x1c8)](_0x8af19b){const _0x459685=_0x4f5e72;return!!(_0x8af19b&&this[_0x459685(0x15f)][_0x459685(0x1d5)](_0x8af19b));}[_0x4f5e72(0xdc)](_0x50dd4b){const _0x58c5e0=_0x4f5e72,_0xd81cda=Math[_0x58c5e0(0x18a)](0x0,Math[_0x58c5e0(0x160)](Number(_0x50dd4b)||0x0)),_0x323d9a=Math['floor'](_0xd81cda/0xe10),_0x46637f=Math[_0x58c5e0(0x160)](_0xd81cda%0xe10/0x3c),_0x498b0e=_0xd81cda%0x3c,_0x3922a2=_0x22ee0f=>String(_0x22ee0f)[_0x58c5e0(0x9c)](0x2,'0');return _0x3922a2(_0x323d9a)+':'+_0x3922a2(_0x46637f)+':'+_0x3922a2(_0x498b0e);}[_0x4f5e72(0x171)](_0x1225d6,_0x17dd00,_0x473bf0){const _0x8e4372=_0x4f5e72;if(!_0x17dd00)return;const _0x4babd6=Math[_0x8e4372(0x18a)](0x0,Math[_0x8e4372(0x160)](Number(_0x473bf0)||0x0));this[_0x8e4372(0x16a)]={'open':!![],'timerEntity':_0x17dd00,'h':Math[_0x8e4372(0x160)](_0x4babd6/0xe10),'m':Math['floor'](_0x4babd6%0xe10/0x3c),'s':_0x4babd6%0x3c,'hasOverride':this[_0x8e4372(0x1c8)](_0x17dd00)};}['_closeDurationEditor'](){this['_durationEditor']=null;}[_0x4f5e72(0x1ac)](_0x3f8a9d,_0x55d713){const _0x17a68f=_0x4f5e72;if(!this[_0x17a68f(0x16a)])return;let _0x3c6096=parseInt(_0x55d713,0xa);if(!Number[_0x17a68f(0x14f)](_0x3c6096)||_0x3c6096<0x0)_0x3c6096=0x0;if(_0x3f8a9d==='m'||_0x3f8a9d==='s')_0x3c6096=Math[_0x17a68f(0x1d4)](_0x3c6096,0x3b);if(_0x3f8a9d==='h')_0x3c6096=Math[_0x17a68f(0x1d4)](_0x3c6096,0x63);this[_0x17a68f(0x16a)]={...this[_0x17a68f(0x16a)],[_0x3f8a9d]:_0x3c6096};}[_0x4f5e72(0x1ce)](){const _0x38e19c=_0x4f5e72;if(!this[_0x38e19c(0x16a)])return;const {timerEntity:_0x390042,h:_0xb3ea7a,m:_0x4420e2,s:_0x2225bf}=this[_0x38e19c(0x16a)],_0x4816ce=_0xb3ea7a*0xe10+_0x4420e2*0x3c+_0x2225bf;_0x390042&&_0x4816ce>0x0&&(this[_0x38e19c(0x15f)]['set'](_0x390042,_0x4816ce),this[_0x38e19c(0xe2)]()),this[_0x38e19c(0x16a)]=null,this['__recomputeTickNeedAndApply']();}['_resetDurationOverride'](){const _0x3d3a02=_0x4f5e72;if(!this[_0x3d3a02(0x16a)])return;const {timerEntity:_0x15c206}=this[_0x3d3a02(0x16a)];_0x15c206&&this[_0x3d3a02(0x15f)][_0x3d3a02(0x1d5)](_0x15c206)&&(this[_0x3d3a02(0x15f)][_0x3d3a02(0x1c6)](_0x15c206),this['_saveDurationOverrides']()),this[_0x3d3a02(0x16a)]=null;}[_0x4f5e72(0xa6)](_0x3e2417,_0x4914f9){const _0x4d6715=_0x4f5e72;if(!this[_0x4d6715(0xa3)]||!_0x3e2417)return;const _0x36cc5a=_0x3e2417[_0x4d6715(0x1d3)]('.')[0x0];let _0x451e60;switch(_0x36cc5a){case _0x4d6715(0x1cd):_0x451e60=_0x4914f9==='on'?_0x4d6715(0x1d2):_0x4d6715(0x187);break;case _0x4d6715(0x184):_0x451e60=_0x4914f9==='on'?_0x4d6715(0x1c4):_0x4d6715(0x130);break;case _0x4d6715(0x1a2):_0x451e60=_0x4914f9==='on'?_0x4d6715(0x1a2):_0x4d6715(0x1b4);break;default:_0x451e60=_0x4914f9==='on'?_0x4d6715(0x173):'turn_off';break;}this['hass'][_0x4d6715(0x14e)](_0x36cc5a,_0x451e60,{'entity_id':_0x3e2417});}['_isActive'](_0x3bc3e0){const _0x318a0d=_0x4f5e72;if(!_0x3bc3e0)return![];const _0x53a55a=_0x3bc3e0[_0x318a0d(0xd6)]['split']('.')[0x0],_0x17bb20=_0x3bc3e0['state'];switch(_0x53a55a){case _0x318a0d(0x1cd):return _0x17bb20==='closed';case'valve':return _0x17bb20===_0x318a0d(0x15c)||_0x17bb20===_0x318a0d(0x98);case _0x318a0d(0x1a2):return _0x17bb20===_0x318a0d(0xb0);case _0x318a0d(0x91):return[_0x318a0d(0x153),_0x318a0d(0x18f),'on'][_0x318a0d(0x10b)](_0x17bb20);default:return _0x17bb20==='on';}}[_0x4f5e72(0xec)](){const _0x2f8b2b=_0x4f5e72;if(!HaLitBase||!haHtml)return'';if(!this[_0x2f8b2b(0xa3)]||!this[_0x2f8b2b(0x170)])return haHtml``;const _0x5055db=Date['now']();return haHtml`
+    `;}constructor(){const _0x548e7c=_0x1a7b4c;super(),this[_0x548e7c(0x1c1)]=null,this['__tickMs']=0x3e8,this['__needsTick']=![],this['__lastOffAt']=new Map(),this[_0x548e7c(0x185)]=0x9c4,this[_0x548e7c(0x163)]=new Set(),this['__durationOverrides']=new Map(),this[_0x548e7c(0x1ed)]=_0x548e7c(0x222),this[_0x548e7c(0x268)](),this[_0x548e7c(0x184)]=new Map(),this[_0x548e7c(0x1ab)]=_0x548e7c(0x27a),this[_0x548e7c(0x233)](),this[_0x548e7c(0x1de)]=![],this[_0x548e7c(0x232)]=null,this[_0x548e7c(0x214)]=_0x56d0d4=>{const _0x378641=_0x548e7c;if(_0x56d0d4[_0x378641(0x180)]==='Escape'&&this[_0x378641(0x232)])this['_cancelStart']();},this[_0x548e7c(0x1ef)]=null;}[_0x1a7b4c(0x268)](){const _0x299627=_0x1a7b4c;try{const _0x62204=window['localStorage']?.[_0x299627(0x1f7)](this[_0x299627(0x1ed)]);if(!_0x62204)return;const _0x38e725=JSON['parse'](_0x62204);_0x38e725&&typeof _0x38e725===_0x299627(0x197)&&(this[_0x299627(0x14c)]=new Map(Object['entries'](_0x38e725)));}catch(_0x1f7abd){}}['_saveDurationOverrides'](){const _0x24f7b7=_0x1a7b4c;try{const _0x317b01=Object[_0x24f7b7(0x1c6)](this[_0x24f7b7(0x14c)]);window[_0x24f7b7(0x1cc)]?.[_0x24f7b7(0x24d)](this[_0x24f7b7(0x1ed)],JSON[_0x24f7b7(0x25e)](_0x317b01));}catch(_0x494a66){}}['_loadArmedTimers'](){const _0x330860=_0x1a7b4c;try{const _0x5e631f=window[_0x330860(0x1cc)]?.[_0x330860(0x1f7)](this['__armedStorageKey']);if(!_0x5e631f)return;const _0x4c2b16=JSON[_0x330860(0x196)](_0x5e631f);_0x4c2b16&&typeof _0x4c2b16==='object'&&(this[_0x330860(0x184)]=new Map(Object['entries'](_0x4c2b16)));}catch(_0x2264d6){}}['_saveArmedTimers'](){const _0x203df8=_0x1a7b4c;try{const _0x14187c=Object['fromEntries'](this[_0x203df8(0x184)]);window[_0x203df8(0x1cc)]?.[_0x203df8(0x24d)](this[_0x203df8(0x1ab)],JSON[_0x203df8(0x25e)](_0x14187c));}catch(_0x5b61f0){}}[_0x1a7b4c(0x1c8)](_0x28985f,_0x4d2747,_0x19c219){const _0x3e8cb3=_0x1a7b4c;if(!_0x28985f||!_0x4d2747)return;const _0x35a401=Number['isFinite'](_0x19c219)?_0x19c219:null,_0x1dceb8=this[_0x3e8cb3(0x184)][_0x3e8cb3(0x228)](_0x28985f);if(_0x1dceb8&&_0x1dceb8[_0x3e8cb3(0x27e)]===_0x4d2747&&_0x1dceb8[_0x3e8cb3(0x258)]===_0x35a401)return;this['__armedTimers'][_0x3e8cb3(0x17e)](_0x28985f,{'switch':_0x4d2747,'finishesAt':_0x35a401}),this[_0x3e8cb3(0x270)]();}[_0x1a7b4c(0x1fd)](_0x3322d6){const _0x558e90=_0x1a7b4c;if(!_0x3322d6||!this['__armedTimers'][_0x558e90(0x1bf)](_0x3322d6))return;this[_0x558e90(0x184)][_0x558e90(0x1eb)](_0x3322d6),this[_0x558e90(0x270)]();}['_maybeReconcile'](){const _0x4ef80a=_0x1a7b4c;if(this[_0x4ef80a(0x1de)])return;if(!this[_0x4ef80a(0x16f)]||!this[_0x4ef80a(0x1f0)]?.['entities'])return;this[_0x4ef80a(0x1de)]=!![],this['_reconcileMissedTimers']();}[_0x1a7b4c(0x23e)](){const _0x71d290=_0x1a7b4c;if(!this[_0x71d290(0x16f)]||!this[_0x71d290(0x184)]['size'])return;const _0xedb6f4=this[_0x71d290(0x16f)][_0x71d290(0x162)]||{},_0x28b4e9=new Map();for(const _0x4a1d92 of this['_config']?.[_0x71d290(0x266)]||[]){if(_0x4a1d92[_0x71d290(0x1a5)])continue;if(_0x4a1d92['timer']&&_0x4a1d92['switch'])_0x28b4e9[_0x71d290(0x17e)](_0x4a1d92[_0x71d290(0x23a)],_0x4a1d92);}let _0x216ea8=![];for(const [_0x2a8aa9,_0x6f0579]of[...this[_0x71d290(0x184)]['entries']()]){const _0x455a94=_0x28b4e9['get'](_0x2a8aa9),_0x116ffc=_0xedb6f4[_0x2a8aa9];if(!_0x455a94||!_0x116ffc){this['__armedTimers']['delete'](_0x2a8aa9),_0x216ea8=!![];continue;}const _0x1af2c9=_0x116ffc['state'];if(_0x1af2c9===_0x71d290(0x240)||_0x1af2c9===_0x71d290(0x164)){if(_0x1af2c9===_0x71d290(0x240)){const _0x4e89e1=Date['parse'](_0x116ffc[_0x71d290(0x20c)]?.[_0x71d290(0x226)]||''),_0xf52165=Number['isFinite'](_0x4e89e1)?_0x4e89e1:null;_0x6f0579[_0x71d290(0x258)]!==_0xf52165&&(this[_0x71d290(0x184)][_0x71d290(0x17e)](_0x2a8aa9,{'switch':_0x455a94['switch'],'finishesAt':_0xf52165}),_0x216ea8=!![]);}continue;}const _0x4ff765=_0x455a94[_0x71d290(0x27e)],_0x4a9b03=_0xedb6f4[_0x4ff765];if(_0x4a9b03&&this['_isActive'](_0x4a9b03)){let _0x36fd60=![];this[_0x71d290(0x163)][_0x71d290(0x1bf)](_0x4ff765)&&(_0x36fd60=(this[_0x71d290(0x1f0)][_0x71d290(0x266)]||[])[_0x71d290(0x20f)](_0x27fde2=>_0x27fde2['switch']===_0x4ff765&&_0x27fde2['timer']&&_0x27fde2[_0x71d290(0x23a)]!==_0x2a8aa9&&_0xedb6f4[_0x27fde2[_0x71d290(0x23a)]]?.[_0x71d290(0x20d)]===_0x71d290(0x240)));if(!_0x36fd60){const _0x2b5ffa=Date[_0x71d290(0x156)](),_0x6ce84a=this['__lastOffAt'][_0x71d290(0x228)](_0x4ff765)||0x0;_0x2b5ffa-_0x6ce84a>=this[_0x71d290(0x185)]&&(this[_0x71d290(0x183)][_0x71d290(0x17e)](_0x4ff765,_0x2b5ffa),this['_callService'](_0x4ff765,_0x71d290(0x225)));}}this[_0x71d290(0x184)][_0x71d290(0x1eb)](_0x2a8aa9),_0x216ea8=!![];}if(_0x216ea8)this['_saveArmedTimers']();}[_0x1a7b4c(0x26a)](_0x263e4e){const _0x1834ad=_0x1a7b4c;if(!_0x263e4e)throw new Error(_0x1834ad(0x18c));const _0x392f16=SwitchAndTimerBarCard[_0x1834ad(0x281)],_0x4cb432=JSON[_0x1834ad(0x196)](JSON[_0x1834ad(0x25e)](_0x263e4e));(!_0x4cb432['entities']||!Array[_0x1834ad(0x227)](_0x4cb432['entities']))&&(console[_0x1834ad(0x28d)](_0x1834ad(0x15e)),_0x4cb432[_0x1834ad(0x266)]=[]);_0x4cb432[_0x1834ad(0x266)][_0x1834ad(0x19d)](_0x47a45b=>{const _0x5242b1=_0x1834ad;_0x47a45b['timer_and_entity_connected_via_automation']===undefined&&(_0x47a45b[_0x5242b1(0x1a5)]=!![]);}),this[_0x1834ad(0x1f0)]={..._0x392f16,..._0x4cb432,'colors':{..._0x392f16[_0x1834ad(0x20e)],..._0x4cb432[_0x1834ad(0x20e)]||{}},'icons':{..._0x392f16[_0x1834ad(0x1e0)],..._0x4cb432[_0x1834ad(0x1e0)]||{}},'labels':{..._0x392f16[_0x1834ad(0x174)],..._0x4cb432['labels']||{}}};const _0x2d868c=new Map();for(const _0x2ac17d of this[_0x1834ad(0x1f0)][_0x1834ad(0x266)]){if(_0x2ac17d[_0x1834ad(0x27e)])_0x2d868c[_0x1834ad(0x17e)](_0x2ac17d[_0x1834ad(0x27e)],(_0x2d868c['get'](_0x2ac17d[_0x1834ad(0x27e)])||0x0)+0x1);}this[_0x1834ad(0x163)]=new Set(Array['from'](_0x2d868c[_0x1834ad(0x1cf)]())[_0x1834ad(0x21c)](([,_0x34a695])=>_0x34a695>0x1)[_0x1834ad(0x269)](([_0x11acc5])=>_0x11acc5)),this[_0x1834ad(0x202)]();}[_0x1a7b4c(0x1df)](){const _0x13c2d6=_0x1a7b4c;super[_0x13c2d6(0x1df)]?.(),this[_0x13c2d6(0x202)](),this[_0x13c2d6(0x271)](),window['addEventListener']('keydown',this['__onConfirmKeyDown']);}[_0x1a7b4c(0x283)](){const _0x28c1d6=_0x1a7b4c;super[_0x28c1d6(0x283)]?.(),this['__stopTick'](),window[_0x28c1d6(0x17b)](_0x28c1d6(0x1c0),this[_0x28c1d6(0x214)]),this[_0x28c1d6(0x1de)]=![];}[_0x1a7b4c(0x1fc)](_0x5685e7){const _0x278b8f=_0x1a7b4c;if(_0x5685e7[_0x278b8f(0x1bf)](_0x278b8f(0x16f))){this[_0x278b8f(0x202)](),this['_maybeReconcile']();if(!this[_0x278b8f(0x1f0)]?.[_0x278b8f(0x266)])return;const _0xcb0957=_0x5685e7[_0x278b8f(0x228)](_0x278b8f(0x16f));for(const _0x4b76a5 of this[_0x278b8f(0x1f0)]['entities']){if(_0x4b76a5[_0x278b8f(0x1a5)])continue;const _0x3a7468=_0x4b76a5[_0x278b8f(0x23a)],_0x4c2f60=_0x4b76a5[_0x278b8f(0x27e)];if(!_0x3a7468||!_0x4c2f60)continue;const _0x4b2e4f=this[_0x278b8f(0x16f)]?.['states']?.[_0x3a7468],_0x3e6873=this[_0x278b8f(0x16f)]?.['states']?.[_0x4c2f60];if(!_0x4b2e4f)continue;if(_0x4b2e4f[_0x278b8f(0x20d)]==='active'){const _0x485559=Date[_0x278b8f(0x196)](_0x4b2e4f['attributes']?.[_0x278b8f(0x226)]||'');this[_0x278b8f(0x1c8)](_0x3a7468,_0x4c2f60,_0x485559);}const _0x1ec438=_0xcb0957?.[_0x278b8f(0x162)]?.[_0x3a7468];if(!_0x1ec438)continue;if(_0x1ec438['state']==='active'&&_0x4b2e4f[_0x278b8f(0x20d)]===_0x278b8f(0x216)){this[_0x278b8f(0x1fd)](_0x3a7468);if(!_0x3e6873)continue;if(!this[_0x278b8f(0x22e)](_0x3e6873))continue;if(this[_0x278b8f(0x163)]['has'](_0x4c2f60)){const _0x325cab=this[_0x278b8f(0x1f0)][_0x278b8f(0x266)]['some'](_0x5a3e09=>_0x5a3e09[_0x278b8f(0x27e)]===_0x4c2f60&&_0x5a3e09['timer']&&_0x5a3e09[_0x278b8f(0x23a)]!==_0x3a7468&&this[_0x278b8f(0x16f)][_0x278b8f(0x162)]?.[_0x5a3e09[_0x278b8f(0x23a)]]?.[_0x278b8f(0x20d)]===_0x278b8f(0x240));if(_0x325cab)continue;}const _0x31657d=Date['now'](),_0x4bc187=this[_0x278b8f(0x183)]['get'](_0x4c2f60)||0x0;if(_0x31657d-_0x4bc187<this[_0x278b8f(0x185)])continue;this[_0x278b8f(0x183)][_0x278b8f(0x17e)](_0x4c2f60,_0x31657d),this[_0x278b8f(0x1be)](_0x4c2f60,_0x278b8f(0x225));}}}}[_0x1a7b4c(0x18a)](){const _0x403d52=_0x1a7b4c;if(this[_0x403d52(0x1c1)])return;this[_0x403d52(0x1c1)]=setInterval(()=>{const _0x1450e9=_0x403d52;this[_0x1450e9(0x1f9)]=Date[_0x1450e9(0x156)]();},this[_0x403d52(0x168)]);}['__stopTick'](){const _0x3ccf44=_0x1a7b4c;if(!this[_0x3ccf44(0x1c1)])return;clearInterval(this[_0x3ccf44(0x1c1)]),this[_0x3ccf44(0x1c1)]=null;}[_0x1a7b4c(0x202)](){const _0x59831a=_0x1a7b4c;if(!this[_0x59831a(0x16f)]||!this[_0x59831a(0x1f0)]?.[_0x59831a(0x266)]?.[_0x59831a(0x195)]){this[_0x59831a(0x23f)]=![],this['__stopTick']();return;}const _0x41a86e=this[_0x59831a(0x16f)][_0x59831a(0x162)]||{};let _0x2d6a7e=![];for(const _0xccc201 of this['_config'][_0x59831a(0x266)]){const _0x5e7ae2=_0xccc201[_0x59831a(0x27e)];if(!_0x5e7ae2)continue;const _0x23c2df=_0xccc201['timer'],_0x1e5641=_0x23c2df?_0x41a86e[_0x23c2df]:null;if(this[_0x59831a(0x163)]['has'](_0x5e7ae2)){if(_0x1e5641&&_0x1e5641[_0x59831a(0x20d)]==='active'){_0x2d6a7e=!![];break;}continue;}const _0x1921bc=_0x41a86e[_0x5e7ae2];if(_0x1921bc&&this['_isActive'](_0x1921bc)){_0x2d6a7e=!![];break;}if(_0x1e5641&&_0x1e5641[_0x59831a(0x20d)]==='active'){_0x2d6a7e=!![];break;}}this[_0x59831a(0x23f)]=_0x2d6a7e;if(_0x2d6a7e)this[_0x59831a(0x18a)]();else this['__stopTick']();}[_0x1a7b4c(0x25d)](_0x57429c,_0x1db13d){const _0x3c120f=_0x1a7b4c,_0x129417=_0x57429c?.[_0x3c120f(0x23a)];if(_0x129417&&this[_0x3c120f(0x14c)][_0x3c120f(0x1bf)](_0x129417)){const _0x40babc=Number(this['__durationOverrides'][_0x3c120f(0x228)](_0x129417));if(Number[_0x3c120f(0x250)](_0x40babc)&&_0x40babc>=0x0)return _0x40babc;}if(_0x57429c&&_0x57429c[_0x3c120f(0x24b)]!==undefined&&_0x57429c[_0x3c120f(0x24b)]!==null&&_0x57429c[_0x3c120f(0x24b)]!==''){const _0x1f6330=this[_0x3c120f(0x26c)](_0x57429c[_0x3c120f(0x24b)]);if(_0x1f6330>0x0)return _0x1f6330;}return this[_0x3c120f(0x26c)](_0x1db13d?.[_0x3c120f(0x20c)]?.[_0x3c120f(0x24b)]);}[_0x1a7b4c(0x193)](_0x398c18){const _0x3cc410=_0x1a7b4c,_0x4e805d=_0x398c18?.[_0x3cc410(0x23a)];if(_0x4e805d&&this[_0x3cc410(0x14c)][_0x3cc410(0x1bf)](_0x4e805d))return!![];if(_0x398c18?.[_0x3cc410(0x24b)]!==undefined&&_0x398c18[_0x3cc410(0x24b)]!==null&&_0x398c18['duration']!=='')return!![];return![];}[_0x1a7b4c(0x290)](_0x3dc982){const _0x125358=_0x1a7b4c;return!!(_0x3dc982&&this[_0x125358(0x14c)]['has'](_0x3dc982));}[_0x1a7b4c(0x17a)](_0x49ee14){const _0x37e28f=_0x1a7b4c,_0x3ac908=Math[_0x37e28f(0x19a)](0x0,Math[_0x37e28f(0x150)](Number(_0x49ee14)||0x0)),_0x2d2ce9=Math['floor'](_0x3ac908/0xe10),_0x22a9ba=Math[_0x37e28f(0x150)](_0x3ac908%0xe10/0x3c),_0x3ec08e=_0x3ac908%0x3c,_0xe57213=_0xf36f4f=>String(_0xf36f4f)[_0x37e28f(0x1d7)](0x2,'0');return _0xe57213(_0x2d2ce9)+':'+_0xe57213(_0x22a9ba)+':'+_0xe57213(_0x3ec08e);}[_0x1a7b4c(0x276)](_0x31c48d,_0x4c35bc,_0x7c4053){const _0x449746=_0x1a7b4c;if(!_0x4c35bc)return;const _0x4da3e1=Math[_0x449746(0x19a)](0x0,Math[_0x449746(0x150)](Number(_0x7c4053)||0x0));this[_0x449746(0x1ef)]={'open':!![],'timerEntity':_0x4c35bc,'h':Math[_0x449746(0x150)](_0x4da3e1/0xe10),'m':Math[_0x449746(0x150)](_0x4da3e1%0xe10/0x3c),'s':_0x4da3e1%0x3c,'hasOverride':this[_0x449746(0x290)](_0x4c35bc)};}['_closeDurationEditor'](){const _0x26cf9f=_0x1a7b4c;this[_0x26cf9f(0x1ef)]=null;}[_0x1a7b4c(0x217)](_0x57956b,_0x453a8b){const _0xbd74ab=_0x1a7b4c;if(!this[_0xbd74ab(0x1ef)])return;let _0x46b85b=parseInt(_0x453a8b,0xa);if(!Number['isFinite'](_0x46b85b)||_0x46b85b<0x0)_0x46b85b=0x0;if(_0x57956b==='m'||_0x57956b==='s')_0x46b85b=Math[_0xbd74ab(0x1d8)](_0x46b85b,0x3b);if(_0x57956b==='h')_0x46b85b=Math[_0xbd74ab(0x1d8)](_0x46b85b,0x63);this[_0xbd74ab(0x1ef)]={...this[_0xbd74ab(0x1ef)],[_0x57956b]:_0x46b85b};}[_0x1a7b4c(0x251)](){const _0x984575=_0x1a7b4c;if(!this[_0x984575(0x1ef)])return;const {timerEntity:_0x16876c,h:_0x196459,m:_0x278e26,s:_0x29c2f5}=this[_0x984575(0x1ef)],_0x230a31=_0x196459*0xe10+_0x278e26*0x3c+_0x29c2f5;_0x16876c&&_0x230a31>0x0&&(this[_0x984575(0x14c)][_0x984575(0x17e)](_0x16876c,_0x230a31),this['_saveDurationOverrides']()),this[_0x984575(0x1ef)]=null,this['__recomputeTickNeedAndApply']();}[_0x1a7b4c(0x248)](){const _0x2ec6f0=_0x1a7b4c;if(!this[_0x2ec6f0(0x1ef)])return;const {timerEntity:_0x5eb7d2}=this[_0x2ec6f0(0x1ef)];_0x5eb7d2&&this[_0x2ec6f0(0x14c)][_0x2ec6f0(0x1bf)](_0x5eb7d2)&&(this[_0x2ec6f0(0x14c)][_0x2ec6f0(0x1eb)](_0x5eb7d2),this[_0x2ec6f0(0x198)]()),this['_durationEditor']=null;}[_0x1a7b4c(0x1be)](_0x4c64ec,_0x30bcda){const _0x2cdd55=_0x1a7b4c;if(!this[_0x2cdd55(0x16f)]||!_0x4c64ec)return;const _0x1a05e2=_0x4c64ec[_0x2cdd55(0x24c)]('.')[0x0];let _0x162b76;switch(_0x1a05e2){case _0x2cdd55(0x229):_0x162b76=_0x30bcda==='on'?_0x2cdd55(0x25f):_0x2cdd55(0x194);break;case _0x2cdd55(0x24a):_0x162b76=_0x30bcda==='on'?_0x2cdd55(0x285):_0x2cdd55(0x1b4);break;case _0x2cdd55(0x215):_0x162b76=_0x30bcda==='on'?_0x2cdd55(0x215):_0x2cdd55(0x19f);break;default:_0x162b76=_0x30bcda==='on'?_0x2cdd55(0x1db):'turn_off';break;}this['hass']['callService'](_0x1a05e2,_0x162b76,{'entity_id':_0x4c64ec});}[_0x1a7b4c(0x22e)](_0x32c534){const _0xee469b=_0x1a7b4c;if(!_0x32c534)return![];const _0xccd901=_0x32c534[_0xee469b(0x18f)][_0xee469b(0x24c)]('.')[0x0],_0x1cbced=_0x32c534[_0xee469b(0x20d)];switch(_0xccd901){case _0xee469b(0x229):return _0x1cbced===_0xee469b(0x1c5);case _0xee469b(0x24a):return _0x1cbced===_0xee469b(0x1ad)||_0x1cbced===_0xee469b(0x23b);case _0xee469b(0x215):return _0x1cbced===_0xee469b(0x21d);case _0xee469b(0x203):return['playing',_0xee469b(0x172),'on'][_0xee469b(0x279)](_0x1cbced);default:return _0x1cbced==='on';}}[_0x1a7b4c(0x182)](){const _0x5ef005=_0x1a7b4c;if(!HaLitBase||!haHtml)return'';if(!this[_0x5ef005(0x16f)]||!this['_config'])return haHtml``;const _0x5662c1=Date[_0x5ef005(0x156)]();return haHtml`
       <ha-card>
-        ${this[_0x2f8b2b(0x170)][_0x2f8b2b(0x157)]?haHtml`<div class="card-header">${this['_config'][_0x2f8b2b(0x157)]}</div>`:''}
+        ${this['_config'][_0x5ef005(0x200)]?haHtml`<div class="card-header">${this[_0x5ef005(0x1f0)][_0x5ef005(0x200)]}</div>`:''}
         <div class="container">
-          ${this[_0x2f8b2b(0x170)][_0x2f8b2b(0x1bd)]&&this[_0x2f8b2b(0x170)][_0x2f8b2b(0x1bd)][_0x2f8b2b(0xe9)](_0x40001e=>this[_0x2f8b2b(0x1a1)](_0x40001e,_0x5055db))}
+          ${this[_0x5ef005(0x1f0)][_0x5ef005(0x266)]&&this['_config'][_0x5ef005(0x266)][_0x5ef005(0x269)](_0x127845=>this[_0x5ef005(0x288)](_0x127845,_0x5662c1))}
         </div>
       </ha-card>
-      ${this[_0x2f8b2b(0x16b)]()}
-      ${this[_0x2f8b2b(0x138)]()}
-    `;}[_0x4f5e72(0x138)](){const _0x4a3bde=_0x4f5e72;if(!this[_0x4a3bde(0x194)])return'';const _0x108174=this[_0x4a3bde(0x170)]?.[_0x4a3bde(0x1bb)]||{};return haHtml`
-      <div class="stbc-modal" @click=${()=>this[_0x4a3bde(0x12d)]()}>
-        <div class="stbc-modal-card" @click=${_0xf70104=>_0xf70104[_0x4a3bde(0xc4)]()}>
+      ${this[_0x5ef005(0x255)]()}
+      ${this[_0x5ef005(0x280)]()}
+    `;}[_0x1a7b4c(0x280)](){const _0x4a5ec2=_0x1a7b4c;if(!this[_0x4a5ec2(0x232)])return'';const _0x1c7a18=this[_0x4a5ec2(0x1f0)]?.['labels']||{};return haHtml`
+      <div class="stbc-modal" @click=${()=>this[_0x4a5ec2(0x243)]()}>
+        <div class="stbc-modal-card" @click=${_0xa521d8=>_0xa521d8[_0x4a5ec2(0x149)]()}>
           <div class="confirm-callout">
             <ha-icon icon="mdi:alert-outline"></ha-icon>
-            <span>${_0x108174[_0x4a3bde(0x1ab)]||'This\x20timer\x20switches\x20the\x20device\x20off\x20from\x20your\x20browser.\x20If\x20no\x20dashboard\x20is\x20open\x20when\x20the\x20timer\x20ends,\x20the\x20device\x20won\x27t\x20turn\x20off.\x20For\x20unattended\x20use,\x20enable\x20“Automation\x20Link”\x20for\x20this\x20entity\x20and\x20let\x20a\x20Home\x20Assistant\x20automation\x20handle\x20the\x20switch-off.'}</span>
+            <span>${_0x1c7a18[_0x4a5ec2(0x26d)]||_0x4a5ec2(0x231)}</span>
           </div>
           <div class="duration-actions">
             <button
               class="dlg-btn dlg-btn-text"
-              @click=${()=>this[_0x4a3bde(0x12d)]()}
-            >${_0x108174[_0x4a3bde(0x163)]||_0x4a3bde(0x164)}</button>
+              @click=${()=>this[_0x4a5ec2(0x243)]()}
+            >${_0x1c7a18['start_confirm_cancel']||_0x4a5ec2(0x188)}</button>
             <button
               class="dlg-btn dlg-btn-primary"
-              @click=${()=>this['_confirmStart']()}
-            >${_0x108174[_0x4a3bde(0x15e)]||'Start\x20anyway'}</button>
+              @click=${()=>this[_0x4a5ec2(0x261)]()}
+            >${_0x1c7a18[_0x4a5ec2(0x171)]||_0x4a5ec2(0x284)}</button>
           </div>
         </div>
       </div>
-    `;}[_0x4f5e72(0x16b)](){const _0x1003c6=_0x4f5e72;if(!this[_0x1003c6(0x16a)]||!this['_durationEditor'][_0x1003c6(0x15c)])return'';const _0x449505=this[_0x1003c6(0x170)]?.[_0x1003c6(0x1bb)]||{},_0x21a27a=this[_0x1003c6(0x16a)];return haHtml`
+    `;}['_renderDurationDialog'](){const _0x8e7cf=_0x1a7b4c;if(!this['_durationEditor']||!this['_durationEditor'][_0x8e7cf(0x1ad)])return'';const _0xaefa5c=this[_0x8e7cf(0x1f0)]?.['labels']||{},_0x34f377=this['_durationEditor'];return haHtml`
       <ha-dialog
         open
         hideActions
-        heading="${_0x449505[_0x1003c6(0x1aa)]||'Set\x20duration'}"
-        @closed=${()=>this[_0x1003c6(0x177)]()}
+        heading="${_0xaefa5c['edit_duration_title']||'Set\x20duration'}"
+        @closed=${()=>this[_0x8e7cf(0x186)]()}
       >
         <div class="duration-dialog-body">
           <div class="duration-fields">
             <label class="duration-field">
-              <span class="duration-field-label">${_0x449505[_0x1003c6(0x127)]||_0x1003c6(0x1a8)}</span>
+              <span class="duration-field-label">${_0xaefa5c[_0x8e7cf(0x22d)]||'Hours'}</span>
               <input
                 type="number"
                 min="0"
                 max="99"
                 inputmode="numeric"
-                .value=${String(_0x21a27a['h'])}
-                @input=${_0x1c29c2=>this[_0x1003c6(0x1ac)]('h',_0x1c29c2[_0x1003c6(0x115)]['value'])}
+                .value=${String(_0x34f377['h'])}
+                @input=${_0x72cf14=>this[_0x8e7cf(0x217)]('h',_0x72cf14[_0x8e7cf(0x256)]['value'])}
               />
             </label>
             <span class="duration-sep">:</span>
             <label class="duration-field">
-              <span class="duration-field-label">${_0x449505[_0x1003c6(0x172)]||'Minutes'}</span>
+              <span class="duration-field-label">${_0xaefa5c[_0x8e7cf(0x209)]||_0x8e7cf(0x1ea)}</span>
               <input
                 type="number"
                 min="0"
                 max="59"
                 inputmode="numeric"
-                .value=${String(_0x21a27a['m'])}
-                @input=${_0x831df1=>this[_0x1003c6(0x1ac)]('m',_0x831df1['target'][_0x1003c6(0x17f)])}
+                .value=${String(_0x34f377['m'])}
+                @input=${_0x13d116=>this[_0x8e7cf(0x217)]('m',_0x13d116[_0x8e7cf(0x256)][_0x8e7cf(0x1b8)])}
               />
             </label>
             <span class="duration-sep">:</span>
             <label class="duration-field">
-              <span class="duration-field-label">${_0x449505[_0x1003c6(0x1b7)]||_0x1003c6(0xf3)}</span>
+              <span class="duration-field-label">${_0xaefa5c[_0x8e7cf(0x1d5)]||_0x8e7cf(0x1cb)}</span>
               <input
                 type="number"
                 min="0"
                 max="59"
                 inputmode="numeric"
-                .value=${String(_0x21a27a['s'])}
-                @input=${_0x52586f=>this['_onDurationFieldChange']('s',_0x52586f[_0x1003c6(0x115)][_0x1003c6(0x17f)])}
+                .value=${String(_0x34f377['s'])}
+                @input=${_0x1f5974=>this[_0x8e7cf(0x217)]('s',_0x1f5974[_0x8e7cf(0x256)][_0x8e7cf(0x1b8)])}
               />
             </label>
           </div>
           <div class="duration-actions">
             <button
               class="dlg-btn dlg-btn-text"
-              @click=${()=>this[_0x1003c6(0x177)]()}
-            >${_0x449505[_0x1003c6(0x19d)]||_0x1003c6(0x164)}</button>
-            ${_0x21a27a[_0x1003c6(0x16e)]?haHtml`<button
+              @click=${()=>this[_0x8e7cf(0x186)]()}
+            >${_0xaefa5c[_0x8e7cf(0x18d)]||_0x8e7cf(0x188)}</button>
+            ${_0x34f377['hasOverride']?haHtml`<button
                   class="dlg-btn dlg-btn-text dlg-btn-reset"
-                  @click=${()=>this[_0x1003c6(0x162)]()}
-                >${_0x449505['edit_duration_reset']||_0x1003c6(0xb7)}</button>`:''}
+                  @click=${()=>this['_resetDurationOverride']()}
+                >${_0xaefa5c[_0x8e7cf(0x21e)]||_0x8e7cf(0x1a2)}</button>`:''}
             <button
               class="dlg-btn dlg-btn-primary"
-              @click=${()=>this[_0x1003c6(0x1ce)]()}
-            >${_0x449505[_0x1003c6(0x8d)]||'Apply'}</button>
+              @click=${()=>this[_0x8e7cf(0x251)]()}
+            >${_0xaefa5c['edit_duration_apply']||_0x8e7cf(0x142)}</button>
           </div>
         </div>
       </ha-dialog>
-    `;}['renderEntity'](_0x2843fa,_0x3b58db){const _0x5d5435=_0x4f5e72,_0x57d5da=_0x2843fa[_0x5d5435(0x189)],_0x31634f=_0x2843fa[_0x5d5435(0x1d1)],_0x19a5ea=_0x2843fa[_0x5d5435(0xbf)],_0x1acd5a=_0x2843fa[_0x5d5435(0xa2)];if(!_0x57d5da)return haHtml`<div class="warning">Entity 'switch' is not defined.</div>`;const _0x4ef6c8=this[_0x5d5435(0xa3)][_0x5d5435(0x1b0)]||{},_0x5899f4=_0x4ef6c8[_0x57d5da],_0x5cba9d=_0x31634f?_0x4ef6c8[_0x31634f]:undefined,_0x35e8c6=_0x19a5ea?_0x4ef6c8[_0x19a5ea]:undefined,_0x12d801=_0x1acd5a?_0x4ef6c8[_0x1acd5a]:undefined;if(!_0x5899f4)return haHtml`<div class="warning">Entity not found: ${_0x57d5da}</div>`;const _0x4ed12d=this[_0x5d5435(0xdd)](_0x5899f4),_0x2b55e9=[_0x5d5435(0x1ad),_0x5d5435(0x183)]['includes'](_0x5899f4['state']),_0x15bfe3=_0x2843fa[_0x5d5435(0x179)]||this[_0x5d5435(0x170)][_0x5d5435(0x179)],_0x49b4cc=this[_0x5d5435(0x146)][_0x5d5435(0x1d5)](_0x57d5da),_0x2d2c57=_0x49b4cc&&_0x5cba9d?_0x5cba9d['state']===_0x5d5435(0x15d):_0x4ed12d,_0x2f4efa={...this[_0x5d5435(0x170)]['colors'],..._0x2843fa[_0x5d5435(0xa7)]||{}},_0x322255={...this['_config'][_0x5d5435(0xf0)],..._0x2843fa[_0x5d5435(0xf0)]||{}},_0x3f77b2={...this[_0x5d5435(0x170)][_0x5d5435(0x1bb)],..._0x2843fa[_0x5d5435(0x1bb)]||{}},_0xe36585=this[_0x5d5435(0x12c)](_0x5cba9d?.[_0x5d5435(0xc1)]?.['duration']),_0x31ca7a=_0x5cba9d?.[_0x5d5435(0xfc)]===_0x5d5435(0x15d),_0x2a12f7=_0x31ca7a?_0xe36585:this[_0x5d5435(0xe4)](_0x2843fa,_0x5cba9d),_0x17b8f7=_0x2843fa[_0x5d5435(0xe1)]!==undefined?!!_0x2843fa[_0x5d5435(0xe1)]:!!this[_0x5d5435(0x170)]['editable_duration'],_0x3c394c=_0x17b8f7&&!!_0x31634f&&!_0x2d2c57;let _0x2e1202=0x0;if(_0x4ed12d){const _0x3394a5=Date[_0x5d5435(0xb2)](_0x5899f4[_0x5d5435(0x16c)]);!Number[_0x5d5435(0x197)](_0x3394a5)&&(_0x2e1202=Math[_0x5d5435(0x1d4)]((_0x3b58db-_0x3394a5)/0x3e8,0x708));}let _0x3bcab1=0x0;if(_0x5cba9d?.[_0x5d5435(0xfc)]===_0x5d5435(0x15d)&&_0x2a12f7>0x0){const _0x3e1319=Date[_0x5d5435(0xb2)](_0x5cba9d[_0x5d5435(0x16c)]),_0x25b89f=(Number[_0x5d5435(0x197)](_0x3e1319)?_0x3b58db:_0x3e1319)+_0x2a12f7*0x3e8,_0x216080=Math[_0x5d5435(0x18a)](0x0,(_0x25b89f-_0x3b58db)/0x3e8);_0x3bcab1=Math['max'](0x0,_0x2a12f7-_0x216080);}else _0x2d2c57&&(_0x3bcab1=_0x2e1202);const _0x2c9512=this[_0x5d5435(0xb3)](_0x3bcab1,_0x2a12f7);let _0x2ea841=_0x5d5435(0x151)+_0x2f4efa[_0x5d5435(0xb5)]+';';if(_0x2b55e9)_0x2ea841=_0x5d5435(0x151)+_0x2f4efa[_0x5d5435(0x1ad)]+';';else{if(_0x2d2c57)_0x2ea841=_0x5d5435(0x151)+_0x2f4efa['on']+';';}const _0x4a6083=_0x5d5435(0x151)+_0x2f4efa[_0x5d5435(0x1b8)]+';',_0x7918a1='background-color:\x20'+_0x2f4efa[_0x5d5435(0x1ae)]+';',_0x1b1824=_0x5d5435(0x186)+_0x2f4efa[_0x5d5435(0xc3)]+';',_0x549a0f=haHtml`
+    `;}[_0x1a7b4c(0x288)](_0x184127,_0x57c7b2){const _0x53993a=_0x1a7b4c,_0xfec74f=_0x184127[_0x53993a(0x27e)],_0x1c3793=_0x184127[_0x53993a(0x23a)],_0x49bf4a=_0x184127['sensor'],_0x231e58=_0x184127['battery'];if(!_0xfec74f)return haHtml`<div class="warning">Entity 'switch' is not defined.</div>`;const _0x245130=this[_0x53993a(0x16f)][_0x53993a(0x162)]||{},_0x59a766=_0x245130[_0xfec74f],_0x492494=_0x1c3793?_0x245130[_0x1c3793]:undefined,_0x3c1ec1=_0x49bf4a?_0x245130[_0x49bf4a]:undefined;let _0x1a9b60;if(typeof _0x231e58===_0x53993a(0x20b)&&_0x245130[_0x231e58])_0x1a9b60=_0x245130[_0x231e58];else _0x231e58!==undefined&&_0x231e58!==null&&_0x231e58!==''&&Number[_0x53993a(0x250)](Number(_0x231e58))?_0x1a9b60={'state':String(Number(_0x231e58)),'attributes':{'unit_of_measurement':'%'}}:_0x1a9b60=undefined;if(!_0x59a766)return haHtml`<div class="warning">Entity not found: ${_0xfec74f}</div>`;const _0x1b02b0=this[_0x53993a(0x22e)](_0x59a766),_0x1f51f6=['unavailable',_0x53993a(0x1b3)]['includes'](_0x59a766[_0x53993a(0x20d)]),_0x9ee651=_0x184127[_0x53993a(0x294)]||this[_0x53993a(0x1f0)][_0x53993a(0x294)],_0x29eec5=this[_0x53993a(0x163)][_0x53993a(0x1bf)](_0xfec74f),_0x20b754=_0x29eec5&&_0x492494?_0x492494[_0x53993a(0x20d)]===_0x53993a(0x240):_0x1b02b0,_0x2293af={...this[_0x53993a(0x1f0)][_0x53993a(0x20e)],..._0x184127[_0x53993a(0x20e)]||{}},_0x32c331={...this[_0x53993a(0x1f0)][_0x53993a(0x1e0)],..._0x184127[_0x53993a(0x1e0)]||{}},_0x44f3c9={...this[_0x53993a(0x1f0)]['labels'],..._0x184127[_0x53993a(0x174)]||{}},_0x447861=this[_0x53993a(0x26c)](_0x492494?.['attributes']?.['duration']),_0x1aef7a=_0x492494?.[_0x53993a(0x20d)]==='active',_0xd5200e=_0x1aef7a?_0x447861:this[_0x53993a(0x25d)](_0x184127,_0x492494),_0xfbffd1=_0x184127['editable_duration']!==undefined?!!_0x184127[_0x53993a(0x178)]:!!this[_0x53993a(0x1f0)]['editable_duration'],_0x518631=_0xfbffd1&&!!_0x1c3793&&!_0x20b754;let _0x51a46a=0x0;if(_0x1b02b0){const _0x4991c5=Date[_0x53993a(0x196)](_0x59a766[_0x53993a(0x1e7)]);!Number['isNaN'](_0x4991c5)&&(_0x51a46a=Math[_0x53993a(0x1d8)]((_0x57c7b2-_0x4991c5)/0x3e8,0x708));}let _0x4685fb=0x0;if(_0x492494?.[_0x53993a(0x20d)]===_0x53993a(0x240)&&_0xd5200e>0x0){const _0xb5d07f=Date[_0x53993a(0x196)](_0x492494[_0x53993a(0x1e7)]),_0x3c65eb=(Number[_0x53993a(0x27b)](_0xb5d07f)?_0x57c7b2:_0xb5d07f)+_0xd5200e*0x3e8,_0x5438b9=Math[_0x53993a(0x19a)](0x0,(_0x3c65eb-_0x57c7b2)/0x3e8);_0x4685fb=Math[_0x53993a(0x19a)](0x0,_0xd5200e-_0x5438b9);}else _0x20b754&&(_0x4685fb=_0x51a46a);const _0x4a0787=this['calculateActivePercent'](_0x4685fb,_0xd5200e);let _0x5c3179=_0x53993a(0x1ce)+_0x2293af['ready']+';';if(_0x1f51f6)_0x5c3179=_0x53993a(0x1ce)+_0x2293af[_0x53993a(0x179)]+';';else{if(_0x20b754)_0x5c3179=_0x53993a(0x1ce)+_0x2293af['on']+';';}const _0x4e150a=_0x53993a(0x1ce)+_0x2293af[_0x53993a(0x262)]+';',_0xb2ab38='background-color:\x20'+_0x2293af[_0x53993a(0x167)]+';',_0x1a6cd8=_0x53993a(0x15c)+_0x2293af[_0x53993a(0x143)]+';',_0x58f8f5=haHtml`
       <div class="timer-controls">
-        ${!_0x2d2c57&&_0x31634f?haHtml`<button
+        ${!_0x20b754&&_0x1c3793?haHtml`<button
               class="control-btn start"
-              style="${_0x4a6083}"
-              @click=${()=>this['_handleStart'](_0x31634f,_0x57d5da,_0x2843fa,_0x2a12f7)}
+              style="${_0x4e150a}"
+              @click=${()=>this[_0x53993a(0x1a4)](_0x1c3793,_0xfec74f,_0x184127,_0xd5200e)}
             >
-              <ha-icon icon="${_0x322255['start']}" style="${_0x1b1824}"></ha-icon>
+              <ha-icon icon="${_0x32c331[_0x53993a(0x19c)]}" style="${_0x1a6cd8}"></ha-icon>
             </button>`:''}
-        ${_0x2d2c57&&_0x31634f?haHtml`<button
+        ${_0x20b754&&_0x1c3793?haHtml`<button
               class="control-btn stop"
-              style="${_0x7918a1}"
-              @click=${()=>this[_0x5d5435(0xda)](_0x31634f,_0x57d5da,_0x2843fa)}
+              style="${_0xb2ab38}"
+              @click=${()=>this[_0x53993a(0x144)](_0x1c3793,_0xfec74f,_0x184127)}
             >
-              <ha-icon icon="${_0x322255[_0x5d5435(0xaa)]}" style="${_0x1b1824}"></ha-icon>
+              <ha-icon icon="${_0x32c331['stop']}" style="${_0x1a6cd8}"></ha-icon>
             </button>`:''}
       </div>
-    `,_0xd7adbc=this[_0x5d5435(0x103)](_0x3bcab1,_0x3f77b2)+'\x20/\x20'+this[_0x5d5435(0x103)](_0x2a12f7,_0x3f77b2),_0x133f98=_0x3c394c?haHtml`<span
+    `,_0x30e521=this[_0x53993a(0x1e8)](_0x4685fb,_0x44f3c9)+_0x53993a(0x1a6)+this[_0x53993a(0x1e8)](_0xd5200e,_0x44f3c9),_0x498a3a=_0x518631?haHtml`<span
           class="duration-editable"
-          title="${_0x3f77b2[_0x5d5435(0xbc)]}"
-          @click=${()=>this[_0x5d5435(0x171)](_0x2843fa,_0x31634f,_0x2a12f7)}
+          title="${_0x44f3c9[_0x53993a(0x24f)]}"
+          @click=${()=>this['_openDurationEditor'](_0x184127,_0x1c3793,_0xd5200e)}
         >
-          ${_0xd7adbc}
+          ${_0x30e521}
           <ha-icon icon="mdi:pencil" class="edit-icon"></ha-icon>
-        </span>`:haHtml`<span>${_0xd7adbc}</span>`;return haHtml`
+        </span>`:haHtml`<span>${_0x30e521}</span>`;return haHtml`
       <div class="entity-card">
         <div class="header">
-          <div class="title" style="${_0x2d2c57?_0x5d5435(0x186)+_0x2f4efa['on']:''}">
-            ${_0x2843fa[_0x5d5435(0x1b3)]||_0x5899f4['attributes'][_0x5d5435(0x132)]||_0x57d5da}
-            ${this[_0x5d5435(0x174)](_0x12d801)}
+          <div class="title" style="${_0x20b754?_0x53993a(0x15c)+_0x2293af['on']:''}">
+            ${_0x184127[_0x53993a(0x1dd)]||_0x59a766[_0x53993a(0x20c)]['friendly_name']||_0xfec74f}
+            ${this[_0x53993a(0x1c4)](_0x1a9b60)}
           </div>
-          <div class="status" style="${_0x2ea841}">
-            ${this[_0x5d5435(0xcb)](_0x5899f4,_0x5cba9d,_0x3f77b2,_0x2d2c57)}
+          <div class="status" style="${_0x5c3179}">
+            ${this[_0x53993a(0x1d0)](_0x59a766,_0x492494,_0x44f3c9,_0x20b754)}
           </div>
         </div>
 
-        <div class="control-wrapper ${_0x15bfe3}">
-          ${_0x15bfe3===_0x5d5435(0xa5)?_0x549a0f:''}
+        <div class="control-wrapper ${_0x9ee651}">
+          ${_0x9ee651===_0x53993a(0x1a7)?_0x58f8f5:''}
           <div class="timeline-container">
             <div class="progress-bar">
               <div
                 class="progress-fill"
-                style="width: ${_0x2c9512}%; background-color: ${_0x2f4efa['progress_fill']};"
+                style="width: ${_0x4a0787}%; background-color: ${_0x2293af[_0x53993a(0x274)]};"
               ></div>
             </div>
             <div class="time-info">
-              <span>${this[_0x5d5435(0xee)](_0x35e8c6,_0x5899f4,_0x3f77b2,_0x3b58db,_0x2d2c57)}</span>
-              ${_0x133f98}
+              <span>${this[_0x53993a(0x267)](_0x3c1ec1,_0x59a766,_0x44f3c9,_0x57c7b2,_0x20b754)}</span>
+              ${_0x498a3a}
             </div>
           </div>
-          ${_0x15bfe3===_0x5d5435(0x1a6)?_0x549a0f:''}
+          ${_0x9ee651===_0x53993a(0x15a)?_0x58f8f5:''}
         </div>
       </div>
-    `;}async['_handleStart'](_0x4038e9,_0x30d84c,_0x53fbf8,_0x1e7343){const _0x3771fc=_0x4f5e72,_0x30112c=!_0x53fbf8?.[_0x3771fc(0x109)]&&_0x4038e9;if(_0x30112c){this[_0x3771fc(0x194)]={'timerEntity':_0x4038e9,'controllableEntity':_0x30d84c,'entityConfig':_0x53fbf8,'totalDuration':_0x1e7343};return;}this[_0x3771fc(0xd8)](_0x4038e9,_0x30d84c,_0x53fbf8,_0x1e7343);}[_0x4f5e72(0x11e)](){const _0x1f486c=_0x4f5e72,_0x157b41=this[_0x1f486c(0x194)];this[_0x1f486c(0x194)]=null;if(!_0x157b41)return;this['_performStart'](_0x157b41['timerEntity'],_0x157b41[_0x1f486c(0x11b)],_0x157b41[_0x1f486c(0x11d)],_0x157b41[_0x1f486c(0xc9)]);}['_cancelStart'](){this['_startConfirm']=null;}[_0x4f5e72(0xd8)](_0x236ca4,_0x141f79,_0x57cd59,_0xbaee94){const _0xf6a216=_0x4f5e72;if(!_0x57cd59[_0xf6a216(0x109)])this[_0xf6a216(0xa6)](_0x141f79,'on');if(!_0x57cd59['timer_and_entity_connected_via_automation']&&_0x236ca4&&_0x141f79){const _0x23c585=Number['isFinite'](_0xbaee94)&&_0xbaee94>0x0?Date['now']()+_0xbaee94*0x3e8:null;this[_0xf6a216(0xa0)](_0x236ca4,_0x141f79,_0x23c585);}const _0x2c92e0={'entity_id':_0x236ca4};this['_hasAnyDurationOverride'](_0x57cd59)&&Number[_0xf6a216(0x14f)](_0xbaee94)&&_0xbaee94>0x0&&(_0x2c92e0[_0xf6a216(0xd9)]=this[_0xf6a216(0xdc)](_0xbaee94)),this['hass'][_0xf6a216(0x14e)](_0xf6a216(0x1d1),_0xf6a216(0xb1),_0x2c92e0);}async[_0x4f5e72(0xda)](_0x157bd3,_0x1d4e2c,_0x65a8ae){const _0x2bbef9=_0x4f5e72;this[_0x2bbef9(0x1c3)](_0x157bd3);if(_0x157bd3)await this[_0x2bbef9(0xa3)][_0x2bbef9(0x14e)](_0x2bbef9(0x1d1),_0x2bbef9(0x13a),{'entity_id':_0x157bd3});if(!_0x1d4e2c)return;if(_0x65a8ae?.[_0x2bbef9(0x109)])return;if(this[_0x2bbef9(0x146)][_0x2bbef9(0x1d5)](_0x1d4e2c)){const _0x3f3357=this[_0x2bbef9(0x170)]?.[_0x2bbef9(0x1bd)]?.[_0x2bbef9(0xd0)](_0x2c4e6d=>_0x2c4e6d['switch']===_0x1d4e2c&&_0x2c4e6d[_0x2bbef9(0x1d1)]&&_0x2c4e6d[_0x2bbef9(0x1d1)]!==_0x157bd3&&this['hass'][_0x2bbef9(0x1b0)]?.[_0x2c4e6d[_0x2bbef9(0x1d1)]]?.['state']===_0x2bbef9(0x15d));if(_0x3f3357)return;}this[_0x2bbef9(0xa6)](_0x1d4e2c,'off');}[_0x4f5e72(0x12c)](_0x213d19){const _0x28a812=_0x4f5e72;if(!_0x213d19)return 0x0;if(typeof _0x213d19===_0x28a812(0x19c)&&_0x213d19[_0x28a812(0x10b)](':')){const _0x29bcb5=_0x213d19[_0x28a812(0x1d3)](':');if(_0x29bcb5['length']===0x3){const _0x12f03a=parseInt(_0x29bcb5[0x0],0xa),_0x473b48=parseInt(_0x29bcb5[0x1],0xa),_0x5280d1=parseInt(_0x29bcb5[0x2],0xa);return(Number[_0x28a812(0x197)](_0x12f03a)?0x0:_0x12f03a)*0xe10+(Number[_0x28a812(0x197)](_0x473b48)?0x0:_0x473b48)*0x3c+(Number[_0x28a812(0x197)](_0x5280d1)?0x0:_0x5280d1);}}const _0x520ab0=typeof _0x213d19===_0x28a812(0xfb)?_0x213d19:parseFloat(_0x213d19);return Number[_0x28a812(0x14f)](_0x520ab0)?_0x520ab0:0x0;}['calculateActivePercent'](_0x36c451,_0x37c257){const _0x101db0=_0x4f5e72;if(!(_0x37c257>0x0))return 0x0;const _0x2920ec=_0x36c451/_0x37c257*0x64;return Math[_0x101db0(0x1d4)](0x64,Math['max'](0x0,_0x2920ec));}[_0x4f5e72(0x103)](_0x34d1fb,_0x2686f0){const _0xc866e7=_0x4f5e72,_0x1fc163=Number(_0x34d1fb);if(!Number['isFinite'](_0x1fc163)||_0x1fc163<=0x0)return _0x2686f0['time_format_zero'];const _0x4dc791=Math[_0xc866e7(0x160)](_0x1fc163/0x3c),_0x1dd5b3=Math[_0xc866e7(0x160)](_0x1fc163%0x3c);return''+_0x4dc791+_0x2686f0['time_unit_minutes']+'\x20'+String(_0x1dd5b3)[_0xc866e7(0x9c)](0x2,'0')+_0x2686f0[_0xc866e7(0x140)];}[_0x4f5e72(0x174)](_0xb857a7){const _0x730d4c=_0x4f5e72;if(!_0xb857a7)return'';const _0xa74b6a=_0xb857a7[_0x730d4c(0xfc)];if(_0xa74b6a==null||[_0x730d4c(0x1ad),_0x730d4c(0x183),'']['includes'](String(_0xa74b6a)))return'';const _0x304e14=Number(_0xa74b6a),_0x20e260=Number[_0x730d4c(0x14f)](_0x304e14),_0x468d81=_0xb857a7['attributes']?.['unit_of_measurement']||(_0x20e260?'%':''),_0x421d88=_0x20e260?''+Math[_0x730d4c(0x112)](_0x304e14)+_0x468d81:''+_0xa74b6a+(_0x468d81?'\x20'+_0x468d81:''),_0x453a8c=_0xb857a7['attributes']||{},_0x53c134=_0x453a8c['is_charging']===!![]||_0x453a8c[_0x730d4c(0xb6)]===!![]||[_0x730d4c(0xb6),'on'][_0x730d4c(0x10b)](String(_0x453a8c['battery_state']??'')['toLowerCase']());let _0x537cc2=_0x730d4c(0xbd);if(_0x20e260){const _0x5b2918=Math[_0x730d4c(0x18a)](0x0,Math[_0x730d4c(0x1d4)](0x64,_0x304e14)),_0x428a48=Math[_0x730d4c(0x112)](_0x5b2918/0xa)*0xa;_0x53c134?_0x537cc2=_0x428a48<=0x0?'mdi:battery-charging-outline':_0x428a48>=0x64?_0x730d4c(0xf5):_0x730d4c(0x12f)+_0x428a48:_0x537cc2=_0x428a48<=0x0?_0x730d4c(0x125):_0x428a48>=0x64?_0x730d4c(0xbd):_0x730d4c(0xaf)+_0x428a48;}return haHtml`<span class="battery"><ha-icon icon="${_0x537cc2}"></ha-icon>${_0x421d88}</span>`;}[_0x4f5e72(0xcb)](_0x168465,_0x3792ca,_0xb88d6c,_0x2c3226){const _0x41b20d=_0x4f5e72;if(!_0x168465)return _0xb88d6c['status_unavailable'];if([_0x41b20d(0x1ad),_0x41b20d(0x183)][_0x41b20d(0x10b)](_0x168465['state']))return _0xb88d6c[_0x41b20d(0x8f)];const _0xb5d06c=_0x2c3226!==undefined?_0x2c3226:this[_0x41b20d(0xdd)](_0x168465);if(_0xb5d06c)return _0xb88d6c[_0x41b20d(0x143)];return _0xb88d6c[_0x41b20d(0xa1)];}[_0x4f5e72(0xee)](_0x16abbd,_0x1cee08,_0x47dcfd,_0x5a4cbd,_0x24ac10){const _0x4dd2db=_0x4f5e72,_0x3107f1=_0x24ac10!==undefined?_0x24ac10:this[_0x4dd2db(0xdd)](_0x1cee08);if(_0x3107f1)return _0x47dcfd[_0x4dd2db(0xde)];if(!_0x16abbd||!_0x16abbd[_0x4dd2db(0xfc)])return'';const _0x24eeb5=Date['parse'](_0x16abbd['state']);if(Number[_0x4dd2db(0x197)](_0x24eeb5))return _0x16abbd[_0x4dd2db(0xfc)];const _0x35e6d5=Math['floor']((_0x5a4cbd-_0x24eeb5)/0x3e8),_0x4b5ed2=Math[_0x4dd2db(0x160)](_0x35e6d5/0x3c),_0x4d3bc3=Math[_0x4dd2db(0x160)](_0x4b5ed2/0x3c),_0x321e3b=Math[_0x4dd2db(0x160)](_0x4d3bc3/0x18);if(_0x35e6d5<0x3c)return _0x47dcfd['last_on_now'];if(_0x4b5ed2<0x3c)return _0x4b5ed2+'\x20'+_0x47dcfd['last_on_ago_minutes'];if(_0x4d3bc3<0x18)return _0x4d3bc3+'\x20'+_0x47dcfd[_0x4dd2db(0x14d)];return _0x321e3b+'\x20'+_0x47dcfd['last_on_ago_days'];}}customElements[_0x4f5e72(0x142)](_0x4f5e72(0xab),SwitchAndTimerBarCard);class SwitchAndTimerBarCardEditor extends HaLitBase{static get[_0x4f5e72(0xf2)](){return{'hass':{},'_config':{'state':!![]},'_expanded':{'state':!![]},'_dragOverIndex':{'state':!![]},'_showSensorHelp':{'state':!![]},'_mainTab':{'state':!![]},'_entityTabs':{'state':!![]}};}constructor(){const _0x5d1485=_0x4f5e72;super(),this[_0x5d1485(0x1af)]=new Map(),this[_0x5d1485(0x92)]=null,this[_0x5d1485(0x13b)]={'global_overrides':![],'entities':![]},this[_0x5d1485(0x19b)]=null,this[_0x5d1485(0x114)]=null,this[_0x5d1485(0x178)]=![],this[_0x5d1485(0x1b9)]='general',this['_entityTabs']={},this['_openSensorHelp']=_0x2cb1ca=>{const _0x4062d5=_0x5d1485;if(_0x2cb1ca)_0x2cb1ca[_0x4062d5(0xc4)]();this[_0x4062d5(0x178)]=!![];},this[_0x5d1485(0x99)]=()=>{const _0x356d37=_0x5d1485;this[_0x356d37(0x178)]=![];};}[_0x4f5e72(0xfa)](_0x5d9901){const _0x9e36c4=_0x4f5e72,_0x4882e6=JSON[_0x9e36c4(0xb2)](JSON[_0x9e36c4(0x9d)](_0x5d9901||{}));if(!Array[_0x9e36c4(0xc7)](_0x4882e6[_0x9e36c4(0x1bd)]))_0x4882e6[_0x9e36c4(0x1bd)]=[];_0x4882e6[_0x9e36c4(0xa7)]=_0x4882e6[_0x9e36c4(0xa7)]||{},_0x4882e6[_0x9e36c4(0xf0)]=_0x4882e6[_0x9e36c4(0xf0)]||{},_0x4882e6[_0x9e36c4(0x1bb)]=_0x4882e6[_0x9e36c4(0x1bb)]||{},_0x4882e6[_0x9e36c4(0x1bd)][_0x9e36c4(0x15a)]((_0x289466,_0x4fd773)=>{const _0x171476=_0x9e36c4;if(this[_0x171476(0x13b)][_0x171476(0xad)+_0x4fd773]===undefined)this[_0x171476(0x13b)][_0x171476(0xad)+_0x4fd773]=![];}),this[_0x9e36c4(0x170)]=_0x4882e6;}['shouldUpdate'](_0x24e6a2){const _0x5e6c46=_0x4f5e72;if(_0x24e6a2[_0x5e6c46(0x1d5)](_0x5e6c46(0x170))||_0x24e6a2[_0x5e6c46(0x1d5)](_0x5e6c46(0x13b))||_0x24e6a2[_0x5e6c46(0x1d5)](_0x5e6c46(0x19b))||_0x24e6a2[_0x5e6c46(0x1d5)](_0x5e6c46(0x178))||_0x24e6a2[_0x5e6c46(0x1d5)](_0x5e6c46(0x1b9))||_0x24e6a2[_0x5e6c46(0x1d5)](_0x5e6c46(0x1a4)))return!![];if(_0x24e6a2[_0x5e6c46(0x1d5)](_0x5e6c46(0xa3))){const _0x40b357=this[_0x5e6c46(0x116)](this[_0x5e6c46(0xa3)]);if(_0x40b357!==this[_0x5e6c46(0x92)])return this['__lastEntitySig']=_0x40b357,this[_0x5e6c46(0x1af)][_0x5e6c46(0x165)](),!![];return![];}return!![];}[_0x4f5e72(0x116)](_0x2e7e27){const _0x17ea13=_0x4f5e72,_0x55731e=_0x2e7e27?.[_0x17ea13(0x1b0)]||{};let _0x14c5e8=0x0;for(const _0x261f72 in _0x55731e)_0x14c5e8++;return''+_0x14c5e8;}[_0x4f5e72(0xb9)](_0x1c0cd9){const _0x5aa717=_0x4f5e72,_0x4114b1=SwitchAndTimerBarCard[_0x5aa717(0x8c)],_0xf4594a=JSON['parse'](JSON[_0x5aa717(0x9d)](_0x1c0cd9||{}));for(const _0x42dddb of[_0x5aa717(0x1bb),'colors',_0x5aa717(0xf0)]){const _0x25d9ad=_0x4114b1[_0x42dddb],_0x131c7a=_0xf4594a[_0x42dddb];if(_0x131c7a&&typeof _0x131c7a===_0x5aa717(0x1b5)&&!Array['isArray'](_0x131c7a)&&_0x25d9ad){for(const _0x213189 of Object['keys'](_0x131c7a)){if(_0x213189 in _0x25d9ad&&_0x131c7a[_0x213189]===_0x25d9ad[_0x213189])delete _0x131c7a[_0x213189];}if(Object[_0x5aa717(0x108)](_0x131c7a)[_0x5aa717(0xdb)]===0x0)delete _0xf4594a[_0x42dddb];}}for(const _0x4d930d of Object[_0x5aa717(0x108)](_0x4114b1)){if(_0x4d930d===_0x5aa717(0x1bd))continue;if(_0x4114b1[_0x4d930d]&&typeof _0x4114b1[_0x4d930d]===_0x5aa717(0x1b5))continue;if(_0x4d930d in _0xf4594a&&_0xf4594a[_0x4d930d]===_0x4114b1[_0x4d930d])delete _0xf4594a[_0x4d930d];}return _0xf4594a;}[_0x4f5e72(0x18b)](_0x5b5e4a){const _0x42488f=_0x4f5e72,_0x131c16=this[_0x42488f(0xb9)](_0x5b5e4a);this[_0x42488f(0x170)]=_0x131c16,this['requestUpdate'](),this['dispatchEvent'](new CustomEvent(_0x42488f(0x180),{'detail':{'config':_0x131c16},'bubbles':!![],'composed':!![]}));}[_0x4f5e72(0xc5)](_0x38eea1){const _0x462cf4=_0x4f5e72;if(!this[_0x462cf4(0x170)]||!this[_0x462cf4(0xa3)])return;const _0x381f66=_0x38eea1['target'],_0x18a1d4=_0x381f66[_0x462cf4(0x137)]||_0x381f66[_0x462cf4(0xa9)](_0x462cf4(0x137));if(!_0x18a1d4)return;const _0xf03698=_0x18a1d4[_0x462cf4(0x1d3)]('.');let _0x2cb9f4;if(_0x381f66[_0x462cf4(0x1ca)]===_0x462cf4(0x190))_0x2cb9f4=_0x381f66['checked'];else{if(_0x38eea1[_0x462cf4(0x199)]?.['value']!==undefined)_0x2cb9f4=_0x38eea1['detail']['value'];else{if(_0x381f66[_0x462cf4(0x17f)]!==undefined)_0x2cb9f4=_0x381f66['value'];else _0x2cb9f4='';}}if(_0x2cb9f4===_0x462cf4(0x12e))_0x2cb9f4='';const _0x5493b7=JSON[_0x462cf4(0xb2)](JSON[_0x462cf4(0x9d)](this['_config']));let _0x595ca5=_0x5493b7;for(let _0x42704b=0x0;_0x42704b<_0xf03698['length']-0x1;_0x42704b++){const _0x4fbc3a=_0xf03698[_0x42704b];if(_0x595ca5[_0x4fbc3a]===undefined)_0x595ca5[_0x4fbc3a]=!isNaN(parseInt(_0xf03698[_0x42704b+0x1],0xa))?[]:{};_0x595ca5=_0x595ca5[_0x4fbc3a];}const _0x41de13=_0xf03698[_0xf03698[_0x462cf4(0xdb)]-0x1];if(_0x2cb9f4===''||_0x2cb9f4===null||Array[_0x462cf4(0xc7)](_0x2cb9f4)&&_0x2cb9f4[_0x462cf4(0xdb)]===0x0){delete _0x595ca5[_0x41de13];if(_0xf03698['length']>0x1){let _0x5ee9ab=_0x5493b7;for(let _0x25dbe7=0x0;_0x25dbe7<_0xf03698['length']-0x2;_0x25dbe7++)_0x5ee9ab=_0x5ee9ab[_0xf03698[_0x25dbe7]];if(Object[_0x462cf4(0x108)](_0x595ca5)['length']===0x0&&_0x5ee9ab[_0xf03698[_0xf03698[_0x462cf4(0xdb)]-0x2]])delete _0x5ee9ab[_0xf03698[_0xf03698[_0x462cf4(0xdb)]-0x2]];}}else _0x595ca5[_0x41de13]=_0x2cb9f4;this['_dispatchConfig'](_0x5493b7);}[_0x4f5e72(0x147)](_0x584405){const _0xfd1225=_0x4f5e72;this['_expanded']={...this[_0xfd1225(0x13b)],[_0x584405]:!this[_0xfd1225(0x13b)][_0x584405]};}['_toggleEntityExpand'](_0x309501){const _0x492e34=_0x4f5e72,_0x28ccda=_0x492e34(0xad)+_0x309501,_0x3daf71=!!this[_0x492e34(0x13b)][_0x28ccda];if(_0x3daf71){this[_0x492e34(0x13b)]={...this[_0x492e34(0x13b)],[_0x28ccda]:![]};return;}const _0x468a92={...this[_0x492e34(0x13b)]};Object[_0x492e34(0x108)](_0x468a92)[_0x492e34(0x145)](_0x1e8fb0=>_0x1e8fb0[_0x492e34(0x122)]('entity_'))[_0x492e34(0x15a)](_0x555125=>_0x468a92[_0x555125]=![]),_0x468a92[_0x28ccda]=!![],_0x468a92[_0x492e34(0x1bd)]=!![],this[_0x492e34(0x13b)]=_0x468a92,requestAnimationFrame(()=>{const _0x2aaf3b=_0x492e34;requestAnimationFrame(()=>this[_0x2aaf3b(0xc0)](_0x309501));});}[_0x4f5e72(0xc0)](_0x447135){const _0x1f4b85=_0x4f5e72,_0x456ee2=this[_0x1f4b85(0xac)]?.['querySelector']('[data-entity-index=\x22'+_0x447135+'\x22]');if(!_0x456ee2)return;const _0x15d21c=_0x456ee2['querySelector'](_0x1f4b85(0x1bf))||_0x456ee2;try{_0x15d21c[_0x1f4b85(0xe7)]({'behavior':_0x1f4b85(0x15b),'block':_0x1f4b85(0xb1),'inline':'nearest'});}catch(_0x50edbf){_0x15d21c[_0x1f4b85(0xe7)](!![]);}}[_0x4f5e72(0x176)]=()=>{const _0x1479df=_0x4f5e72,_0x5d1bd5=JSON[_0x1479df(0xb2)](JSON['stringify'](this[_0x1479df(0x170)]));_0x5d1bd5[_0x1479df(0x1bd)]=_0x5d1bd5[_0x1479df(0x1bd)]||[],_0x5d1bd5[_0x1479df(0x1bd)][_0x1479df(0x181)]({'name':'','switch':'','timer':'','sensor':'','timer_and_entity_connected_via_automation':!![]});const _0x197d22=_0x5d1bd5['entities'][_0x1479df(0xdb)]-0x1,_0x4abb89={...this[_0x1479df(0x13b)]};Object[_0x1479df(0x108)](_0x4abb89)[_0x1479df(0x145)](_0x4ac3b8=>_0x4ac3b8['startsWith'](_0x1479df(0xad)))[_0x1479df(0x15a)](_0x568a37=>_0x4abb89[_0x568a37]=![]),_0x4abb89[_0x1479df(0xad)+_0x197d22]=!![],_0x4abb89[_0x1479df(0x1bd)]=!![],this[_0x1479df(0x13b)]=_0x4abb89,this[_0x1479df(0x18b)](_0x5d1bd5);};['_removeEntity'](_0x2c16f3){const _0x2f7e0e=_0x4f5e72,_0x217d83=JSON['parse'](JSON[_0x2f7e0e(0x9d)](this[_0x2f7e0e(0x170)]));_0x217d83['entities']['splice'](_0x2c16f3,0x1);const _0x266b68={...this[_0x2f7e0e(0x13b)]};Object[_0x2f7e0e(0x108)](_0x266b68)[_0x2f7e0e(0x145)](_0x2f6bfe=>_0x2f6bfe[_0x2f7e0e(0x122)](_0x2f7e0e(0xad)))['forEach'](_0x3b4cb2=>delete _0x266b68[_0x3b4cb2]),_0x217d83[_0x2f7e0e(0x1bd)][_0x2f7e0e(0x15a)]((_0x2a74ed,_0x31cfc6)=>_0x266b68['entity_'+_0x31cfc6]=![]),this[_0x2f7e0e(0x13b)]=_0x266b68,this[_0x2f7e0e(0x18b)](_0x217d83);}[_0x4f5e72(0x1c2)](_0x4c25b8){const _0x4a0371=_0x4f5e72,_0x3452b8=JSON['parse'](JSON['stringify'](this[_0x4a0371(0x170)])),_0x3a3b91=JSON['parse'](JSON['stringify'](_0x3452b8[_0x4a0371(0x1bd)][_0x4c25b8]));if(_0x3a3b91[_0x4a0371(0x1b3)])_0x3a3b91['name']=_0x3a3b91['name']+_0x4a0371(0x1a9);_0x3452b8[_0x4a0371(0x1bd)][_0x4a0371(0xea)](_0x4c25b8+0x1,0x0,_0x3a3b91);const _0x27bce2={...this[_0x4a0371(0x13b)]};Object[_0x4a0371(0x108)](_0x27bce2)[_0x4a0371(0x145)](_0x1ba784=>_0x1ba784[_0x4a0371(0x122)](_0x4a0371(0xad)))[_0x4a0371(0x15a)](_0x19f7cd=>_0x27bce2[_0x19f7cd]=![]),_0x27bce2[_0x4a0371(0xad)+(_0x4c25b8+0x1)]=!![],_0x27bce2[_0x4a0371(0x1bd)]=!![],this[_0x4a0371(0x13b)]=_0x27bce2,this[_0x4a0371(0x18b)](_0x3452b8);}['_onDragStart'](_0x78f52b,_0x2c7759){const _0x7c88d0=_0x4f5e72;this[_0x7c88d0(0x114)]=_0x78f52b;try{_0x2c7759[_0x7c88d0(0xba)][_0x7c88d0(0xb8)]=_0x7c88d0(0x14b),_0x2c7759[_0x7c88d0(0xba)][_0x7c88d0(0xcf)](_0x7c88d0(0x1a3),String(_0x78f52b));}catch(_0x34fde1){}}[_0x4f5e72(0x1cc)](_0x517e0b,_0x7a2865){const _0x418450=_0x4f5e72;_0x7a2865['preventDefault'](),this['_dragOverIndex']=_0x517e0b;try{_0x7a2865[_0x418450(0xba)][_0x418450(0x19f)]=_0x418450(0x14b);}catch(_0x3bb539){}}[_0x4f5e72(0xff)](_0x49d98a,_0x4ed07a){}['_onDrop'](_0x4aabe4,_0xf21376){const _0x31d9d8=_0x4f5e72;_0xf21376[_0x31d9d8(0x123)]();let _0x575340=this[_0x31d9d8(0x114)];try{const _0x36b3ac=_0xf21376['dataTransfer'][_0x31d9d8(0x196)]('text/plain'),_0x58630c=parseInt(_0x36b3ac,0xa);if(!Number[_0x31d9d8(0x197)](_0x58630c))_0x575340=_0x58630c;}catch(_0x525390){}if(_0x575340===null||_0x575340===undefined)return;this[_0x31d9d8(0x134)](_0x575340,_0x4aabe4),this[_0x31d9d8(0x114)]=null,this['_dragOverIndex']=null;}[_0x4f5e72(0x134)](_0x293fb5,_0x368287){const _0x13fdb4=_0x4f5e72;if(_0x293fb5===_0x368287)return;const _0x46adf5=JSON[_0x13fdb4(0xb2)](JSON['stringify'](this[_0x13fdb4(0x170)])),_0x4eed99=_0x46adf5[_0x13fdb4(0x1bd)]||[];if(_0x293fb5<0x0||_0x293fb5>=_0x4eed99[_0x13fdb4(0xdb)]||_0x368287<0x0||_0x368287>=_0x4eed99[_0x13fdb4(0xdb)])return;const _0x22eb69=(this[_0x13fdb4(0x170)]['entities']||[])[_0x13fdb4(0x1ba)]((_0x1e1be8,_0xd1ad64)=>!!this[_0x13fdb4(0x13b)][_0x13fdb4(0xad)+_0xd1ad64]),[_0x6a552e]=_0x4eed99[_0x13fdb4(0xea)](_0x293fb5,0x1);_0x4eed99[_0x13fdb4(0xea)](_0x368287,0x0,_0x6a552e);let _0x32d173=_0x22eb69;if(_0x22eb69===_0x293fb5)_0x32d173=_0x368287;else{if(_0x293fb5<_0x22eb69&&_0x368287>=_0x22eb69)_0x32d173=_0x22eb69-0x1;else{if(_0x293fb5>_0x22eb69&&_0x368287<=_0x22eb69)_0x32d173=_0x22eb69+0x1;}}const _0x3c7aca={...this[_0x13fdb4(0x13b)]};Object['keys'](_0x3c7aca)['filter'](_0xe408ab=>_0xe408ab['startsWith'](_0x13fdb4(0xad)))[_0x13fdb4(0x15a)](_0x2a675e=>delete _0x3c7aca[_0x2a675e]),_0x4eed99[_0x13fdb4(0x15a)]((_0x1f0cb3,_0x42c36c)=>_0x3c7aca[_0x13fdb4(0xad)+_0x42c36c]=![]);if(_0x32d173>=0x0&&_0x32d173<_0x4eed99['length'])_0x3c7aca[_0x13fdb4(0xad)+_0x32d173]=!![];this[_0x13fdb4(0x13b)]=_0x3c7aca,this[_0x13fdb4(0x18b)](_0x46adf5);}[_0x4f5e72(0xed)](_0x4a5333,_0x4fdc47,_0x3c589a,_0x573390){const _0x4b939e=_0x4f5e72,_0x4e6ebd=Array[_0x4b939e(0xc7)](_0x573390)?_0x573390:undefined;return haHtml`
-      <div class="field">
+    `;}async[_0x1a7b4c(0x1a4)](_0x330b23,_0x2be3ee,_0x3b009e,_0x47c0a8){const _0x10d972=_0x1a7b4c,_0xff720=!_0x3b009e?.[_0x10d972(0x1a5)]&&_0x330b23;if(_0xff720){this['_startConfirm']={'timerEntity':_0x330b23,'controllableEntity':_0x2be3ee,'entityConfig':_0x3b009e,'totalDuration':_0x47c0a8};return;}this[_0x10d972(0x275)](_0x330b23,_0x2be3ee,_0x3b009e,_0x47c0a8);}[_0x1a7b4c(0x261)](){const _0x2af5a5=_0x1a7b4c,_0x58e465=this[_0x2af5a5(0x232)];this[_0x2af5a5(0x232)]=null;if(!_0x58e465)return;this[_0x2af5a5(0x275)](_0x58e465[_0x2af5a5(0x1f2)],_0x58e465[_0x2af5a5(0x219)],_0x58e465['entityConfig'],_0x58e465['totalDuration']);}[_0x1a7b4c(0x243)](){this['_startConfirm']=null;}['_performStart'](_0x571b66,_0x204710,_0x2ae827,_0x1ce752){const _0x5eecb9=_0x1a7b4c;if(!_0x2ae827[_0x5eecb9(0x1a5)])this[_0x5eecb9(0x1be)](_0x204710,'on');if(!_0x2ae827[_0x5eecb9(0x1a5)]&&_0x571b66&&_0x204710){const _0x5f1c86=Number[_0x5eecb9(0x250)](_0x1ce752)&&_0x1ce752>0x0?Date['now']()+_0x1ce752*0x3e8:null;this[_0x5eecb9(0x1c8)](_0x571b66,_0x204710,_0x5f1c86);}const _0x490819={'entity_id':_0x571b66};this[_0x5eecb9(0x193)](_0x2ae827)&&Number[_0x5eecb9(0x250)](_0x1ce752)&&_0x1ce752>0x0&&(_0x490819['duration']=this[_0x5eecb9(0x17a)](_0x1ce752)),this[_0x5eecb9(0x16f)]['callService'](_0x5eecb9(0x23a),_0x5eecb9(0x19c),_0x490819);}async[_0x1a7b4c(0x144)](_0x31f159,_0x3b0245,_0x51c3af){const _0x39e31f=_0x1a7b4c;this[_0x39e31f(0x1fd)](_0x31f159);if(_0x31f159)await this[_0x39e31f(0x16f)][_0x39e31f(0x1b0)](_0x39e31f(0x23a),_0x39e31f(0x1b7),{'entity_id':_0x31f159});if(!_0x3b0245)return;if(_0x51c3af?.[_0x39e31f(0x1a5)])return;if(this[_0x39e31f(0x163)]['has'](_0x3b0245)){const _0x98747e=this['_config']?.[_0x39e31f(0x266)]?.['some'](_0x1412b3=>_0x1412b3[_0x39e31f(0x27e)]===_0x3b0245&&_0x1412b3[_0x39e31f(0x23a)]&&_0x1412b3[_0x39e31f(0x23a)]!==_0x31f159&&this[_0x39e31f(0x16f)][_0x39e31f(0x162)]?.[_0x1412b3[_0x39e31f(0x23a)]]?.[_0x39e31f(0x20d)]===_0x39e31f(0x240));if(_0x98747e)return;}this[_0x39e31f(0x1be)](_0x3b0245,'off');}[_0x1a7b4c(0x26c)](_0x181ed4){const _0x10f781=_0x1a7b4c;if(!_0x181ed4)return 0x0;if(typeof _0x181ed4==='string'&&_0x181ed4[_0x10f781(0x279)](':')){const _0x4e0a95=_0x181ed4[_0x10f781(0x24c)](':');if(_0x4e0a95[_0x10f781(0x195)]===0x3){const _0x2ec201=parseInt(_0x4e0a95[0x0],0xa),_0x1d9a74=parseInt(_0x4e0a95[0x1],0xa),_0x18b689=parseInt(_0x4e0a95[0x2],0xa);return(Number[_0x10f781(0x27b)](_0x2ec201)?0x0:_0x2ec201)*0xe10+(Number['isNaN'](_0x1d9a74)?0x0:_0x1d9a74)*0x3c+(Number['isNaN'](_0x18b689)?0x0:_0x18b689);}}const _0x210d95=typeof _0x181ed4===_0x10f781(0x16c)?_0x181ed4:parseFloat(_0x181ed4);return Number[_0x10f781(0x250)](_0x210d95)?_0x210d95:0x0;}[_0x1a7b4c(0x28f)](_0x8c3ba1,_0x18c630){const _0x3a1f5e=_0x1a7b4c;if(!(_0x18c630>0x0))return 0x0;const _0x485e49=_0x8c3ba1/_0x18c630*0x64;return Math[_0x3a1f5e(0x1d8)](0x64,Math[_0x3a1f5e(0x19a)](0x0,_0x485e49));}['formatTime'](_0x2e1998,_0x110745){const _0x3ba646=_0x1a7b4c,_0x30a38a=Number(_0x2e1998);if(!Number[_0x3ba646(0x250)](_0x30a38a)||_0x30a38a<=0x0)return _0x110745[_0x3ba646(0x1e4)];const _0x2a2327=Math[_0x3ba646(0x150)](_0x30a38a/0x3c),_0x2510e8=Math[_0x3ba646(0x150)](_0x30a38a%0x3c);return''+_0x2a2327+_0x110745[_0x3ba646(0x1f6)]+'\x20'+String(_0x2510e8)[_0x3ba646(0x1d7)](0x2,'0')+_0x110745[_0x3ba646(0x153)];}['_renderBattery'](_0x374c16){const _0x35fa29=_0x1a7b4c;if(!_0x374c16)return'';const _0x458ef8=_0x374c16[_0x35fa29(0x20d)];if(_0x458ef8==null||[_0x35fa29(0x179),_0x35fa29(0x1b3),''][_0x35fa29(0x279)](String(_0x458ef8)))return'';const _0x144f63=Number(_0x458ef8),_0x3b004f=Number[_0x35fa29(0x250)](_0x144f63),_0x367f4c=_0x374c16[_0x35fa29(0x20c)]?.[_0x35fa29(0x28e)]||(_0x3b004f?'%':''),_0xe57e31=_0x3b004f?''+Math[_0x35fa29(0x189)](_0x144f63)+_0x367f4c:''+_0x458ef8+(_0x367f4c?'\x20'+_0x367f4c:''),_0x1677a3=_0x374c16[_0x35fa29(0x20c)]||{},_0x19d344=_0x1677a3['is_charging']===!![]||_0x1677a3[_0x35fa29(0x26f)]===!![]||[_0x35fa29(0x26f),'on'][_0x35fa29(0x279)](String(_0x1677a3[_0x35fa29(0x146)]??'')['toLowerCase']());let _0x46ceca='mdi:battery';if(_0x3b004f){const _0x4bd56a=Math[_0x35fa29(0x19a)](0x0,Math[_0x35fa29(0x1d8)](0x64,_0x144f63)),_0x3dcf4e=Math['round'](_0x4bd56a/0xa)*0xa;_0x19d344?_0x46ceca=_0x3dcf4e<=0x0?_0x35fa29(0x260):_0x3dcf4e>=0x64?_0x35fa29(0x16d):_0x35fa29(0x221)+_0x3dcf4e:_0x46ceca=_0x3dcf4e<=0x0?_0x35fa29(0x1c9):_0x3dcf4e>=0x64?_0x35fa29(0x1cd):_0x35fa29(0x252)+_0x3dcf4e;}return haHtml`<span class="battery"><ha-icon icon="${_0x46ceca}"></ha-icon>${_0xe57e31}</span>`;}[_0x1a7b4c(0x1d0)](_0x1513cd,_0x5ce9cd,_0x1cb709,_0xf6bd40){const _0x269d19=_0x1a7b4c;if(!_0x1513cd)return _0x1cb709[_0x269d19(0x1fa)];if([_0x269d19(0x179),'unknown']['includes'](_0x1513cd[_0x269d19(0x20d)]))return _0x1cb709[_0x269d19(0x1fa)];const _0x286656=_0xf6bd40!==undefined?_0xf6bd40:this['_isActive'](_0x1513cd);if(_0x286656)return _0x1cb709[_0x269d19(0x230)];return _0x1cb709[_0x269d19(0x212)];}[_0x1a7b4c(0x267)](_0x3b1e2e,_0x4391e7,_0x1138e0,_0x2062e8,_0xb1424f){const _0x5d9bff=_0x1a7b4c,_0x1eae57=_0xb1424f!==undefined?_0xb1424f:this['_isActive'](_0x4391e7);if(_0x1eae57)return _0x1138e0[_0x5d9bff(0x21f)];if(!_0x3b1e2e||!_0x3b1e2e['state'])return'';const _0x2f7903=Date[_0x5d9bff(0x196)](_0x3b1e2e['state']);if(Number[_0x5d9bff(0x27b)](_0x2f7903))return _0x3b1e2e['state'];const _0x15067e=Math[_0x5d9bff(0x150)]((_0x2062e8-_0x2f7903)/0x3e8),_0x381c31=Math['floor'](_0x15067e/0x3c),_0x62b182=Math[_0x5d9bff(0x150)](_0x381c31/0x3c),_0x5ad89c=Math[_0x5d9bff(0x150)](_0x62b182/0x18);if(_0x15067e<0x3c)return _0x1138e0[_0x5d9bff(0x25b)];if(_0x381c31<0x3c)return _0x381c31+'\x20'+_0x1138e0[_0x5d9bff(0x1c3)];if(_0x62b182<0x18)return _0x62b182+'\x20'+_0x1138e0[_0x5d9bff(0x1d3)];return _0x5ad89c+'\x20'+_0x1138e0[_0x5d9bff(0x242)];}}customElements[_0x1a7b4c(0x155)](_0x1a7b4c(0x17c),SwitchAndTimerBarCard);function _0x1949(){const _0x1e5ab8=['customCards','right','move','color:\x20','Override\x20global\x20button\x20position\x20for\x20this\x20entity\x20only.','Switch\x20and\x20Timer\x20Bar\x20Card:\x20\x27entities\x27\x20is\x20not\x20a\x20list\x20or\x20is\x20missing.','2732570hWNmCy','0m\x2000s','#F44336','states','__sharedSwitches','paused','_computeEntitySig','querySelector','button_stop','__tickMs','Position','8YkviBh','properties','number','mdi:battery-charging-100','push','hass','_toggleEntityExpand','start_confirm_ok','streaming','Right','labels','Set\x20duration','Shown\x20at\x20the\x20top\x20of\x20the\x20card.\x20Leave\x20empty\x20to\x20hide.','Just\x20now','editable_duration','unavailable','_secondsToHHMMSS','removeEventListener','switch-and-timer-bar-card','dispatchEvent','set','sensor.example_last_watered','key','requestUpdate','render','__lastOffAt','__armedTimers','__offDebounceMs','_closeDurationEditor','tagName','Cancel','round','__startTick','__lastEntitySig','Invalid\x20configuration.','edit_duration_cancel','input_datetime','entity_id','_scrollEntityIntoView','7888590QvbyPM','getStubConfig','_hasAnyDurationOverride','open_cover','length','parse','object','_saveDurationOverrides','#000000','max','battery','start','forEach','Unavailable','unlock','Hours','switch.example_switch','Reset\x20to\x20default','entities.','_handleStart','timer_and_entity_connected_via_automation','\x20/\x20','left','sensor','_renderColorOptions','renderRoot','__armedStorageKey','74746huJCsH','open','scrollIntoView','_onDragOver','callService','_onDrop','html','unknown','close_valve','ha-dialog','edit_duration_apply','finish','value','Left','minutes\x20ago','.labels','config-changed','_valueChanged','_callService','has','keydown','__interval','css','last_on_ago_minutes','_renderBattery','closed','fromEntries','splice','_armTimer','mdi:battery-outline','_onDragStart','Seconds','localStorage','mdi:battery','background-color:\x20','entries','getStatusText','_dispatchConfig','150mqcseH','last_on_ago_hours','_onDragLeave','edit_duration_seconds','timer.example_timer','padStart','min','_pruneDefaults','_expanded','turn_on','Watering','name','__reconciledOnce','connectedCallback','icons','days\x20ago','Entity\x20#','findIndex','time_format_zero','Active','_renderEntitySection','last_changed','formatTime','Last\x20run\x20sensor\x20(optional)','Minutes','delete','Click\x20to\x20change\x20duration','__durationStorageKey','checked','_durationEditor','_config','10TPwYkD','timerEntity','_renderEntityPicker','_renderLabelOptions','18ugrnNR','time_unit_minutes','getItem','_dragOverIndex','_timer','status_unavailable','.switch','updated','_disarmTimer','_renderIconOptions','_entityTabs','title','Switch\x20&\x20Timer\x20Bar\x20Card','__recomputeTickNeedAndApply','media_player','prototype','entity_','26ZlSLVY','replace','global_overrides','edit_duration_minutes','_reorderEntities','string','attributes','state','colors','some','error','mwc-dialog','status_ready','type','__onConfirmKeyDown','lock','idle','_onDurationFieldChange','friendly_name','controllableEntity','nearest','Optional.\x20If\x20set\x20(HH:MM:SS\x20or\x20seconds),\x20this\x20overrides\x20the\x20timer\x20helper’s\x20configured\x20duration\x20when\x20starting\x20from\x20this\x20card.\x20Leave\x20empty\x20to\x20use\x20the\x20helper\x20default.','filter','unlocked','edit_duration_reset','last_on_active','_closeSensorHelp','mdi:battery-charging-','switch-and-timer-bar-card:durations','\x20(copy)','\x20label-row--','off','finishes_at','isArray','get','cover','4008433RFwmAT','_getBuiltInDefaults','.sensor','edit_duration_hours','_isActive','preventDefault','status_on','This\x20timer\x20switches\x20the\x20device\x20off\x20from\x20your\x20browser.\x20If\x20no\x20dashboard\x20is\x20open\x20when\x20the\x20timer\x20ends,\x20the\x20device\x20won\x27t\x20turn\x20off.\x20For\x20unattended\x20use,\x20enable\x20“Automation\x20Link”\x20for\x20this\x20entity\x20and\x20let\x20a\x20Home\x20Assistant\x20automation\x20handle\x20the\x20switch-off.','_startConfirm','_loadArmedTimers','#FFFFFF','mdi:stop','Battery\x20(optional)','startsWith','Use\x20global','Where\x20Start/Stop\x20buttons\x20appear\x20by\x20default\x20for\x20all\x20entities.','timer','opening','text/plain','light','_reconcileMissedTimers','__needsTick','active','hours\x20ago','last_on_ago_days','_cancelStart','_renderSensorPickerWithHelp','_getEffectiveGlobal','Control\x20entity\x20(switch\x20/\x20light\x20/\x20cover\x20/\x20valve\x20/\x20lock\x20/\x20etc.)','trim','_resetDurationOverride','start_confirm_cancel','valve','duration','split','setItem','_removeEntity','edit_duration_tooltip','isFinite','_applyDurationEditor','mdi:battery-','createElement','104228KxFvyQ','_renderDurationDialog','target','#2196F3','finishesAt','smooth','configValue','last_on_now','[data-entity-index=\x22','_getEffectiveDuration','stringify','close_cover','mdi:battery-charging-outline','_confirmStart','button_start','getData','styles','.timer','entities','getLastWateringText','_loadDurationOverrides','map','setConfig','Ready','parseDuration','start_confirm_body','_resetPath','charging','_saveArmedTimers','_maybeReconcile','dataTransfer','general','progress_fill','_performStart','_openDurationEditor','_addEntity','_mainTab','includes','switch-and-timer-bar-card:armed','isNaN','_showSensorHelp','4802232SUZOrA','switch','detail','_renderStartConfirmDialog','DEFAULTS','_duplicateEntity','disconnectedCallback','Start\x20anyway','open_valve','.battery','charAt','renderEntity','.icons','#4CAF50','.colors','HA-SWITCH','warn','unit_of_measurement','calculateActivePercent','_hasUIDurationOverride','.entity-head','_tip','__itemsCache','button_position','mdi:play','Apply','icon','_handleStop','dropdown','battery_state','_openSensorHelp','global','stopPropagation','setData','keys','__durationOverrides','fan','ha-panel-lovelace','control','floor','43057Cdfdan','\x20field--','time_unit_seconds','clear','define','now','drag-over','_dragFromIndex'];_0x1949=function(){return _0x1e5ab8;};return _0x1949();}class SwitchAndTimerBarCardEditor extends HaLitBase{static get[_0x1a7b4c(0x16b)](){return{'hass':{},'_config':{'state':!![]},'_expanded':{'state':!![]},'_dragOverIndex':{'state':!![]},'_showSensorHelp':{'state':!![]},'_mainTab':{'state':!![]},'_entityTabs':{'state':!![]}};}constructor(){const _0x609132=_0x1a7b4c;super(),this['__itemsCache']=new Map(),this['__lastEntitySig']=null,this['_expanded']={'global_overrides':![],'entities':![]},this[_0x609132(0x1f8)]=null,this[_0x609132(0x158)]=null,this[_0x609132(0x27c)]=![],this[_0x609132(0x278)]=_0x609132(0x273),this[_0x609132(0x1ff)]={},this[_0x609132(0x147)]=_0x3fff67=>{const _0x2585e7=_0x609132;if(_0x3fff67)_0x3fff67[_0x2585e7(0x149)]();this[_0x2585e7(0x27c)]=!![];},this[_0x609132(0x220)]=()=>{const _0x3b0cfe=_0x609132;this[_0x3b0cfe(0x27c)]=![];};}['setConfig'](_0x2d2481){const _0x423ee9=_0x1a7b4c,_0x1b8d86=JSON[_0x423ee9(0x196)](JSON[_0x423ee9(0x25e)](_0x2d2481||{}));if(!Array[_0x423ee9(0x227)](_0x1b8d86['entities']))_0x1b8d86[_0x423ee9(0x266)]=[];_0x1b8d86['colors']=_0x1b8d86[_0x423ee9(0x20e)]||{},_0x1b8d86[_0x423ee9(0x1e0)]=_0x1b8d86['icons']||{},_0x1b8d86[_0x423ee9(0x174)]=_0x1b8d86['labels']||{},_0x1b8d86[_0x423ee9(0x266)]['forEach']((_0x453ec7,_0x4f0e31)=>{const _0x59b38f=_0x423ee9;if(this[_0x59b38f(0x1da)]['entity_'+_0x4f0e31]===undefined)this[_0x59b38f(0x1da)][_0x59b38f(0x205)+_0x4f0e31]=![];}),this[_0x423ee9(0x1f0)]=_0x1b8d86;}['shouldUpdate'](_0xc1a96){const _0x2a7365=_0x1a7b4c;if(_0xc1a96['has'](_0x2a7365(0x1f0))||_0xc1a96[_0x2a7365(0x1bf)](_0x2a7365(0x1da))||_0xc1a96[_0x2a7365(0x1bf)](_0x2a7365(0x1f8))||_0xc1a96[_0x2a7365(0x1bf)](_0x2a7365(0x27c))||_0xc1a96[_0x2a7365(0x1bf)](_0x2a7365(0x278))||_0xc1a96[_0x2a7365(0x1bf)](_0x2a7365(0x1ff)))return!![];if(_0xc1a96[_0x2a7365(0x1bf)](_0x2a7365(0x16f))){const _0x1af0f5=this[_0x2a7365(0x165)](this[_0x2a7365(0x16f)]);if(_0x1af0f5!==this[_0x2a7365(0x18b)])return this[_0x2a7365(0x18b)]=_0x1af0f5,this[_0x2a7365(0x293)][_0x2a7365(0x154)](),!![];return![];}return!![];}[_0x1a7b4c(0x165)](_0x5a9394){const _0x5ec9eb=_0x1a7b4c,_0x361ae3=_0x5a9394?.[_0x5ec9eb(0x162)]||{};let _0x4b7e60=0x0;for(const _0x47d7ba in _0x361ae3)_0x4b7e60++;return''+_0x4b7e60;}[_0x1a7b4c(0x1d9)](_0x36e30e){const _0x3f9a18=_0x1a7b4c,_0x5331e2=SwitchAndTimerBarCard['DEFAULTS'],_0x5a4f59=JSON[_0x3f9a18(0x196)](JSON[_0x3f9a18(0x25e)](_0x36e30e||{}));for(const _0x21b84c of[_0x3f9a18(0x174),'colors',_0x3f9a18(0x1e0)]){const _0x1c00e3=_0x5331e2[_0x21b84c],_0x52c878=_0x5a4f59[_0x21b84c];if(_0x52c878&&typeof _0x52c878==='object'&&!Array[_0x3f9a18(0x227)](_0x52c878)&&_0x1c00e3){for(const _0x33f028 of Object[_0x3f9a18(0x14b)](_0x52c878)){if(_0x33f028 in _0x1c00e3&&_0x52c878[_0x33f028]===_0x1c00e3[_0x33f028])delete _0x52c878[_0x33f028];}if(Object[_0x3f9a18(0x14b)](_0x52c878)[_0x3f9a18(0x195)]===0x0)delete _0x5a4f59[_0x21b84c];}}for(const _0x5bdb34 of Object[_0x3f9a18(0x14b)](_0x5331e2)){if(_0x5bdb34===_0x3f9a18(0x266))continue;if(_0x5331e2[_0x5bdb34]&&typeof _0x5331e2[_0x5bdb34]===_0x3f9a18(0x197))continue;if(_0x5bdb34 in _0x5a4f59&&_0x5a4f59[_0x5bdb34]===_0x5331e2[_0x5bdb34])delete _0x5a4f59[_0x5bdb34];}return _0x5a4f59;}['_dispatchConfig'](_0x3d443f){const _0x281171=_0x1a7b4c,_0x1dec5b=this[_0x281171(0x1d9)](_0x3d443f);this[_0x281171(0x1f0)]=_0x1dec5b,this[_0x281171(0x181)](),this[_0x281171(0x17d)](new CustomEvent(_0x281171(0x1bc),{'detail':{'config':_0x1dec5b},'bubbles':!![],'composed':!![]}));}[_0x1a7b4c(0x1bd)](_0x37163b){const _0xd55b9c=_0x1a7b4c;if(!this[_0xd55b9c(0x1f0)]||!this[_0xd55b9c(0x16f)])return;const _0x6768d3=_0x37163b[_0xd55b9c(0x256)],_0x236858=_0x6768d3['configValue']||_0x6768d3['getAttribute'](_0xd55b9c(0x25a));if(!_0x236858)return;const _0x40d473=_0x236858[_0xd55b9c(0x24c)]('.');let _0x377057;if(_0x6768d3[_0xd55b9c(0x187)]===_0xd55b9c(0x28c))_0x377057=_0x6768d3[_0xd55b9c(0x1ee)];else{if(_0x37163b[_0xd55b9c(0x27f)]?.['value']!==undefined)_0x377057=_0x37163b['detail'][_0xd55b9c(0x1b8)];else{if(_0x6768d3[_0xd55b9c(0x1b8)]!==undefined)_0x377057=_0x6768d3[_0xd55b9c(0x1b8)];else _0x377057='';}}if(_0x377057===_0xd55b9c(0x148))_0x377057='';const _0x3c79f2=JSON[_0xd55b9c(0x196)](JSON[_0xd55b9c(0x25e)](this[_0xd55b9c(0x1f0)]));let _0x2bbfe7=_0x3c79f2;for(let _0x34f9e0=0x0;_0x34f9e0<_0x40d473['length']-0x1;_0x34f9e0++){const _0x4c37bc=_0x40d473[_0x34f9e0];if(_0x2bbfe7[_0x4c37bc]===undefined)_0x2bbfe7[_0x4c37bc]=!isNaN(parseInt(_0x40d473[_0x34f9e0+0x1],0xa))?[]:{};_0x2bbfe7=_0x2bbfe7[_0x4c37bc];}const _0x32dded=_0x40d473[_0x40d473[_0xd55b9c(0x195)]-0x1];if(_0x377057===''||_0x377057===null||Array[_0xd55b9c(0x227)](_0x377057)&&_0x377057[_0xd55b9c(0x195)]===0x0){delete _0x2bbfe7[_0x32dded];if(_0x40d473[_0xd55b9c(0x195)]>0x1){let _0x3caa3e=_0x3c79f2;for(let _0x25d4f8=0x0;_0x25d4f8<_0x40d473[_0xd55b9c(0x195)]-0x2;_0x25d4f8++)_0x3caa3e=_0x3caa3e[_0x40d473[_0x25d4f8]];if(Object[_0xd55b9c(0x14b)](_0x2bbfe7)['length']===0x0&&_0x3caa3e[_0x40d473[_0x40d473[_0xd55b9c(0x195)]-0x2]])delete _0x3caa3e[_0x40d473[_0x40d473[_0xd55b9c(0x195)]-0x2]];}}else _0x2bbfe7[_0x32dded]=_0x377057;this['_dispatchConfig'](_0x3c79f2);}['_toggleExpand'](_0x13c7e2){const _0x8628f0=_0x1a7b4c;this[_0x8628f0(0x1da)]={...this['_expanded'],[_0x13c7e2]:!this[_0x8628f0(0x1da)][_0x13c7e2]};}['_toggleEntityExpand'](_0x10f0c7){const _0x29e225=_0x1a7b4c,_0x1ff7ce=_0x29e225(0x205)+_0x10f0c7,_0x35995f=!!this[_0x29e225(0x1da)][_0x1ff7ce];if(_0x35995f){this[_0x29e225(0x1da)]={...this[_0x29e225(0x1da)],[_0x1ff7ce]:![]};return;}const _0x2559f6={...this[_0x29e225(0x1da)]};Object[_0x29e225(0x14b)](_0x2559f6)[_0x29e225(0x21c)](_0x316b95=>_0x316b95['startsWith'](_0x29e225(0x205)))['forEach'](_0x219cfd=>_0x2559f6[_0x219cfd]=![]),_0x2559f6[_0x1ff7ce]=!![],_0x2559f6[_0x29e225(0x266)]=!![],this['_expanded']=_0x2559f6,requestAnimationFrame(()=>{const _0x3fa981=_0x29e225;requestAnimationFrame(()=>this[_0x3fa981(0x190)](_0x10f0c7));});}[_0x1a7b4c(0x190)](_0xf74720){const _0x433268=_0x1a7b4c,_0x54a12f=this[_0x433268(0x1aa)]?.[_0x433268(0x166)](_0x433268(0x25c)+_0xf74720+'\x22]');if(!_0x54a12f)return;const _0x1c2ff6=_0x54a12f[_0x433268(0x166)](_0x433268(0x291))||_0x54a12f;try{_0x1c2ff6[_0x433268(0x1ae)]({'behavior':_0x433268(0x259),'block':_0x433268(0x19c),'inline':_0x433268(0x21a)});}catch(_0x4557ea){_0x1c2ff6[_0x433268(0x1ae)](!![]);}}['_addEntity']=()=>{const _0x3c03f7=_0x1a7b4c,_0x1e267b=JSON[_0x3c03f7(0x196)](JSON[_0x3c03f7(0x25e)](this[_0x3c03f7(0x1f0)]));_0x1e267b[_0x3c03f7(0x266)]=_0x1e267b['entities']||[],_0x1e267b[_0x3c03f7(0x266)][_0x3c03f7(0x16e)]({'name':'','switch':'','timer':'','sensor':'','timer_and_entity_connected_via_automation':!![]});const _0x107ec9=_0x1e267b[_0x3c03f7(0x266)][_0x3c03f7(0x195)]-0x1,_0x536ea3={...this[_0x3c03f7(0x1da)]};Object['keys'](_0x536ea3)[_0x3c03f7(0x21c)](_0x31fa15=>_0x31fa15[_0x3c03f7(0x237)](_0x3c03f7(0x205)))[_0x3c03f7(0x19d)](_0xc4fc27=>_0x536ea3[_0xc4fc27]=![]),_0x536ea3[_0x3c03f7(0x205)+_0x107ec9]=!![],_0x536ea3['entities']=!![],this[_0x3c03f7(0x1da)]=_0x536ea3,this[_0x3c03f7(0x1d1)](_0x1e267b);};['_removeEntity'](_0x3d6b98){const _0x18c040=_0x1a7b4c,_0x345d29=JSON[_0x18c040(0x196)](JSON[_0x18c040(0x25e)](this['_config']));_0x345d29['entities']['splice'](_0x3d6b98,0x1);const _0x5b58ca={...this[_0x18c040(0x1da)]};Object[_0x18c040(0x14b)](_0x5b58ca)[_0x18c040(0x21c)](_0x5e54a1=>_0x5e54a1[_0x18c040(0x237)](_0x18c040(0x205)))[_0x18c040(0x19d)](_0x3590aa=>delete _0x5b58ca[_0x3590aa]),_0x345d29[_0x18c040(0x266)][_0x18c040(0x19d)]((_0x4bb9c8,_0x295654)=>_0x5b58ca['entity_'+_0x295654]=![]),this[_0x18c040(0x1da)]=_0x5b58ca,this['_dispatchConfig'](_0x345d29);}['_duplicateEntity'](_0x2aed37){const _0x474d36=_0x1a7b4c,_0x150f37=JSON[_0x474d36(0x196)](JSON[_0x474d36(0x25e)](this[_0x474d36(0x1f0)])),_0x1c60d7=JSON[_0x474d36(0x196)](JSON[_0x474d36(0x25e)](_0x150f37[_0x474d36(0x266)][_0x2aed37]));if(_0x1c60d7[_0x474d36(0x1dd)])_0x1c60d7[_0x474d36(0x1dd)]=_0x1c60d7[_0x474d36(0x1dd)]+_0x474d36(0x223);_0x150f37[_0x474d36(0x266)][_0x474d36(0x1c7)](_0x2aed37+0x1,0x0,_0x1c60d7);const _0x216e98={...this[_0x474d36(0x1da)]};Object[_0x474d36(0x14b)](_0x216e98)[_0x474d36(0x21c)](_0x4639d2=>_0x4639d2[_0x474d36(0x237)]('entity_'))[_0x474d36(0x19d)](_0x133aa9=>_0x216e98[_0x133aa9]=![]),_0x216e98[_0x474d36(0x205)+(_0x2aed37+0x1)]=!![],_0x216e98[_0x474d36(0x266)]=!![],this[_0x474d36(0x1da)]=_0x216e98,this[_0x474d36(0x1d1)](_0x150f37);}[_0x1a7b4c(0x1ca)](_0x13886f,_0x20af45){const _0x1e5608=_0x1a7b4c;this[_0x1e5608(0x158)]=_0x13886f;try{_0x20af45['dataTransfer']['effectAllowed']=_0x1e5608(0x15b),_0x20af45[_0x1e5608(0x272)][_0x1e5608(0x14a)](_0x1e5608(0x23c),String(_0x13886f));}catch(_0xa4cba){}}[_0x1a7b4c(0x1af)](_0x272353,_0x35260b){const _0x2dc5fd=_0x1a7b4c;_0x35260b[_0x2dc5fd(0x22f)](),this[_0x2dc5fd(0x1f8)]=_0x272353;try{_0x35260b[_0x2dc5fd(0x272)]['dropEffect']=_0x2dc5fd(0x15b);}catch(_0x31bcd4){}}[_0x1a7b4c(0x1d4)](_0x43103d,_0x38b3fb){}[_0x1a7b4c(0x1b1)](_0x519ebf,_0x1c5f77){const _0x1c5dd6=_0x1a7b4c;_0x1c5f77[_0x1c5dd6(0x22f)]();let _0x59e2e1=this[_0x1c5dd6(0x158)];try{const _0x58f9b2=_0x1c5f77[_0x1c5dd6(0x272)][_0x1c5dd6(0x263)]('text/plain'),_0x4557e1=parseInt(_0x58f9b2,0xa);if(!Number[_0x1c5dd6(0x27b)](_0x4557e1))_0x59e2e1=_0x4557e1;}catch(_0x139c68){}if(_0x59e2e1===null||_0x59e2e1===undefined)return;this['_reorderEntities'](_0x59e2e1,_0x519ebf),this['_dragFromIndex']=null,this[_0x1c5dd6(0x1f8)]=null;}[_0x1a7b4c(0x20a)](_0x165064,_0x37baa7){const _0x17e2a3=_0x1a7b4c;if(_0x165064===_0x37baa7)return;const _0x5f1a0f=JSON['parse'](JSON['stringify'](this['_config'])),_0x3b4d89=_0x5f1a0f[_0x17e2a3(0x266)]||[];if(_0x165064<0x0||_0x165064>=_0x3b4d89[_0x17e2a3(0x195)]||_0x37baa7<0x0||_0x37baa7>=_0x3b4d89[_0x17e2a3(0x195)])return;const _0x1d13ac=(this[_0x17e2a3(0x1f0)][_0x17e2a3(0x266)]||[])[_0x17e2a3(0x1e3)]((_0x204d1c,_0x4494ee)=>!!this[_0x17e2a3(0x1da)]['entity_'+_0x4494ee]),[_0x318d8d]=_0x3b4d89[_0x17e2a3(0x1c7)](_0x165064,0x1);_0x3b4d89[_0x17e2a3(0x1c7)](_0x37baa7,0x0,_0x318d8d);let _0x53f872=_0x1d13ac;if(_0x1d13ac===_0x165064)_0x53f872=_0x37baa7;else{if(_0x165064<_0x1d13ac&&_0x37baa7>=_0x1d13ac)_0x53f872=_0x1d13ac-0x1;else{if(_0x165064>_0x1d13ac&&_0x37baa7<=_0x1d13ac)_0x53f872=_0x1d13ac+0x1;}}const _0x22000c={...this[_0x17e2a3(0x1da)]};Object[_0x17e2a3(0x14b)](_0x22000c)[_0x17e2a3(0x21c)](_0x191820=>_0x191820[_0x17e2a3(0x237)](_0x17e2a3(0x205)))['forEach'](_0x5f1b4b=>delete _0x22000c[_0x5f1b4b]),_0x3b4d89[_0x17e2a3(0x19d)]((_0x40ba04,_0x345033)=>_0x22000c['entity_'+_0x345033]=![]);if(_0x53f872>=0x0&&_0x53f872<_0x3b4d89[_0x17e2a3(0x195)])_0x22000c[_0x17e2a3(0x205)+_0x53f872]=!![];this[_0x17e2a3(0x1da)]=_0x22000c,this[_0x17e2a3(0x1d1)](_0x5f1a0f);}['_renderEntityPicker'](_0x2977fa,_0xa50500,_0x4366c2,_0x2abe0d,_0x310c72=''){const _0x33fb16=_0x1a7b4c,_0x22efff=Array['isArray'](_0x2abe0d)?_0x2abe0d:undefined,_0x5fd9fa=_0x310c72?_0x33fb16(0x152)+_0x310c72:'',_0x298795=_0x310c72?'\x20field-label--'+_0x310c72:'';return haHtml`
+      <div class="field${_0x5fd9fa}">
+        <div class="field-label${_0x298795}">${_0x2977fa}</div>
         <div class="picker-wrap">
           <ha-selector
-            .hass=${this[_0x4b939e(0xa3)]}
-            .label=${_0x4a5333}
-            .selector=${_0x4e6ebd?{'entity':{'domain':_0x4e6ebd}}:{'entity':{}}}
-            .value=${_0x4fdc47||''}
-            .configValue=${_0x3c589a}
-            @value-changed=${this[_0x4b939e(0xc5)]}
+            .hass=${this['hass']}
+            .label=${''}
+            .selector=${_0x22efff?{'entity':{'domain':_0x22efff}}:{'entity':{}}}
+            .value=${_0xa50500||''}
+            .configValue=${_0x4366c2}
+            @value-changed=${this[_0x33fb16(0x1bd)]}
           ></ha-selector>
         </div>
       </div>
-    `;}['_renderSensorPickerWithHelp'](_0x32532f,_0x3efb8e,_0x230e05){const _0x4270b4=_0x4f5e72;return haHtml`
-      <div class="field">
-        <div class="label-row">
-          <div class="label-text">${_0x32532f}</div>
-          <button class="help-btn" type="button" title="Help" @click=${this[_0x4270b4(0x154)]}>
+    `;}[_0x1a7b4c(0x244)](_0x349aa1,_0x15c421,_0x1508f7,_0x2e7c61=''){const _0x2fd7e7=_0x1a7b4c,_0x2671a8=_0x2e7c61?'\x20field--'+_0x2e7c61:'',_0xe3dfc8=_0x2e7c61?_0x2fd7e7(0x224)+_0x2e7c61:'';return haHtml`
+      <div class="field${_0x2671a8}">
+        <div class="label-row${_0xe3dfc8}">
+          <div class="label-text">${_0x349aa1}</div>
+          <button class="help-btn" type="button" title="Help" @click=${this['_openSensorHelp']}>
             <span class="help-q">?</span>
           </button>
         </div>
 
         <div class="picker-wrap">
           <ha-selector
-            .hass=${this[_0x4270b4(0xa3)]}
+            .hass=${this[_0x2fd7e7(0x16f)]}
             .label=${''}
-            .selector=${{'entity':{'domain':[_0x4270b4(0xbf),_0x4270b4(0x1c9)]}}}
-            .value=${_0x3efb8e||''}
-            .configValue=${_0x230e05}
-            @value-changed=${this[_0x4270b4(0xc5)]}
+            .selector=${{'entity':{'domain':['sensor',_0x2fd7e7(0x18e)]}}}
+            .value=${_0x15c421||''}
+            .configValue=${_0x1508f7}
+            @value-changed=${this['_valueChanged']}
           ></ha-selector>
         </div>
       </div>
-    `;}[_0x4f5e72(0x101)](_0x420612){const _0x489650=_0x4f5e72,_0x7ffa76={'colors':{'on':_0x489650(0x19e),'ready':_0x489650(0x9f),'unavailable':_0x489650(0x13c),'button_start':_0x489650(0x9f),'button_stop':_0x489650(0x19e),'icon':_0x489650(0x10d),'progress_fill':'#2196F3'},'icons':{'start':_0x489650(0x128),'stop':'mdi:stop'},'labels':{'status_on':_0x489650(0x17b),'status_ready':'Ready','status_unavailable':_0x489650(0x13f),'last_on_active':_0x489650(0x14c),'last_on_now':_0x489650(0x105),'last_on_ago_minutes':'minutes\x20ago','last_on_ago_hours':_0x489650(0x106),'last_on_ago_days':_0x489650(0x1bc),'time_format_zero':_0x489650(0x1d6),'time_unit_minutes':'m','time_unit_seconds':'s','edit_duration_title':_0x489650(0x124),'edit_duration_hours':_0x489650(0x1a8),'edit_duration_minutes':_0x489650(0x12a),'edit_duration_seconds':_0x489650(0xf3),'edit_duration_apply':'Apply','edit_duration_reset':_0x489650(0xb7),'edit_duration_cancel':_0x489650(0x164),'edit_duration_tooltip':'Click\x20to\x20change\x20duration','start_confirm_body':_0x489650(0x135),'start_confirm_ok':_0x489650(0x10c),'start_confirm_cancel':_0x489650(0x164)}};return _0x7ffa76[_0x420612];}['_getEffectiveGlobal'](_0x1b5918){const _0x9d0b75=_0x4f5e72;return{...this['_getBuiltInDefaults'](_0x1b5918),...this[_0x9d0b75(0x170)]?.[_0x1b5918]||{}};}[_0x4f5e72(0x18d)](_0x12ff39){const _0x114c92=_0x4f5e72,_0x2cc392=JSON[_0x114c92(0xb2)](JSON[_0x114c92(0x9d)](this[_0x114c92(0x170)])),_0x72ddce=_0x12ff39[_0x114c92(0x1d3)]('.');let _0x4c87b4=_0x2cc392;for(let _0x55eb3e=0x0;_0x55eb3e<_0x72ddce[_0x114c92(0xdb)]-0x1;_0x55eb3e++){_0x4c87b4=_0x4c87b4?.[_0x72ddce[_0x55eb3e]];if(!_0x4c87b4)break;}if(_0x4c87b4&&typeof _0x4c87b4==='object')delete _0x4c87b4[_0x72ddce[_0x72ddce[_0x114c92(0xdb)]-0x1]];this[_0x114c92(0x18b)](_0x2cc392);}['_tip'](_0x599b8e){return haHtml`<span class="tip-wrap" tabindex="-1">
+    `;}[_0x1a7b4c(0x22b)](_0x23d4a8){const _0x3e7d01=_0x1a7b4c,_0x146220={'colors':{'on':_0x3e7d01(0x257),'ready':_0x3e7d01(0x28a),'unavailable':_0x3e7d01(0x161),'button_start':_0x3e7d01(0x28a),'button_stop':_0x3e7d01(0x257),'icon':_0x3e7d01(0x234),'progress_fill':'#2196F3'},'icons':{'start':_0x3e7d01(0x141),'stop':_0x3e7d01(0x235)},'labels':{'status_on':_0x3e7d01(0x1dc),'status_ready':_0x3e7d01(0x26b),'status_unavailable':_0x3e7d01(0x19e),'last_on_active':_0x3e7d01(0x1e5),'last_on_now':'Just\x20now','last_on_ago_minutes':'minutes\x20ago','last_on_ago_hours':_0x3e7d01(0x241),'last_on_ago_days':_0x3e7d01(0x1e1),'time_format_zero':_0x3e7d01(0x160),'time_unit_minutes':'m','time_unit_seconds':'s','edit_duration_title':_0x3e7d01(0x175),'edit_duration_hours':_0x3e7d01(0x1a0),'edit_duration_minutes':'Minutes','edit_duration_seconds':_0x3e7d01(0x1cb),'edit_duration_apply':'Apply','edit_duration_reset':_0x3e7d01(0x1a2),'edit_duration_cancel':'Cancel','edit_duration_tooltip':_0x3e7d01(0x1ec),'start_confirm_body':_0x3e7d01(0x231),'start_confirm_ok':'Start\x20anyway','start_confirm_cancel':_0x3e7d01(0x188)}};return _0x146220[_0x23d4a8];}[_0x1a7b4c(0x245)](_0x2344d8){const _0x31409d=_0x1a7b4c;return{...this[_0x31409d(0x22b)](_0x2344d8),...this[_0x31409d(0x1f0)]?.[_0x2344d8]||{}};}['_resetPath'](_0x5b4010){const _0xb93986=_0x1a7b4c,_0x7aa449=JSON[_0xb93986(0x196)](JSON[_0xb93986(0x25e)](this[_0xb93986(0x1f0)])),_0x3667c5=_0x5b4010['split']('.');let _0x3ffc0e=_0x7aa449;for(let _0x1689ad=0x0;_0x1689ad<_0x3667c5[_0xb93986(0x195)]-0x1;_0x1689ad++){_0x3ffc0e=_0x3ffc0e?.[_0x3667c5[_0x1689ad]];if(!_0x3ffc0e)break;}if(_0x3ffc0e&&typeof _0x3ffc0e===_0xb93986(0x197))delete _0x3ffc0e[_0x3667c5[_0x3667c5['length']-0x1]];this[_0xb93986(0x1d1)](_0x7aa449);}[_0x1a7b4c(0x292)](_0x384d46){return haHtml`<span class="tip-wrap" tabindex="-1">
       <svg class="tip-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-      <span class="tip-box">${_0x599b8e}</span>
-    </span>`;}[_0x4f5e72(0x10f)](_0x1a5990,_0x3894a3,_0x42632d){const _0x2e6868=_0x4f5e72,_0x1681ed=_0x1a5990||{},_0x2f1efe=_0x42632d||this[_0x2e6868(0x101)](_0x2e6868(0xa7));return haHtml`
-      <div class="grid grid-3">
-        ${Object['keys'](_0x2f1efe)['map'](_0x38a1a9=>{const _0x2c728a=_0x2e6868,_0xf00ce1=_0x38a1a9[_0x2c728a(0x118)](/_/g,'\x20')[_0x2c728a(0x118)](/\b\w/g,_0x31677b=>_0x31677b[_0x2c728a(0xd4)]());return haHtml`
-            <div class="field">
-              <div class="field-label">${_0xf00ce1}</div>
-              <div class="color-row">
-                <input
-                  class="color-input"
-                  type="color"
-                  .value="${_0x1681ed[_0x38a1a9]||_0x2f1efe[_0x38a1a9]||''}"
-                  @input=${_0x4a9404=>this[_0x2c728a(0xc5)]({'target':{'configValue':_0x3894a3+'.'+_0x38a1a9,'value':_0x4a9404['target'][_0x2c728a(0x17f)]},'detail':{'value':_0x4a9404[_0x2c728a(0x115)][_0x2c728a(0x17f)]}})}
-                />
-                <ha-textfield
-                  label="Hex"
-                  .value="${_0x1681ed[_0x38a1a9]||''}"
-                  .placeholder="${_0x2f1efe[_0x38a1a9]}"
-                  .configValue="${_0x3894a3}.${_0x38a1a9}"
-                  @change=${this['_valueChanged']}
-                ></ha-textfield>
-              </div>
+      <span class="tip-box">${_0x384d46}</span>
+    </span>`;}[_0x1a7b4c(0x1a9)](_0x5e6737,_0x4646fe,_0x265538){const _0x99adf0=_0x1a7b4c,_0x50a17e=_0x5e6737||{},_0x613cbd=_0x265538||this[_0x99adf0(0x22b)](_0x99adf0(0x20e));return haHtml`
+      <div class="color-grid">
+        ${Object['keys'](_0x613cbd)[_0x99adf0(0x269)](_0x4fc0c6=>{const _0x445e71=_0x99adf0,_0x4e0246=_0x4fc0c6[_0x445e71(0x207)](/_/g,'\x20'),_0x236921=_0x50a17e[_0x4fc0c6]||_0x613cbd[_0x4fc0c6]||_0x445e71(0x199);return haHtml`
+            <div class="color-tile">
+              <span class="color-name">${_0x4e0246}</span>
+              <input
+                class="color-swatch"
+                type="color"
+                .value="${_0x236921}"
+                @input=${_0x16f7f8=>this['_valueChanged']({'target':{'configValue':_0x4646fe+'.'+_0x4fc0c6,'value':_0x16f7f8[_0x445e71(0x256)][_0x445e71(0x1b8)]},'detail':{'value':_0x16f7f8[_0x445e71(0x256)][_0x445e71(0x1b8)]}})}
+              />
+              <input
+                class="ed-input color-hex"
+                type="text"
+                .value="${_0x50a17e[_0x4fc0c6]||''}"
+                placeholder="${_0x613cbd[_0x4fc0c6]}"
+                .configValue="${_0x4646fe}.${_0x4fc0c6}"
+                @change=${this[_0x445e71(0x1bd)]}
+              />
             </div>
           `;})}
       </div>
-    `;}[_0x4f5e72(0xdf)](_0x21fb18,_0x439901,_0x20f616){const _0x3e46ba=_0x4f5e72,_0x1fc9db=_0x21fb18||{},_0x10d930=_0x20f616||this[_0x3e46ba(0x101)]('icons');return haHtml`
+    `;}[_0x1a7b4c(0x1fe)](_0x54168f,_0x3142ab,_0x2bfbdd){const _0xa33092=_0x1a7b4c,_0x247192=_0x54168f||{},_0x220357=_0x2bfbdd||this[_0xa33092(0x22b)](_0xa33092(0x1e0));return haHtml`
       <div class="grid grid-2">
-        ${Object[_0x3e46ba(0x108)](_0x10d930)[_0x3e46ba(0xe9)](_0x29cba6=>haHtml`
+        ${Object['keys'](_0x220357)[_0xa33092(0x269)](_0x4d1a1a=>haHtml`
             <div class="field">
               <ha-icon-picker
-                label="${_0x29cba6[_0x3e46ba(0xa8)](0x0)[_0x3e46ba(0xd4)]()+_0x29cba6[_0x3e46ba(0x119)](0x1)} Icon"
-                .value="${_0x1fc9db[_0x29cba6]||''}"
-                .placeholder="${_0x10d930[_0x29cba6]}"
-                .configValue="${_0x439901}.${_0x29cba6}"
-                @value-changed=${this['_valueChanged']}
+                label="${_0x4d1a1a[_0xa33092(0x287)](0x0)['toUpperCase']()+_0x4d1a1a['slice'](0x1)} Icon"
+                .value="${_0x247192[_0x4d1a1a]||''}"
+                .placeholder="${_0x220357[_0x4d1a1a]}"
+                .configValue="${_0x3142ab}.${_0x4d1a1a}"
+                @value-changed=${this[_0xa33092(0x1bd)]}
               ></ha-icon-picker>
             </div>
           `)}
       </div>
-    `;}[_0x4f5e72(0x152)](_0x27a82c,_0x7b2d01,_0x124158){const _0x2181a3=_0x4f5e72,_0x154f8b=_0x27a82c||{},_0x455d21=_0x124158||this[_0x2181a3(0x101)](_0x2181a3(0x1bb));return haHtml`
-      <div class="grid grid-2">
-        ${Object[_0x2181a3(0x108)](_0x455d21)['map'](_0x61215b=>haHtml`
-            <div class="field">
-              <ha-textfield
-                label="${_0x61215b[_0x2181a3(0x118)](/_/g,'\x20')}"
-                .value="${_0x154f8b[_0x61215b]||''}"
-                .placeholder="${_0x455d21[_0x61215b]}"
-                .configValue="${_0x7b2d01}.${_0x61215b}"
-                @change=${this[_0x2181a3(0xc5)]}
-              ></ha-textfield>
-            </div>
+    `;}[_0x1a7b4c(0x1f4)](_0x44b87c,_0xe2716f,_0x1ad506){const _0x237211=_0x1a7b4c,_0xc8f83=new Set(['edit_duration_title',_0x237211(0x22d),_0x237211(0x209),_0x237211(0x1d5),_0x237211(0x1b6),_0x237211(0x21e),'edit_duration_cancel',_0x237211(0x24f),_0x237211(0x26d),_0x237211(0x171),_0x237211(0x249)]),_0x1f0cb7=_0x44b87c||{},_0x4e86f8=_0x1ad506||this[_0x237211(0x22b)](_0x237211(0x174)),_0x3864c0=Object['keys'](_0x4e86f8)[_0x237211(0x21c)](_0x43a1c8=>!_0xc8f83[_0x237211(0x1bf)](_0x43a1c8));return haHtml`
+      <div class="ovr-grid">
+        ${_0x3864c0['map'](_0x56008e=>haHtml`
+            <label class="ovr-field">
+              <span class="ovr-label">${_0x56008e[_0x237211(0x207)](/_/g,'\x20')}</span>
+              <input
+                class="ed-input"
+                type="text"
+                .value="${_0x1f0cb7[_0x56008e]||''}"
+                placeholder="${_0x4e86f8[_0x56008e]}"
+                .configValue="${_0xe2716f}.${_0x56008e}"
+                @change=${this[_0x237211(0x1bd)]}
+              />
+            </label>
           `)}
       </div>
-    `;}[_0x4f5e72(0x18e)](){const _0x3a8697=_0x4f5e72,_0x148a03=customElements[_0x3a8697(0xcd)](_0x3a8697(0xe5))?_0x3a8697(0xe5):'mwc-dialog',_0x431cc0=_0x3a8697(0x104);if(_0x148a03===_0x3a8697(0xe5))return haHtml`
+    `;}['_renderSensorHelpDialog'](){const _0x3fba9a=_0x1a7b4c,_0x1e88df=customElements[_0x3fba9a(0x228)](_0x3fba9a(0x1b5))?_0x3fba9a(0x1b5):_0x3fba9a(0x211),_0x28482a='template:\x0a\x20\x20-\x20trigger:\x0a\x20\x20\x20\x20\x20\x20-\x20trigger:\x20event\x0a\x20\x20\x20\x20\x20\x20\x20\x20event_type:\x20timer.finished\x0a\x20\x20\x20\x20\x20\x20\x20\x20event_data:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20entity_id:\x20timer.zone_1_timer\x0a\x20\x20\x20\x20\x20\x20-\x20trigger:\x20state\x0a\x20\x20\x20\x20\x20\x20\x20\x20entity_id:\x20switch.zone_1\x20\x20\x20#\x20For\x20non-switch\x20domains,\x20change\x20to\x20your\x20entity\x0a\x20\x20\x20\x20\x20\x20\x20\x20from:\x20\x27on\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20to:\x20\x27off\x27\x0a\x20\x20\x20\x20sensor:\x0a\x20\x20\x20\x20\x20\x20-\x20name:\x20zone_1_is_finished\x0a\x20\x20\x20\x20\x20\x20\x20\x20state:\x20\x22{{\x20now().timestamp()\x20|\x20as_datetime\x20}}\x22';if(_0x1e88df===_0x3fba9a(0x1b5))return haHtml`
         <ha-dialog
-          .open=${this[_0x3a8697(0x178)]}
-          @closed=${this[_0x3a8697(0x99)]}
+          .open=${this['_showSensorHelp']}
+          @closed=${this[_0x3fba9a(0x220)]}
           heading="How to create a trigger-based sensor"
         >
           <div class="help-content">
@@ -485,14 +487,14 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
               (works for all domains) and/or when the device turns off. Example below uses both a
               <code>timer.finished</code> event and a switch turning off; adapt the second trigger for your domain if needed.
             </div>
-            <pre class="code"><code>${_0x431cc0}</code></pre>
+            <pre class="code"><code>${_0x28482a}</code></pre>
           </div>
-          <mwc-button slot="primaryAction" @click=${this[_0x3a8697(0x99)]}>Close</mwc-button>
+          <mwc-button slot="primaryAction" @click=${this[_0x3fba9a(0x220)]}>Close</mwc-button>
         </ha-dialog>
       `;return haHtml`
       <mwc-dialog
-        ?open=${this[_0x3a8697(0x178)]}
-        @closed=${this['_closeSensorHelp']}
+        ?open=${this[_0x3fba9a(0x27c)]}
+        @closed=${this[_0x3fba9a(0x220)]}
         heading="How to create a trigger-based sensor"
       >
         <div class="help-content">
@@ -502,15 +504,15 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
             (works for all domains) and/or when the device turns off. Example below uses both a
             <code>timer.finished</code> event and a switch turning off; adapt the second trigger for your domain if needed.
           </div>
-          <pre class="code"><code>${_0x431cc0}</code></pre>
+          <pre class="code"><code>${_0x28482a}</code></pre>
         </div>
-        <mwc-button slot="primaryAction" @click=${this[_0x3a8697(0x99)]}>Close</mwc-button>
+        <mwc-button slot="primaryAction" @click=${this[_0x3fba9a(0x220)]}>Close</mwc-button>
       </mwc-dialog>
-    `;}[_0x4f5e72(0xec)](){const _0x37cc13=_0x4f5e72;if(!this[_0x37cc13(0xa3)]||!this[_0x37cc13(0x170)])return haHtml``;const _0x49e680=!this[_0x37cc13(0x13b)][_0x37cc13(0x93)],_0x28fe34=!this[_0x37cc13(0x13b)][_0x37cc13(0x1bd)],_0x1aef8d=this[_0x37cc13(0x1b9)]||_0x37cc13(0xcc);return haHtml`
+    `;}[_0x1a7b4c(0x182)](){const _0x1be9a9=_0x1a7b4c;if(!this[_0x1be9a9(0x16f)]||!this[_0x1be9a9(0x1f0)])return haHtml``;const _0x18e23c=!this[_0x1be9a9(0x1da)]['global_overrides'],_0x10f473=!this[_0x1be9a9(0x1da)]['entities'],_0x5e1353=this[_0x1be9a9(0x278)]||_0x1be9a9(0x273);return haHtml`
       <div class="editor">
         <!-- GLOBAL SETTINGS PANEL -->
-        <div class="panel ${_0x49e680?'':_0x37cc13(0x15c)}">
-          <div class="panel-header" @click=${()=>this[_0x37cc13(0x147)](_0x37cc13(0x93))}>
+        <div class="panel ${_0x18e23c?'':_0x1be9a9(0x1ad)}">
+          <div class="panel-header" @click=${()=>this['_toggleExpand'](_0x1be9a9(0x208))}>
             <div class="panel-icon">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
             </div>
@@ -523,66 +525,67 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
             </span>
           </div>
 
-          ${_0x49e680?'':haHtml`
+          ${_0x18e23c?'':haHtml`
             <div class="panel-body">
               <div class="tabs">
-                <button class="tb ${_0x1aef8d==='general'?_0x37cc13(0x15d):''}" @click=${()=>{const _0x2dc717=_0x37cc13;this[_0x2dc717(0x1b9)]=_0x2dc717(0xcc);}}>
+                <button class="tb ${_0x5e1353==='general'?_0x1be9a9(0x240):''}" @click=${()=>{const _0x4aa479=_0x1be9a9;this[_0x4aa479(0x278)]=_0x4aa479(0x273);}}>
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
                   General
                 </button>
-                <button class="tb ${_0x1aef8d===_0x37cc13(0xa7)?'active':''}" @click=${()=>{const _0x27323b=_0x37cc13;this[_0x27323b(0x1b9)]='colors';}}>
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-                  Colors
-                </button>
-                <button class="tb ${_0x1aef8d===_0x37cc13(0xf0)?'active':''}" @click=${()=>{const _0x14eefa=_0x37cc13;this[_0x14eefa(0x1b9)]=_0x14eefa(0xf0);}}>
+                <button class="tb ${_0x5e1353===_0x1be9a9(0x1e0)?'active':''}" @click=${()=>{const _0x45eae6=_0x1be9a9;this[_0x45eae6(0x278)]=_0x45eae6(0x1e0);}}>
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
                   Icons
                 </button>
-                <button class="tb ${_0x1aef8d==='labels'?'active':''}" @click=${()=>{const _0x571b0d=_0x37cc13;this['_mainTab']=_0x571b0d(0x1bb);}}>
+                <button class="tb ${_0x5e1353==='colors'?'active':''}" @click=${()=>{const _0x54afbe=_0x1be9a9;this[_0x54afbe(0x278)]=_0x54afbe(0x20e);}}>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                  Colors
+                </button>
+                <button class="tb ${_0x5e1353===_0x1be9a9(0x174)?_0x1be9a9(0x240):''}" @click=${()=>{const _0xf585b0=_0x1be9a9;this['_mainTab']=_0xf585b0(0x174);}}>
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="17" y1="10" x2="3" y2="10"/><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="17" y1="18" x2="3" y2="18"/></svg>
                   Labels
                 </button>
               </div>
 
               <!-- General Tab -->
-              <div class="tc ${_0x1aef8d===_0x37cc13(0xcc)?_0x37cc13(0x15d):''}">
+              <div class="tc ${_0x5e1353==='general'?_0x1be9a9(0x240):''}">
                 <div class="fg">
                   <div class="fgl">Card</div>
-                  <div class="grid grid-2">
+                  <div class="grid grid-pair">
                     <div class="field">
-                      <div class="field-label">Title ${this[_0x37cc13(0x191)](_0x37cc13(0xf8))}</div>
-                      <ha-textfield
-                        label="Title"
-                        .value="${this[_0x37cc13(0x170)][_0x37cc13(0x157)]||''}"
-                        .configValue=${_0x37cc13(0x157)}
-                        @change=${this[_0x37cc13(0xc5)]}
-                      ></ha-textfield>
+                      <div class="field-label">Title ${this['_tip'](_0x1be9a9(0x176))}</div>
+                      <input
+                        class="ed-input"
+                        type="text"
+                        .value="${this[_0x1be9a9(0x1f0)][_0x1be9a9(0x200)]||''}"
+                        .configValue=${'title'}
+                        @change=${this['_valueChanged']}
+                      />
                     </div>
 
                     <div class="field">
-                      <div class="field-label">Button Position ${this[_0x37cc13(0x191)](_0x37cc13(0x17c))}</div>
+                      <div class="field-label">Button Position ${this[_0x1be9a9(0x292)](_0x1be9a9(0x239))}</div>
                       <div class="picker-wrap">
                         <ha-selector
                           .hass=${this['hass']}
-                          .label=${_0x37cc13(0x19a)}
-                          .selector=${{'select':{'options':[{'value':'left','label':_0x37cc13(0x1cf)},{'value':_0x37cc13(0x1a6),'label':_0x37cc13(0x8e)}],'mode':_0x37cc13(0x139)}}}
-                          .value=${this['_config'][_0x37cc13(0x179)]||_0x37cc13(0xa5)}
-                          .configValue=${_0x37cc13(0x179)}
-                          @value-changed=${this[_0x37cc13(0xc5)]}
+                          .label=${_0x1be9a9(0x169)}
+                          .selector=${{'select':{'options':[{'value':_0x1be9a9(0x1a7),'label':_0x1be9a9(0x1b9)},{'value':_0x1be9a9(0x15a),'label':'Right'}],'mode':_0x1be9a9(0x145)}}}
+                          .value=${this[_0x1be9a9(0x1f0)]['button_position']||'left'}
+                          .configValue=${'button_position'}
+                          @value-changed=${this[_0x1be9a9(0x1bd)]}
                         ></ha-selector>
                       </div>
                     </div>
                   </div>
                   <div class="grid grid-2">
                     <div class="field">
-                      <div class="field-label">Editable duration (global default) ${this[_0x37cc13(0x191)]('Default\x20for\x20all\x20entities.\x20If\x20enabled,\x20users\x20can\x20tap\x20the\x20total\x20time\x20on\x20the\x20card\x20to\x20change\x20the\x20duration.\x20Each\x20entity\x20can\x20still\x20override\x20this.')}</div>
+                      <div class="field-label">Editable duration (global default) ${this['_tip']('Default\x20for\x20all\x20entities.\x20If\x20enabled,\x20users\x20can\x20tap\x20the\x20total\x20time\x20on\x20the\x20card\x20to\x20change\x20the\x20duration.\x20Each\x20entity\x20can\x20still\x20override\x20this.')}</div>
                       <div class="toggle-row">
                         <label class="si">
                           <div class="st">
                             <ha-switch
-                              .checked="${!!this[_0x37cc13(0x170)][_0x37cc13(0xe1)]}"
-                              .configValue=${'editable_duration'}
-                              @change=${this[_0x37cc13(0xc5)]}
+                              .checked="${!!this[_0x1be9a9(0x1f0)]['editable_duration']}"
+                              .configValue=${_0x1be9a9(0x178)}
+                              @change=${this['_valueChanged']}
                             ></ha-switch>
                           </div>
                           <div class="sl">
@@ -596,44 +599,44 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
               </div>
 
               <!-- Colors Tab -->
-              <div class="tc ${_0x1aef8d===_0x37cc13(0xa7)?_0x37cc13(0x15d):''}">
+              <div class="tc ${_0x5e1353===_0x1be9a9(0x20e)?_0x1be9a9(0x240):''}">
                 <div class="fg">
                   <div class="fgl-row">
                     <div class="fgl">Colors</div>
-                    <button class="reset-btn" @click=${()=>this['_resetPath']('colors')}>
+                    <button class="reset-btn" @click=${()=>this[_0x1be9a9(0x26e)]('colors')}>
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
                       Reset
                     </button>
                   </div>
-                  ${this['_renderColorOptions'](this[_0x37cc13(0x170)]['colors'],_0x37cc13(0xa7),this[_0x37cc13(0x101)](_0x37cc13(0xa7)))}
+                  ${this[_0x1be9a9(0x1a9)](this[_0x1be9a9(0x1f0)][_0x1be9a9(0x20e)],_0x1be9a9(0x20e),this[_0x1be9a9(0x22b)](_0x1be9a9(0x20e)))}
                 </div>
               </div>
 
               <!-- Icons Tab -->
-              <div class="tc ${_0x1aef8d===_0x37cc13(0xf0)?'active':''}">
+              <div class="tc ${_0x5e1353===_0x1be9a9(0x1e0)?_0x1be9a9(0x240):''}">
                 <div class="fg">
                   <div class="fgl-row">
                     <div class="fgl">Icons</div>
-                    <button class="reset-btn" @click=${()=>this[_0x37cc13(0x18d)](_0x37cc13(0xf0))}>
+                    <button class="reset-btn" @click=${()=>this[_0x1be9a9(0x26e)](_0x1be9a9(0x1e0))}>
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
                       Reset
                     </button>
                   </div>
-                  ${this[_0x37cc13(0xdf)](this['_config']['icons'],'icons',this[_0x37cc13(0x101)](_0x37cc13(0xf0)))}
+                  ${this['_renderIconOptions'](this['_config'][_0x1be9a9(0x1e0)],_0x1be9a9(0x1e0),this[_0x1be9a9(0x22b)](_0x1be9a9(0x1e0)))}
                 </div>
               </div>
 
               <!-- Labels Tab -->
-              <div class="tc ${_0x1aef8d==='labels'?_0x37cc13(0x15d):''}">
+              <div class="tc ${_0x5e1353===_0x1be9a9(0x174)?_0x1be9a9(0x240):''}">
                 <div class="fg">
                   <div class="fgl-row">
                     <div class="fgl">Labels</div>
-                    <button class="reset-btn" @click=${()=>this['_resetPath'](_0x37cc13(0x1bb))}>
+                    <button class="reset-btn" @click=${()=>this[_0x1be9a9(0x26e)](_0x1be9a9(0x174))}>
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
                       Reset
                     </button>
                   </div>
-                  ${this['_renderLabelOptions'](this['_config'][_0x37cc13(0x1bb)],_0x37cc13(0x1bb),this[_0x37cc13(0x101)](_0x37cc13(0x1bb)))}
+                  ${this[_0x1be9a9(0x1f4)](this['_config']['labels'],_0x1be9a9(0x174),this[_0x1be9a9(0x22b)](_0x1be9a9(0x174)))}
                 </div>
               </div>
             </div>
@@ -641,13 +644,13 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
         </div>
 
         <!-- ENTITIES PANEL -->
-        <div class="panel ${_0x28fe34?'':_0x37cc13(0x15c)}">
-          <div class="panel-header" @click=${()=>this[_0x37cc13(0x147)](_0x37cc13(0x1bd))}>
+        <div class="panel ${_0x10f473?'':'open'}">
+          <div class="panel-header" @click=${()=>this['_toggleExpand'](_0x1be9a9(0x266))}>
             <div class="panel-icon ent-icon">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
             </div>
             <div class="panel-text">
-              <span class="panel-title">Entities <span class="badge">${(this['_config']['entities']||[])[_0x37cc13(0xdb)]}</span></span>
+              <span class="panel-title">Entities <span class="badge">${(this[_0x1be9a9(0x1f0)][_0x1be9a9(0x266)]||[])['length']}</span></span>
               <span class="panel-subtitle">Drag & drop to reorder. Click entity to expand.</span>
             </div>
             <span class="panel-chevron">
@@ -655,10 +658,10 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
             </span>
           </div>
 
-          ${_0x28fe34?'':haHtml`
+          ${_0x10f473?'':haHtml`
             <div class="panel-body entity-list">
-              ${(this['_config'][_0x37cc13(0x1bd)]||[])[_0x37cc13(0xe9)]((_0xd62b8e,_0xeb2216)=>this[_0x37cc13(0x13e)](_0xd62b8e,_0xeb2216))}
-              <button class="add-btn" @click=${this['_addEntity']}>
+              ${(this[_0x1be9a9(0x1f0)]['entities']||[])[_0x1be9a9(0x269)]((_0x476d61,_0x46d991)=>this['_renderEntitySection'](_0x476d61,_0x46d991))}
+              <button class="add-btn" @click=${this[_0x1be9a9(0x277)]}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                 Add Entity
               </button>
@@ -667,86 +670,87 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
         </div>
       </div>
 
-      ${this[_0x37cc13(0x18e)]()}
-    `;}[_0x4f5e72(0x13e)](_0x3cc00e,_0x35a631){const _0x486864=_0x4f5e72,_0x23d616=_0x486864(0x159)+_0x35a631,_0x390a1a=!!this[_0x486864(0x13b)][_0x486864(0xad)+_0x35a631],_0xbfce35=_0x3cc00e[_0x486864(0x1b3)]?.[_0x486864(0x10a)]()?_0x3cc00e[_0x486864(0x1b3)]:this['hass']?.[_0x486864(0x1b0)]?.[_0x3cc00e[_0x486864(0x189)]]?.[_0x486864(0xc1)]?.[_0x486864(0x132)]||_0x486864(0x150)+(_0x35a631+0x1),_0x5767ca=this['_dragOverIndex']===_0x35a631,_0xe36372=this[_0x486864(0x1a4)][_0x35a631]||_0x486864(0xcc);return haHtml`
+      ${this['_renderSensorHelpDialog']()}
+    `;}[_0x1a7b4c(0x1e6)](_0x47513a,_0x405697){const _0x40e7eb=_0x1a7b4c,_0x45b997=_0x40e7eb(0x1a3)+_0x405697,_0x1558c2=!!this['_expanded'][_0x40e7eb(0x205)+_0x405697],_0x1553c3=_0x47513a[_0x40e7eb(0x1dd)]?.[_0x40e7eb(0x247)]()?_0x47513a[_0x40e7eb(0x1dd)]:this['hass']?.[_0x40e7eb(0x162)]?.[_0x47513a[_0x40e7eb(0x27e)]]?.['attributes']?.[_0x40e7eb(0x218)]||_0x40e7eb(0x1e2)+(_0x405697+0x1),_0x34f617=this[_0x40e7eb(0x1f8)]===_0x405697,_0x460974=this[_0x40e7eb(0x1ff)][_0x405697]||'general';return haHtml`
       <div
-        class="ec ${_0x390a1a?_0x486864(0x15c):''} ${_0x5767ca?'drag-over':''}"
-        data-entity-index="${_0x35a631}"
-        @dragover=${_0x5f5542=>this['_onDragOver'](_0x35a631,_0x5f5542)}
-        @drop=${_0x2322c4=>this[_0x486864(0x11a)](_0x35a631,_0x2322c4)}
-        @dragleave=${_0x106499=>this['_onDragLeave'](_0x35a631,_0x106499)}
+        class="ec ${_0x1558c2?_0x40e7eb(0x1ad):''} ${_0x34f617?_0x40e7eb(0x157):''}"
+        data-entity-index="${_0x405697}"
+        @dragover=${_0x10626c=>this[_0x40e7eb(0x1af)](_0x405697,_0x10626c)}
+        @drop=${_0x1fb938=>this[_0x40e7eb(0x1b1)](_0x405697,_0x1fb938)}
+        @dragleave=${_0x4737c0=>this[_0x40e7eb(0x1d4)](_0x405697,_0x4737c0)}
       >
-        <div class="eh" @click=${()=>this[_0x486864(0x175)](_0x35a631)}>
+        <div class="eh" @click=${()=>this[_0x40e7eb(0x170)](_0x405697)}>
           <div class="ed"
             title="Drag to reorder"
             draggable="true"
-            @dragstart=${_0x5e8eb8=>this[_0x486864(0x136)](_0x35a631,_0x5e8eb8)}
-            @click=${_0x2b66cb=>_0x2b66cb[_0x486864(0xc4)]()}
+            @dragstart=${_0x39a707=>this[_0x40e7eb(0x1ca)](_0x405697,_0x39a707)}
+            @click=${_0x2eb5b3=>_0x2eb5b3[_0x40e7eb(0x149)]()}
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="9" cy="5" r="1.5"/><circle cx="15" cy="5" r="1.5"/><circle cx="9" cy="12" r="1.5"/><circle cx="15" cy="12" r="1.5"/><circle cx="9" cy="19" r="1.5"/><circle cx="15" cy="19" r="1.5"/></svg>
           </div>
           <div class="ei">
-            <span class="en">${_0xbfce35}</span>
+            <span class="en">${_0x1553c3}</span>
           </div>
           <div class="ea">
-            <button class="etb" @click=${_0xda3e29=>{const _0x162fe9=_0x486864;_0xda3e29[_0x162fe9(0xc4)](),this[_0x162fe9(0x175)](_0x35a631);}}>
+            <button class="etb" @click=${_0x61eb10=>{const _0x356708=_0x40e7eb;_0x61eb10[_0x356708(0x149)](),this[_0x356708(0x170)](_0x405697);}}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
-            <button class="edup" title="Duplicate" @click=${_0x21e6d4=>{const _0x884aa2=_0x486864;_0x21e6d4[_0x884aa2(0xc4)](),this[_0x884aa2(0x1c2)](_0x35a631);}}>
+            <button class="edup" title="Duplicate" @click=${_0x59135f=>{const _0x52474e=_0x40e7eb;_0x59135f[_0x52474e(0x149)](),this[_0x52474e(0x282)](_0x405697);}}>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
             </button>
-            <button class="edb" @click=${_0x35df2c=>{_0x35df2c['stopPropagation'](),this['_removeEntity'](_0x35a631);}}>
+            <button class="edb" @click=${_0x56cb1c=>{const _0x336df5=_0x40e7eb;_0x56cb1c[_0x336df5(0x149)](),this[_0x336df5(0x24e)](_0x405697);}}>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
             </button>
           </div>
         </div>
 
-        ${_0x390a1a?haHtml`
+        ${_0x1558c2?haHtml`
           <div class="eb">
             <div class="tabs">
-              <button class="tb ${_0xe36372==='general'?_0x486864(0x15d):''}" @click=${()=>{const _0x1a77a2=_0x486864;this[_0x1a77a2(0x1a4)]={...this['_entityTabs'],[_0x35a631]:'general'};}}>
+              <button class="tb ${_0x460974===_0x40e7eb(0x273)?_0x40e7eb(0x240):''}" @click=${()=>{const _0x5f3850=_0x40e7eb;this[_0x5f3850(0x1ff)]={...this[_0x5f3850(0x1ff)],[_0x405697]:_0x5f3850(0x273)};}}>
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
                 General
               </button>
-              <button class="tb ${_0xe36372===_0x486864(0xa7)?_0x486864(0x15d):''}" @click=${()=>{const _0x58fa15=_0x486864;this[_0x58fa15(0x1a4)]={...this[_0x58fa15(0x1a4)],[_0x35a631]:_0x58fa15(0xa7)};}}>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-                Colors
-              </button>
-              <button class="tb ${_0xe36372==='icons'?_0x486864(0x15d):''}" @click=${()=>{const _0x1fc41b=_0x486864;this[_0x1fc41b(0x1a4)]={...this[_0x1fc41b(0x1a4)],[_0x35a631]:_0x1fc41b(0xf0)};}}>
+              <button class="tb ${_0x460974===_0x40e7eb(0x1e0)?_0x40e7eb(0x240):''}" @click=${()=>{const _0x43c132=_0x40e7eb;this['_entityTabs']={...this['_entityTabs'],[_0x405697]:_0x43c132(0x1e0)};}}>
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
                 Icons
               </button>
-              <button class="tb ${_0xe36372===_0x486864(0x1bb)?_0x486864(0x15d):''}" @click=${()=>{const _0xda4197=_0x486864;this[_0xda4197(0x1a4)]={...this[_0xda4197(0x1a4)],[_0x35a631]:_0xda4197(0x1bb)};}}>
+              <button class="tb ${_0x460974===_0x40e7eb(0x20e)?_0x40e7eb(0x240):''}" @click=${()=>{const _0x5939ad=_0x40e7eb;this['_entityTabs']={...this[_0x5939ad(0x1ff)],[_0x405697]:_0x5939ad(0x20e)};}}>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                Colors
+              </button>
+              <button class="tb ${_0x460974===_0x40e7eb(0x174)?_0x40e7eb(0x240):''}" @click=${()=>{const _0x417809=_0x40e7eb;this[_0x417809(0x1ff)]={...this[_0x417809(0x1ff)],[_0x405697]:'labels'};}}>
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="17" y1="10" x2="3" y2="10"/><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="17" y1="18" x2="3" y2="18"/></svg>
                 Labels
               </button>
             </div>
 
             <!-- Entity General Tab -->
-            <div class="tc ${_0xe36372===_0x486864(0xcc)?_0x486864(0x15d):''}">
+            <div class="tc ${_0x460974==='general'?_0x40e7eb(0x240):''}">
               <div class="fg">
                 <div class="fgl">Entity Setup</div>
-                <div class="grid grid-2">
+                <div class="grid grid-pair">
                   <div class="field">
-                    <div class="field-label">Display Name ${this[_0x486864(0x191)](_0x486864(0x113))}</div>
-                    <ha-textfield
-                      label="Name"
-                      .value="${_0x3cc00e['name']||''}"
-                      .configValue="${_0x23d616}.name"
+                    <div class="field-label">Display Name ${this['_tip']('Optional\x20custom\x20name.\x20If\x20empty,\x20card\x20uses\x20entity\x20friendly\x20name.')}</div>
+                    <input
+                      class="ed-input"
+                      type="text"
+                      .value="${_0x47513a['name']||''}"
+                      .configValue="${_0x45b997}.name"
                       @change=${this['_valueChanged']}
-                    ></ha-textfield>
+                    />
                   </div>
 
                   <div class="field">
-                    <div class="field-label">Button Position ${this[_0x486864(0x191)](_0x486864(0x16d))}</div>
+                    <div class="field-label">Button Position ${this[_0x40e7eb(0x292)](_0x40e7eb(0x15d))}</div>
                     <div class="picker-wrap">
                       <ha-selector
-                        .hass=${this[_0x486864(0xa3)]}
-                        .label=${_0x486864(0x19a)}
-                        .selector=${{'select':{'options':[{'value':'global','label':_0x486864(0x1be)},{'value':_0x486864(0xa5),'label':_0x486864(0x1cf)},{'value':'right','label':_0x486864(0x8e)}],'mode':_0x486864(0x139)}}}
-                        .value=${_0x3cc00e[_0x486864(0x179)]||_0x486864(0x12e)}
-                        .configValue="${_0x23d616}.button_position"
-                        @value-changed=${this[_0x486864(0xc5)]}
+                        .hass=${this['hass']}
+                        .label=${'Position'}
+                        .selector=${{'select':{'options':[{'value':_0x40e7eb(0x148),'label':_0x40e7eb(0x238)},{'value':_0x40e7eb(0x1a7),'label':_0x40e7eb(0x1b9)},{'value':_0x40e7eb(0x15a),'label':_0x40e7eb(0x173)}],'mode':_0x40e7eb(0x145)}}}
+                        .value=${_0x47513a[_0x40e7eb(0x294)]||_0x40e7eb(0x148)}
+                        .configValue="${_0x45b997}.button_position"
+                        @value-changed=${this[_0x40e7eb(0x1bd)]}
                       ></ha-selector>
                     </div>
                   </div>
@@ -756,20 +760,20 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
               <div class="fg">
                 <div class="fgl">Entities</div>
                 <div class="grid grid-2">
-                  ${this['_renderEntityPicker']('Control\x20entity\x20(switch\x20/\x20light\x20/\x20cover\x20/\x20valve\x20/\x20lock\x20/\x20etc.)',_0x3cc00e['switch']||'',_0x23d616+_0x486864(0x1b1),['switch',_0x486864(0x121),_0x486864(0x1cd),_0x486864(0x184),_0x486864(0x1a2),'media_player',_0x486864(0x129),_0x486864(0xf9)])}
-                  ${this[_0x486864(0xed)](_0x486864(0x168),_0x3cc00e['timer']||'',_0x23d616+_0x486864(0x1a5),[_0x486864(0x1d1)])}
+                  ${this[_0x40e7eb(0x1f3)](_0x40e7eb(0x246),_0x47513a[_0x40e7eb(0x27e)]||'',_0x45b997+_0x40e7eb(0x1fb),[_0x40e7eb(0x27e),_0x40e7eb(0x23d),_0x40e7eb(0x229),'valve','lock',_0x40e7eb(0x203),'input_boolean',_0x40e7eb(0x14d)],_0x40e7eb(0x14f))}
+                  ${this[_0x40e7eb(0x1f3)]('Timer\x20entity',_0x47513a[_0x40e7eb(0x23a)]||'',_0x45b997+_0x40e7eb(0x265),[_0x40e7eb(0x23a)],_0x40e7eb(0x23a))}
                 </div>
                 <div class="grid grid-2">
-                  ${this[_0x486864(0x1b2)](_0x486864(0x107),_0x3cc00e[_0x486864(0xbf)]||'',_0x23d616+_0x486864(0xc2))}
+                  ${this[_0x40e7eb(0x244)](_0x40e7eb(0x1e9),_0x47513a[_0x40e7eb(0x1a8)]||'',_0x45b997+_0x40e7eb(0x22c),_0x40e7eb(0x1a8))}
                   <div class="field">
-                    <div class="field-label">Automation Link ${this[_0x486864(0x191)]('If\x20enabled,\x20card\x20only\x20starts/stops\x20the\x20timer;\x20your\x20automation\x20controls\x20the\x20entity.\x20If\x20disabled,\x20card\x20turns\x20entity\x20on/off\x20directly.')}</div>
+                    <div class="field-label">Automation Link ${this[_0x40e7eb(0x292)]('If\x20enabled,\x20card\x20only\x20starts/stops\x20the\x20timer;\x20your\x20automation\x20controls\x20the\x20entity.\x20If\x20disabled,\x20card\x20turns\x20entity\x20on/off\x20directly.')}</div>
                     <div class="toggle-row">
                       <label class="si">
                         <div class="st">
                           <ha-switch
-                            .checked="${_0x3cc00e[_0x486864(0x109)]!==![]}"
-                            .configValue="${_0x23d616}.timer_and_entity_connected_via_automation"
-                            @change=${this[_0x486864(0xc5)]}
+                            .checked="${_0x47513a['timer_and_entity_connected_via_automation']!==![]}"
+                            .configValue="${_0x45b997}.timer_and_entity_connected_via_automation"
+                            @change=${this[_0x40e7eb(0x1bd)]}
                           ></ha-switch>
                         </div>
                         <div class="sl">
@@ -777,34 +781,35 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
                         </div>
                       </label>
                     </div>
-                    ${_0x3cc00e['timer_and_entity_connected_via_automation']===![]?haHtml`<div class="inline-warn">
+                    ${_0x47513a[_0x40e7eb(0x1a5)]===![]?haHtml`<div class="inline-warn">
                           <ha-icon icon="mdi:alert-outline"></ha-icon>
                           <span>Direct control runs in your browser — the device won't switch off if no dashboard is open when the timer ends. For unattended use, keep this on and add a <code>timer.finished</code> automation (see the Help panel).</span>
                         </div>`:''}
                   </div>
                 </div>
                 <div class="grid grid-2">
-                  ${this[_0x486864(0xed)](_0x486864(0xc6),_0x3cc00e[_0x486864(0xa2)]||'',_0x23d616+_0x486864(0xd3),[_0x486864(0xbf)])}
+                  ${this[_0x40e7eb(0x1f3)](_0x40e7eb(0x236),_0x47513a[_0x40e7eb(0x19b)]||'',_0x45b997+_0x40e7eb(0x286),[_0x40e7eb(0x1a8)],'battery')}
                 </div>
                 <div class="grid grid-2">
-                  <div class="field">
-                    <div class="field-label">Default duration override ${this[_0x486864(0x191)](_0x486864(0x169))}</div>
-                    <ha-textfield
+                  <div class="field field--duration">
+                    <div class="field-label field-label--duration">Default duration override ${this['_tip'](_0x40e7eb(0x21b))}</div>
+                    <input
+                      class="ed-input"
+                      type="text"
                       placeholder="e.g. 00:10:00"
-                      .value="${_0x3cc00e[_0x486864(0xd9)]??''}"
-                      .configValue="${_0x23d616}.duration"
-                      @input=${this[_0x486864(0xc5)]}
-                    ></ha-textfield>
+                      .value="${_0x47513a[_0x40e7eb(0x24b)]??''}"
+                      .configValue="${_0x45b997}.duration"
+                      @change=${this[_0x40e7eb(0x1bd)]}
+                    />
                   </div>
-                  <div class="field">
-                    <div class="field-label">Editable duration ${this[_0x486864(0x191)](_0x486864(0xc8))}</div>
+                  <div class="field field--editable-duration">
                     <div class="toggle-row">
                       <label class="si">
                         <div class="st">
                           <ha-switch
-                            .checked="${!!_0x3cc00e[_0x486864(0xe1)]}"
-                            .configValue="${_0x23d616}.editable_duration"
-                            @change=${this[_0x486864(0xc5)]}
+                            .checked="${!!_0x47513a[_0x40e7eb(0x178)]}"
+                            .configValue="${_0x45b997}.editable_duration"
+                            @change=${this[_0x40e7eb(0x1bd)]}
                           ></ha-switch>
                         </div>
                         <div class="sl">
@@ -818,53 +823,53 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
             </div>
 
             <!-- Entity Colors Tab -->
-            <div class="tc ${_0xe36372===_0x486864(0xa7)?'active':''}">
+            <div class="tc ${_0x460974===_0x40e7eb(0x20e)?_0x40e7eb(0x240):''}">
               <div class="fg">
                 <div class="fgl-row">
                   <div class="fgl">Override Colors</div>
-                  <button class="reset-btn" @click=${()=>this[_0x486864(0x18d)](_0x23d616+_0x486864(0x11c))}>
+                  <button class="reset-btn" @click=${()=>this[_0x40e7eb(0x26e)](_0x45b997+_0x40e7eb(0x28b))}>
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
                     Reset
                   </button>
                 </div>
                 <div class="hint" style="margin-bottom:8px">Override global colors for this entity. Unset values inherit from global settings.</div>
-                ${this[_0x486864(0x10f)](_0x3cc00e[_0x486864(0xa7)],_0x23d616+_0x486864(0x11c),this['_getEffectiveGlobal'](_0x486864(0xa7)))}
+                ${this[_0x40e7eb(0x1a9)](_0x47513a['colors'],_0x45b997+_0x40e7eb(0x28b),this[_0x40e7eb(0x245)](_0x40e7eb(0x20e)))}
               </div>
             </div>
 
             <!-- Entity Icons Tab -->
-            <div class="tc ${_0xe36372===_0x486864(0xf0)?'active':''}">
+            <div class="tc ${_0x460974==='icons'?_0x40e7eb(0x240):''}">
               <div class="fg">
                 <div class="fgl-row">
                   <div class="fgl">Override Icons</div>
-                  <button class="reset-btn" @click=${()=>this[_0x486864(0x18d)](_0x23d616+_0x486864(0x8b))}>
+                  <button class="reset-btn" @click=${()=>this[_0x40e7eb(0x26e)](_0x45b997+'.icons')}>
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
                     Reset
                   </button>
                 </div>
                 <div class="hint" style="margin-bottom:8px">Override global icons for this entity. Unset values inherit from global settings.</div>
-                ${this[_0x486864(0xdf)](_0x3cc00e[_0x486864(0xf0)],_0x23d616+_0x486864(0x8b),this[_0x486864(0x193)](_0x486864(0xf0)))}
+                ${this[_0x40e7eb(0x1fe)](_0x47513a[_0x40e7eb(0x1e0)],_0x45b997+_0x40e7eb(0x289),this[_0x40e7eb(0x245)]('icons'))}
               </div>
             </div>
 
             <!-- Entity Labels Tab -->
-            <div class="tc ${_0xe36372===_0x486864(0x1bb)?_0x486864(0x15d):''}">
+            <div class="tc ${_0x460974===_0x40e7eb(0x174)?_0x40e7eb(0x240):''}">
               <div class="fg">
                 <div class="fgl-row">
                   <div class="fgl">Override Labels</div>
-                  <button class="reset-btn" @click=${()=>this[_0x486864(0x18d)](_0x23d616+_0x486864(0x111))}>
+                  <button class="reset-btn" @click=${()=>this['_resetPath'](_0x45b997+_0x40e7eb(0x1bb))}>
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
                     Reset
                   </button>
                 </div>
                 <div class="hint" style="margin-bottom:8px">Override global labels for this entity. Unset values inherit from global settings.</div>
-                ${this[_0x486864(0x152)](_0x3cc00e[_0x486864(0x1bb)],_0x23d616+_0x486864(0x111),this[_0x486864(0x193)]('labels'))}
+                ${this[_0x40e7eb(0x1f4)](_0x47513a[_0x40e7eb(0x174)],_0x45b997+_0x40e7eb(0x1bb),this['_getEffectiveGlobal'](_0x40e7eb(0x174)))}
               </div>
             </div>
           </div>
         `:''}
       </div>
-    `;}static get[_0x4f5e72(0x102)](){return haCss`
+    `;}static get[_0x1a7b4c(0x264)](){return haCss`
       /* ===== CSS Variables ===== */
       :host {
         display: block;
@@ -1008,13 +1013,30 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
       .grid { display: grid; gap: 12px; }
       .grid-2 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
       .grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+      .grid-pair { grid-template-columns: 1fr 1fr; }
 
       /* ===== Field ===== */
-      .field { display: grid; gap: 6px; min-width: 0; }
+      .field { display: grid; gap: 2px; min-width: 0; }
+      /* ---- Per-field style hooks (entity General tab) — edit freely ---- */
+      .field--control { border-left: 3px solid #5aa9f0; border-radius: 0; padding-left: 10px; }
+      .field--timer { border-left: 3px solid #5fc06a; border-radius: 0; padding-left: 10px; }
+      .field--sensor { border-left: 3px solid #e0a23c; border-radius: 0; padding-left: 10px; }
+      .field--battery { border-left: 3px solid #2bc0a8; border-radius: 0; padding-left: 10px; }
+      .field--duration { border-left: 3px solid #b07fe0; border-radius: 0; padding-left: 10px; }
+      .field--editable-duration { border-left: 3px solid #e88a8a; border-radius: 0; padding-left: 10px; }
+
+      .field-label.field-label--control { color: #5aa9f0; }
+      .field-label.field-label--timer { color: #5fc06a; padding-top: 20px }
+      .field-label.field-label--battery { color: #2bc0a8; padding-top: 20px}
+      .field-label.field-label--duration { color: #b07fe0; padding-top: 20px}
+      .field-label.field-label--editable-duration { color: #e88a8a; }
+      .label-row--sensor .label-text { color: #e0a23c; padding-top: 20px }
+      .label-row--sensor .help-btn { margin-top: 20px; }
+
       .field-label {
         font-size: 11.5px; font-weight: 500; color: var(--ts);
         margin: 2px 0; letter-spacing: .02em;
-        display: flex; align-items: center; gap: 2px;
+        display: flex; align-items: center; gap: 2px; padding-top: 15px
       }
       .hint { font-size: 11px; color: var(--ts); line-height: 1.4; opacity: .7; }
       .inline-warn {
@@ -1075,23 +1097,42 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
         display: block;
       }
 
-      /* ===== Color Row ===== */
-      .color-row {
-        display: grid; grid-template-columns: 40px 1fr;
-        gap: 8px; align-items: center;
-        min-width: 0;
+      /* ===== Native inputs (ed-input) ===== */
+      .ed-input {
+        width: 100%; box-sizing: border-box;
+        background: var(--sf); color: var(--tx);
+        border: 1px solid var(--bd); border-radius: 10px;
+        padding: 9px 11px; font-size: 13px; font-family: inherit;
+        outline: none; transition: border-color .15s ease;
       }
-      .color-row ha-textfield {
-        min-width: 0;
-        --ha-color-form-background: var(--sf);
-        --mdc-text-field-fill-color: var(--sf);
+      .ed-input:hover { border-color: var(--ts); }
+      .ed-input:focus { border-color: var(--ac); }
+      .ed-input::placeholder { color: var(--ts); opacity: .55; }
+
+      /* ===== Override grids (labels) ===== */
+      .ovr-grid {
+        display: grid; gap: 12px 14px;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
       }
-      .color-input {
-        width: 40px; height: 40px;
-        border-radius: 8px; border: 1px solid var(--bd);
-        background: transparent; padding: 2px; cursor: pointer;
-        flex-shrink: 0;
+      .ovr-field { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+      .ovr-label { font-size: 11px; color: var(--ts); text-transform: capitalize; }
+      .ovr-field .ed-input { padding: 7px 9px; font-size: 12.5px; }
+
+      /* ===== Color grid (3 per row) ===== */
+      .color-grid {
+        display: grid; gap: 14px 12px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
       }
+      .color-tile { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+      .color-name { font-size: 11px; color: var(--ts); text-transform: capitalize; }
+      .color-swatch {
+        width: 100%; height: 30px; padding: 0; cursor: pointer;
+        border: 1px solid var(--bd); border-radius: 8px; background: none;
+      }
+      .color-swatch::-webkit-color-swatch-wrapper { padding: 0; }
+      .color-swatch::-webkit-color-swatch { border: none; border-radius: 7px; }
+      .color-swatch::-moz-color-swatch { border: none; border-radius: 7px; }
+      .color-hex { font-family: var(--code-font-family, monospace); font-size: 11.5px; padding: 6px 8px; }
 
       /* ===== Toggle Row ===== */
       .toggle-row { padding: 4px 0; }
@@ -1214,7 +1255,7 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
         border: 1px solid var(--bd);
         background: var(--sf); cursor: pointer;
         display: inline-flex; align-items: center; justify-content: center;
-        padding: 0; line-height: 1; flex: 0 0 auto;
+        padding: 20px; line-height: 1; flex: 0 0 auto;
         transition: all .15s;
       }
       .help-btn:hover { border-color: var(--ac); background: rgba(var(--acr), .06); }
@@ -1240,7 +1281,9 @@ function _0x481b(){const _0xb73e23=['move','Active','last_on_ago_hours','callSer
       @media (max-width: 500px) {
         .grid-2 { grid-template-columns: 1fr; }
         .grid-3 { grid-template-columns: 1fr 1fr; }
+        .grid-pair { grid-template-columns: 1fr; }
+        .color-grid { grid-template-columns: repeat(2, 1fr); }
         .tabs { flex-wrap: wrap; }
         .tb { font-size: 10px; padding: 6px 6px; }
       }
-    `;}}customElements[_0x4f5e72(0x142)](_0x4f5e72(0x11f),SwitchAndTimerBarCardEditor),window['customCards']=window[_0x4f5e72(0x17a)]||[];function _0x59e2(_0x4b0fe1,_0x37d0f0){_0x4b0fe1=_0x4b0fe1-0x8b;const _0x481bc6=_0x481b();let _0x59e2c8=_0x481bc6[_0x4b0fe1];return _0x59e2c8;}!window[_0x4f5e72(0x17a)]['some'](_0x33e01e=>_0x33e01e['type']===_0x4f5e72(0xab))&&window[_0x4f5e72(0x17a)][_0x4f5e72(0x181)]({'type':_0x4f5e72(0xab),'name':_0x4f5e72(0x1d0),'description':_0x4f5e72(0x1d0),'preview':!![]});
+    `;}}customElements['define']('switch-and-timer-bar-card-editor',SwitchAndTimerBarCardEditor),window[_0x1a7b4c(0x159)]=window[_0x1a7b4c(0x159)]||[];!window[_0x1a7b4c(0x159)][_0x1a7b4c(0x20f)](_0x19c9c4=>_0x19c9c4[_0x1a7b4c(0x213)]===_0x1a7b4c(0x17c))&&window['customCards'][_0x1a7b4c(0x16e)]({'type':_0x1a7b4c(0x17c),'name':_0x1a7b4c(0x201),'description':_0x1a7b4c(0x201),'preview':!![]});
