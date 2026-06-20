@@ -21,11 +21,12 @@ A flexible Lovelace card for Home Assistant that lets you control a device, mana
 
 * **Multi‑domain control:** The card supports **switch**, **light**, **fan**, **input\_boolean**, **automation**, **siren**, **cover**, **valve**, **lock**, and **media\_player** entities.
 * **Device‑aware Start/Stop:** The card sends the right service for each domain (see mapping below).
-* **Auto turn‑off at timer end:** When the timer finishes, the card can stop the device automatically.
+* **Auto turn‑off at timer end:** When the timer finishes, the card can stop the device automatically. In this (direct‑control) mode the switch‑off is performed by your browser, so for unattended use — when no dashboard is open — automation mode is recommended (see the note below).
 * **Optional automation mode:** Use `timer_and_entity_connected_via_automation: true` if your own automations already link the timer ↔️ device; the card then avoids extra on/off actions.
 * **Smarter status:** “Active” is interpreted sensibly per domain (e.g., covers consider *closed* as active; locks consider *unlocked* as active; media players consider *playing/on* as active).
 * **Shared-device aware:** Use the same controllable entity across multiple cards (e.g., one boiler with 15/30/60-minute boost buttons). Each card tracks its own timer independently and coordinates so an active timer is not interrupted by another card.
 * **Editable duration:** Optionally let users tap the total time on the card to change the timer duration on the fly. The value is saved per device, so each user can have their own preferred boost length. You can also set a YAML default to override the timer helper's configured duration without touching the helper.
+* **Battery indicator:** Optionally show a device's battery level in a smaller font next to the entity name, from a battery sensor (its state is read) or a literal value.
 * **Theme & `card-mod` compatible:** The card is wrapped in a standard `ha-card`, so themes and `card-mod` can fully customize its appearance (transparent background, custom shadows, padding, etc.).
 
 ---
@@ -97,10 +98,55 @@ Add the card via **Add Card → Manual** and paste YAML.
 
 ---
 
-## 🧩 New Option `timer_and_entity_connected_via_automation`
-Default value is true. If you’ve already connected your timer and device with an automation or script etc., start button will start the timer to trigger the automation.
+## 🧩 Option `timer_and_entity_connected_via_automation`
 
-However, now you do not need to connect your timer and entity via automation if you set this to false. The card will start the timer and switch at the same time automatically and when the timer is finished card will turn off the switch automatically without a need of automation. This also means you can use the same timer for different entities on the card. For example, if you have 6 different entities from different domains but they are all needs 10 minutes timer, just create 1 timer and use it for all on the card config
+Default value is **`true`**.
+
+**`true` — automation mode (recommended for unattended use).** You link the timer and the device with your own automation/script. The card only starts the timer (which triggers your automation) and shows progress — it does **not** switch the device on/off itself. Because the timer runs on the Home Assistant **server**, the switch‑off fires reliably even when no browser or dashboard is open. As a bonus, you can reuse one timer for several entities (e.g. six entities from different domains that all need a 10‑minute timer can share a single timer).
+
+**`false` — direct control.** You don't need any automation: the card starts the timer and turns the device on at the same time, and turns it off automatically when the timer finishes.
+
+> ⚠️ **Direct control runs in your browser.** The auto‑off is performed by the card, so if **no dashboard is open** when the timer ends (tab/browser closed, or the mobile companion app was killed), the device will **not** switch off at that moment. For unattended setups, use automation mode instead.
+
+To keep direct‑control mode safe, it includes:
+
+* A **confirmation dialog** each time you start a timer in this mode, explaining the browser limitation (choose *Cancel* or *Start anyway*).
+* **Auto‑recovery on reopen** — when you open the dashboard again, the card detects a timer that already finished while you were away and switches the device off then.
+* An **inline warning** in the visual editor when *Automation Link* is turned off.
+
+### Automation example (for automation mode)
+
+Turn the device on when its timer starts and off when it finishes:
+
+```yaml
+alias: Zone 1 — timer controls switch
+triggers:
+  - trigger: event
+    event_type: timer.started
+    event_data:
+      entity_id: timer.zone_1
+    id: started
+  - trigger: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.zone_1
+    id: finished
+actions:
+  - choose:
+      - conditions: "{{ trigger.id == 'started' }}"
+        sequence:
+          - action: switch.turn_on
+            target:
+              entity_id: switch.zone_1
+      - conditions: "{{ trigger.id == 'finished' }}"
+        sequence:
+          - action: switch.turn_off
+            target:
+              entity_id: switch.zone_1
+mode: queued
+```
+
+> If a timer finishes while Home Assistant itself is restarting, the `timer.finished` event won't fire after startup — this is a Home Assistant limitation, not specific to this card.
 
 ## 🔁 Multiple timers for the same device
 
