@@ -74,8 +74,6 @@ A flexible Lovelace card for Home Assistant that lets you control a device, mana
 
 ![image8](images/ui.png)
 
-![image9](images/ui2.png)
-
 The top of the editor has a single **Card Header** field. Every entity is then configured through
 four tabs, and each entity card shows a colored dot (with a matching border) so you can tell them
 apart at a glance:
