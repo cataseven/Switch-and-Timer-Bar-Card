@@ -26,7 +26,10 @@ A flexible Lovelace card for Home Assistant that lets you control a device, mana
 * **Smarter status:** “Active” is interpreted sensibly per domain (e.g., covers consider *closed* as active; locks consider *unlocked* as active; media players consider *playing/on* as active).
 * **Shared-device aware:** Use the same controllable entity across multiple cards (e.g., one boiler with 15/30/60-minute boost buttons). Each card tracks its own timer independently and coordinates so an active timer is not interrupted by another card.
 * **Editable duration:** Optionally let users tap the total time on the card to change the timer duration on the fly. The value is saved per device, so each user can have their own preferred boost length. You can also set a YAML default to override the timer helper's configured duration without touching the helper.
-* **Battery indicator:** Optionally show a device's battery level in a smaller font next to the entity name, from a battery sensor (its state is read) or a literal value.
+* **Last run & Next run sensors:** Show up to two sensors per entity (for example, when the device last finished and when it will run next). Each sensor can display its state or one of its attributes, with its own label, icon, and position.
+* **Native value formatting:** Sensor values are formatted by Home Assistant itself. Date/time values are shown as localized, auto‑updating **relative time** (e.g. "5 minutes ago").
+* **Battery indicator:** Optionally show a device's battery level in a smaller font next to the entity name, from any battery entity (its state is read) or a literal value.
+* **Four‑tab visual editor:** Each entity is configured through **Entity**, **Timer**, **Sensors**, and **Design** tabs, with a colored marker per entity so they are easy to tell apart.
 * **Theme & `card-mod` compatible:** The card is wrapped in a standard `ha-card`, so themes and `card-mod` can fully customize its appearance (transparent background, custom shadows, padding, etc.).
 
 ---
@@ -73,6 +76,19 @@ A flexible Lovelace card for Home Assistant that lets you control a device, mana
 
 ![image9](images/ui2.png)
 
+The top of the editor has a single **Card Header** field. Every entity is then configured through
+four tabs, and each entity card shows a colored dot (with a matching border) so you can tell them
+apart at a glance:
+
+* **Entity** — display name and the controlled entity.
+* **Timer** — timer entity, *Automation Link*, default‑duration override, editable duration, and the time‑format strings.
+* **Sensors** — the **Last run** / **Next run** sensors and the **Battery** indicator. A `?` button next to *Last Run Sensor* opens a popup that shows how to create a trigger‑based template sensor and lets you copy the YAML.
+* **Design** — button position, colors, icons, and status labels for that entity.
+
+> Global `colors` / `icons` / `labels` / `button_position` are no longer shown in the visual editor;
+> styling is done **per entity** in the **Design** tab. If you set these keys globally in YAML, the
+> card still reads and applies them.
+
 ## ⚙️ Configuration
 
 Add the card via **Add Card → Manual** and paste YAML.
@@ -82,19 +98,24 @@ Add the card via **Add Card → Manual** and paste YAML.
 | Option                                      | Description                                                                                                                                                                    | Type                | Required | Default |
 | :------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------ | :------- | :------ |
 | `type`                                      | Must be `custom:switch-and-timer-bar-card`.                                                                                                                                    | `string`            | **YES**  |         |
-| `title`                                     | Title shown at the top of the card.                                                                                                                                            | `string`            | No       |         |
+| `title` | Header text shown at the top of the card (labeled "Card Header" in the editor). | `string` | No | |
 | `entities`                                  | List of devices to display.                                                                                                                                                    | `list`              | **YES**  |         |
 | `switch`                                    | The **entity\_id** of the device to control. **Supported domains:** `switch`, `light`, `fan`, `input_boolean`, `automation`, `siren`, `cover`, `valve`, `lock`, `media_player`.                                                               | `string`            | **YES**  |         |
 | `timer`                                     | The timer entity associated with the device.                                                                                                                                   | `string`            | No       |         |
-| `sensor`                                    | Sensor that stores info about the timer.                                                                                                                                          | `string`            | No       |         |
-| `battery`                                   | Optional battery percentage shown in a smaller font next to the entity name. Accepts a battery **entity\_id** (its state is used) or a literal number. When omitted, empty, or non‑numeric, no indicator is shown.                                                                | `string` / `number` | No       |         |
+| `last_run_sensor` | **Per-entity.** Sensor shown as the "last run" value. Object fields: `entity` (required), `attribute` (optional), `name`, `icon`, `position` (`left`/`center`/`right`). See the *Last run & Next run sensors* section. | `object` | No | |
+| `next_run_sensor` | **Per-entity.** Optional second sensor (e.g. "next run"). Same fields as `last_run_sensor`. | `object` | No | |
+| `battery` | **Per-entity.** Battery level shown in a smaller font next to the entity name. Accepts an **entity_id** (its state is read) or a literal number. Hidden when empty/non-numeric. | `string` / `number` | No | |
 | `timer_and_entity_connected_via_automation` | Set **true** (default) if your **own automations** handle turning the device on/off when the timer starts/finishes/is stopped. Set **false** if you want the card to call device services itself. | `boolean`           | No       | `true` |
 | `duration`                                  | Optional. Overrides the timer helper's configured duration when starting from this card. Accepts `"HH:MM:SS"` (e.g., `"00:10:00"`) or a number of seconds. Leave empty to use the helper's default.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | `string` / `number` | No       |         |
 | `editable_duration`                         | If `true`, the user can tap the total time on the card to change the duration. The value is saved in the browser (per device).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | `boolean`           | No       | `false` |
-| `button_position`                           | Override global button position (e.g., `left`/`right`) for the whole card or per‑entity.                                                                                       | `string` / `object` | No       |         |
-| `colors`                                    | Override colors globally or per‑entity.                                                                                                                                        | `string` / `object` | No       |         |
-| `icons`                                     | Override icons globally or per‑entity.                                                                                                                                         | `string` / `object` | No       |         |
-| `labels`                                    | Override labels (i18n) globally or per‑entity.                                                                                                                                 | `string` / `object` | No       |         |
+| `button_position` | Button side, `left` or `right`. Set **per-entity** (Design tab) or globally in YAML. | `string` / `object` | No | `left` |
+| `colors` | Color overrides. Set **per-entity** (Design tab); also accepted globally in YAML. Keys: `on`, `ready`, `unavailable`, `button_start`, `button_stop`, `icon`, `progress_fill`. | `object` | No | |
+| `icons` | Icon overrides. Keys: `start`, `stop`. **Per-entity** (Design tab) or global YAML. | `object` | No | |
+| `labels` | Text overrides. Keys: `status_on`, `status_ready`, `status_unavailable`, `time_format_zero`, `time_unit_minutes`, `time_unit_seconds` (plus global `edit_duration_*` / `start_confirm_*` strings). **Per-entity** (Design tab) or global YAML. | `object` | No | |
+
+> **Legacy `sensor`:** an older per-entity `sensor:` *string* is still rendered for backward
+> compatibility and is automatically migrated to `last_run_sensor` the first time you open the
+> card in the visual editor.
 
 ---
 
@@ -232,7 +253,7 @@ entities:
 
 * The value is rounded to a whole number and displayed as `NN%`.
 * If `battery` is omitted, empty, or non‑numeric (e.g. `unavailable`), the indicator stays hidden.
-* You can also set it from the visual editor: open an entity and use the **Battery** field on the *General* tab.
+* You can also set it from the visual editor: open an entity and turn on **Battery** on the *Sensors* tab, then pick any entity whose state is the battery level.
 
 ---
 
@@ -263,9 +284,57 @@ The `ha-card` selector controls the outer shell. The `.entity-card` selector con
 
 ---
 
+## 📟 Last run & Next run sensors
+
+Each entity can show up to **two sensors** below the timer row: a **Last run** sensor and a
+**Next run** sensor. Both are optional and fully independent.
+
+```yaml
+entities:
+  - name: Zone 1
+    switch: switch.zone_1
+    timer: timer.zone_1
+    last_run_sensor:
+      entity: sensor.zone_1_last_run
+      name: Last run          # label shown on the card
+      icon: mdi:history
+      position: left          # left | center | right
+    next_run_sensor:
+      entity: sensor.zone_1_next_run
+      name: Next run
+      icon: mdi:update
+      position: right
+```
+
+Each sensor accepts:
+
+| Field       | Description                                                                 |
+| :---------- | :-------------------------------------------------------------------------- |
+| `entity`    | **Required.** The entity to read.                                           |
+| `attribute` | Optional. Show one of the entity's **attributes** instead of its state.     |
+| `name`      | Label shown next to the value on the card.                                  |
+| `icon`      | Icon shown before the label (any `mdi:` icon).                              |
+| `position`  | Where the chip sits in its row: `left`, `center`, or `right`.               |
+
+**Formatting:** values are rendered with Home Assistant's own formatting, so units and
+device‑class formatting match the rest of your dashboard. **Timestamp / date** values are shown as
+localized, auto‑updating **relative time** (for example "5 minutes ago"). This replaces the old
+`last_on_*` label strings, which are no longer used.
+
+> In the visual editor, open an entity → **Sensors** tab to enable each sensor. The `?` button next
+> to *Last Run Sensor* opens the helper below and lets you copy the template‑sensor YAML.
+
+> **Legacy config:** a single per‑entity `sensor:` string still works (it is shown as the "last run"
+> value) and is automatically migrated to `last_run_sensor` when you open the card in the editor.
+
+---
+
 ## 🧪 How to create a trigger‑based sensor
 
 To show "last run" on the card, you can create a template sensor that updates when the timer finishes (works for all domains) and/or when the device turns off. Example below uses both a `timer.finished` event and a switch turning off; adapt the second trigger for your domain if needed.
+
+> This same example is available inside the editor: open an entity → **Sensors** tab → the `?`
+> button next to *Last Run Sensor*, then **Copy YAML**.
 
 ```yaml
 template:
@@ -304,11 +373,6 @@ labels:
   status_on: 'Watering'
   status_ready: 'Ready'
   status_unavailable: 'Unavailable'
-  last_on_active: 'Active'
-  last_on_now: 'Just now'
-  last_on_ago_minutes: 'minutes ago'
-  last_on_ago_hours: 'hours ago'
-  last_on_ago_days: 'days ago'
   time_format_zero: '0m 00s'
   time_unit_minutes: 'm'
   time_unit_seconds: 's'
@@ -316,11 +380,13 @@ entities:
   - name: Zone 1
     switch: switch.zone_1
     timer: timer.zone_1_timer
-    sensor: sensor.zone_1_is_finished
+    last_run_sensor:
+      entity: sensor.zone_1_is_finished
   - name: Zone 2
     switch: cover.lounge_blind
     timer: timer.lounge_blind
-    sensor: sensor.lounge_blind_last_run
+    last_run_sensor:
+      entity: sensor.lounge_blind_last_run
 ```
 
 ![image3](images/water.png)
@@ -348,11 +414,6 @@ labels:
   status_on: Running
   status_ready: Ready
   status_unavailable: Unavailable
-  last_on_active: Active
-  last_on_now: Just now
-  last_on_ago_minutes: minutes ago
-  last_on_ago_hours: hours ago
-  last_on_ago_days: days ago
   time_format_zero: 0m 00s
   time_unit_minutes: m
   time_unit_seconds: s
@@ -360,7 +421,8 @@ entities:
   - name: Zone 1
     switch: switch.zone_1
     timer: timer.zone_1_timer
-    sensor: sensor.zone_1_is_finished
+    last_run_sensor:
+      entity: sensor.zone_1_is_finished
     timer_and_entity_connected_via_automation: true
     button_position: left
     colors:
@@ -378,18 +440,14 @@ entities:
       status_on: Watering
       status_ready: Ready
       status_unavailable: No Signal
-      last_on_active: Active
-      last_on_now: Just now
-      last_on_ago_minutes: min ago
-      last_on_ago_hours: hours ago
-      last_on_ago_days: days ago
       time_format_zero: 0m 00s
       time_unit_minutes: m
       time_unit_seconds: s
   - name: Zone 2
     switch: switch.zone_2
     timer: timer.zone_2_timer
-    sensor: sensor.zone_2_is_finished
+    last_run_sensor:
+      entity: sensor.zone_2_is_finished
     timer_and_entity_connected_via_automation: true
     button_position: right
     colors:
@@ -405,7 +463,8 @@ entities:
   - name: Zone 3
     switch: switch.zone_3
     timer: timer.zone_3_timer
-    sensor: sensor.zone_3_is_finished
+    last_run_sensor:
+      entity: sensor.zone_3_is_finished
     timer_and_entity_connected_via_automation: true
     button_position: left
     colors:
@@ -422,7 +481,8 @@ entities:
   - name: Zone 4
     switch: switch.zone_4
     timer: timer.zone_4_timer
-    sensor: sensor.zone_4_is_finished
+    last_run_sensor:
+      entity: sensor.zone_4_is_finished
     timer_and_entity_connected_via_automation: true
     button_position: right
     colors:
@@ -439,7 +499,8 @@ entities:
   - name: Zone 5
     switch: switch.zone_5
     timer: timer.zone_5_timer
-    sensor: sensor.zone_5_is_finished
+    last_run_sensor:
+      entity: sensor.zone_5_is_finished
     timer_and_entity_connected_via_automation: false
     button_position: left
     colors:
@@ -456,7 +517,8 @@ entities:
   - name: Zone 6
     switch: switch.zone_6
     timer: timer.zone_6_timer
-    sensor: sensor.zone_6_is_finished
+    last_run_sensor:
+      entity: sensor.zone_6_is_finished
     timer_and_entity_connected_via_automation: true
     button_position: right
     colors:
@@ -465,15 +527,11 @@ entities:
     icons:
       start: mdi:play
       stop: mdi:stop
-    labels:
-      last_on_now: Now
-      last_on_ago_minutes: m ago
-      last_on_ago_hours: h ago
-      last_on_ago_days: d ago
   - name: Zone 7
     switch: switch.zone_7
     timer: timer.zone_7_timer
-    sensor: sensor.zone_7_is_finished
+    last_run_sensor:
+      entity: sensor.zone_7_is_finished
     timer_and_entity_connected_via_automation: true
     button_position: left
     colors:
@@ -488,7 +546,8 @@ entities:
   - name: Zone 8
     switch: switch.zone_8
     timer: timer.zone_8_timer
-    sensor: sensor.zone_8_is_finished
+    last_run_sensor:
+      entity: sensor.zone_8_is_finished
     timer_and_entity_connected_via_automation: true
     button_position: right
     colors:
@@ -504,7 +563,8 @@ entities:
   - name: Zone 9
     switch: switch.zone_9
     timer: timer.zone_9_timer
-    sensor: sensor.zone_9_is_finished
+    last_run_sensor:
+      entity: sensor.zone_9_is_finished
     timer_and_entity_connected_via_automation: true
     button_position: left
     colors:
@@ -522,7 +582,8 @@ entities:
   - name: Zone 10
     switch: switch.zone_10
     timer: timer.zone_10_timer
-    sensor: sensor.zone_10_is_finished
+    last_run_sensor:
+      entity: sensor.zone_10_is_finished
     timer_and_entity_connected_via_automation: true
     button_position: right
     colors:
@@ -553,7 +614,8 @@ sections:
         entities:
           - switch: switch.zone_1
             timer: timer.zone_1_timer
-            sensor: sensor.zone_1_is_finished
+            last_run_sensor:
+              entity: sensor.zone_1_is_finished
             timer_and_entity_connected_via_automation: true
         colors: {}
         icons: {}
@@ -566,7 +628,8 @@ sections:
         entities:
           - switch: switch.zone_2
             timer: timer.zone_2_timer
-            sensor: sensor.zone_2_is_finished
+            last_run_sensor:
+              entity: sensor.zone_2_is_finished
             timer_and_entity_connected_via_automation: true
         colors: {}
         icons: {}
@@ -579,7 +642,8 @@ sections:
         entities:
           - switch: switch.zone_3
             timer: timer.zone_3_timer
-            sensor: sensor.zone_3_is_finished
+            last_run_sensor:
+              entity: sensor.zone_3_is_finished
             timer_and_entity_connected_via_automation: true
         colors: {}
         icons: {}
@@ -592,7 +656,8 @@ sections:
         entities:
           - switch: switch.zone_4
             timer: timer.zone_4_timer
-            sensor: sensor.zone_4_is_finished
+            last_run_sensor:
+              entity: sensor.zone_4_is_finished
             timer_and_entity_connected_via_automation: true
         colors: {}
         icons: {}
@@ -605,7 +670,8 @@ sections:
         entities:
           - switch: switch.zone_5
             timer: timer.zone_5_timer
-            sensor: sensor.zone_5_is_finished
+            last_run_sensor:
+              entity: sensor.zone_5_is_finished
             timer_and_entity_connected_via_automation: true
         colors: {}
         icons: {}
@@ -618,7 +684,8 @@ sections:
         entities:
           - switch: switch.zone_6
             timer: timer.zone_6_timer
-            sensor: sensor.zone_6_is_finished
+            last_run_sensor:
+              entity: sensor.zone_6_is_finished
             timer_and_entity_connected_via_automation: true
         colors: {}
         icons: {}
@@ -631,7 +698,8 @@ sections:
         entities:
           - switch: switch.zone_7
             timer: timer.zone_7_timer
-            sensor: sensor.zone_7_is_finished
+            last_run_sensor:
+              entity: sensor.zone_7_is_finished
             timer_and_entity_connected_via_automation: true
         colors: {}
         icons: {}
@@ -644,7 +712,8 @@ sections:
         entities:
           - switch: switch.zone_8
             timer: timer.zone_8_timer
-            sensor: sensor.zone_8_is_finished
+            last_run_sensor:
+              entity: sensor.zone_8_is_finished
             timer_and_entity_connected_via_automation: true
         colors: {}
         icons: {}
@@ -657,7 +726,8 @@ sections:
         entities:
           - switch: switch.zone_9
             timer: timer.zone_9_timer
-            sensor: sensor.zone_9_is_finished
+            last_run_sensor:
+              entity: sensor.zone_9_is_finished
             timer_and_entity_connected_via_automation: true
         colors: {}
         icons: {}
@@ -670,7 +740,8 @@ sections:
         entities:
           - switch: switch.zone_10
             timer: timer.zone_10_timer
-            sensor: sensor.zone_10_is_finished
+            last_run_sensor:
+              entity: sensor.zone_10_is_finished
             timer_and_entity_connected_via_automation: true
         colors: {}
         icons: {}
@@ -683,7 +754,8 @@ sections:
         entities:
           - switch: switch.zone_11
             timer: timer.zone_11_timer
-            sensor: sensor.zone_11_is_finished
+            last_run_sensor:
+              entity: sensor.zone_11_is_finished
             timer_and_entity_connected_via_automation: true
         colors: {}
         icons: {}
@@ -696,7 +768,8 @@ sections:
         entities:
           - switch: switch.zone_11
             timer: timer.zone_11_timer
-            sensor: sensor.zone_11_is_finished
+            last_run_sensor:
+              entity: sensor.zone_11_is_finished
             timer_and_entity_connected_via_automation: true
         colors: {}
         icons: {}
@@ -734,11 +807,6 @@ labels:
   status_on: 'Watering'
   status_ready: 'Ready'
   status_unavailable: 'Unavailable'
-  last_on_active: 'Active'
-  last_on_now: 'Just now'
-  last_on_ago_minutes: 'minutes ago'
-  last_on_ago_hours: 'hours ago'
-  last_on_ago_days: 'days ago'
   time_format_zero: '0m 00s'
   time_unit_minutes: 'm'
   time_unit_seconds: 's'
@@ -746,15 +814,18 @@ entities:
   - name: Zone 1
     switch: switch.zone_1
     timer: timer.zone_1_timer
-    sensor: sensor.zone_1_is_finished
+    last_run_sensor:
+      entity: sensor.zone_1_is_finished
   - name: Zone 2
     switch: switch.zone_2
     timer: timer.zone_2_timer
-    sensor: sensor.zone_2_is_finished
+    last_run_sensor:
+      entity: sensor.zone_2_is_finished
   - name: Living Room Light
     switch: switch.zone_3
     timer: timer.zone_3_timer
-    sensor: sensor.zone_3_is_finished
+    last_run_sensor:
+      entity: sensor.zone_3_is_finished
     button_position: right
     colors:
       button_start: '#F443FF'
@@ -782,7 +853,8 @@ entities:
   - name: Pool Pump
     switch: switch.pool_pump
     timer: timer.pool_pump
-    sensor: sensor.pool_pump_last_run
+    last_run_sensor:
+      entity: sensor.pool_pump_last_run
     timer_and_entity_connected_via_automation: false
 ```
 
@@ -794,7 +866,8 @@ entities:
   - name: Pool Pump
     switch: switch.pool_pump
     timer: timer.pool_pump
-    sensor: sensor.pool_pump_last_run
+    last_run_sensor:
+      entity: sensor.pool_pump_last_run
     timer_and_entity_connected_via_automation: true #this line is not required because default value is true
 ```
 
@@ -810,7 +883,8 @@ entities:
   - name: Patio Blind
     switch: cover.patio_blind
     timer: timer.patio_blind
-    sensor: sensor.patio_blind_last_run
+    last_run_sensor:
+      entity: sensor.patio_blind_last_run
     timer_and_entity_connected_via_automation: false
 ```
 
@@ -822,7 +896,8 @@ entities:
   - name: Patio Blind
     switch: cover.patio_blind
     timer: timer.patio_blind
-    sensor: sensor.patio_blind_last_run
+    last_run_sensor:
+      entity: sensor.patio_blind_last_run
     timer_and_entity_connected_via_automation: true
 ```
 
@@ -838,7 +913,8 @@ entities:
   - name: Garden Valve
     switch: valve.garden_water_valve
     timer: timer.garden_valve
-    sensor: sensor.garden_valve_last_run
+    last_run_sensor:
+      entity: sensor.garden_valve_last_run
     timer_and_entity_connected_via_automation: false
 ```
 
@@ -850,7 +926,8 @@ entities:
   - name: Garden Valve
     switch: valve.garden_water_valve
     timer: timer.garden_valve
-    sensor: sensor.garden_valve_last_run
+    last_run_sensor:
+      entity: sensor.garden_valve_last_run
     timer_and_entity_connected_via_automation: true
 ```
 
@@ -866,7 +943,8 @@ entities:
   - name: Garden Gate
     switch: lock.garden_gate
     timer: timer.garden_gate
-    sensor: sensor.garden_gate_last_run
+    last_run_sensor:
+      entity: sensor.garden_gate_last_run
     timer_and_entity_connected_via_automation: false
 ```
 
@@ -878,7 +956,8 @@ entities:
   - name: Garden Gate
     switch: lock.garden_gate
     timer: timer.garden_gate
-    sensor: sensor.garden_gate_last_run
+    last_run_sensor:
+      entity: sensor.garden_gate_last_run
     timer_and_entity_connected_via_automation: true
 ```
 
@@ -894,7 +973,8 @@ entities:
   - name: Living Room TV
     switch: media_player.living_room_tv
     timer: timer.tv_sleep_timer
-    sensor: sensor.tv_last_run
+    last_run_sensor:
+      entity: sensor.tv_last_run
     timer_and_entity_connected_via_automation: false
 ```
 
@@ -906,7 +986,8 @@ entities:
   - name: Living Room TV
     switch: media_player.living_room_tv
     timer: timer.tv_sleep_timer
-    sensor: sensor.tv_last_run
+    last_run_sensor:
+      entity: sensor.tv_last_run
     timer_and_entity_connected_via_automation: true
 ```
 ### 6) `automation` domain (e.g., automation.arriving_home)
@@ -919,7 +1000,8 @@ entities:
   - name: Living Room TV
     switch: automation.arriving_home
     timer: timer.stop_automation
-    sensor: sensor.stop_automation_last_time
+    last_run_sensor:
+      entity: sensor.stop_automation_last_time
     timer_and_entity_connected_via_automation: false
 ```
 
@@ -931,7 +1013,8 @@ entities:
   - name: Living Room TV
     switch: automation.arriving_home
     timer: timer.stop_automation
-    sensor: sensor.stop_automation_last_time
+    last_run_sensor:
+      entity: sensor.stop_automation_last_time
     timer_and_entity_connected_via_automation: true
 ```
 
